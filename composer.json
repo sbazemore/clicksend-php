@@ -1,5 +1,5 @@
 {
-    "name": "ClickSend/clicksend-php",
+    "name": "clicksend/clicksend-php",
     "type": "library",
     "description": "A PHP wrapper for ClickSend's API",
     "keywords": ["ClickSend","SMS","Voice","Fax","Post","Email","API","SDK"],
