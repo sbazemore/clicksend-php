@@ -1,6 +1,14 @@
 # clicksend-php
 A wrapper for our REST API - SMS, voice, post, email, fax.
 
+##### API docs can be accessed [here](https://developers.clicksend.com/docs/):
+
+#
+
+##### You’ll need a free account to get [started](https://dashboard.clicksend.com/#/signup/step1/): 
+
+#
+
 How To Build: 
 =============
 The generated code uses a PHP library namely UniRest. The reference to this
@@ -59,7 +67,3 @@ try {
 ?>
 ```
 
-##### API docs can be accessed [here](https://developers.clicksend.com/docs/):
-
-
-##### You’ll need a free account to get [started](https://dashboard.clicksend.com/#/signup/step1/): 
