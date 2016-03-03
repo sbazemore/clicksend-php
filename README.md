@@ -1,4 +1,4 @@
-# clicksend-php
+# ClickSend PHP Library
 A wrapper for our REST API - SMS, voice, post, email, fax.
 
 ##### API docs can be accessed [here](https://developers.clicksend.com/docs/):
@@ -8,6 +8,22 @@ A wrapper for our REST API - SMS, voice, post, email, fax.
 ##### You’ll need a free account to get [started](https://dashboard.clicksend.com/#/signup/step1/): 
 
 #
+
+## Installation
+
+You can install **clicksend-php** via composer or by downloading the source.
+
+#### Via Composer:
+
+**clicksend-php** is available on Packagist as the
+[`clicksend/clicksend-php`](http://packagist.org/packages/clicksend/clicksend-php) package.
+
+#### Via ZIP file:
+
+[Click here to download the source
+(.zip)](https://github.com/ClickSend/clicksend-php/archive/master.zip) which includes all
+dependencies.
+
 
 How To Build: 
 =============
