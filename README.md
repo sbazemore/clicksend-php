@@ -31,11 +31,6 @@ The generated code uses a PHP library namely UniRest. The reference to this
 library is already added as a composer dependency in the generated composer.json
 file. Therefore, you will need internet access to resolve this dependency.
 
-Installation:
-===========
-
-****For using this SDK do the following:****
-
 	1. Go to sdk project root folder.
 	2. Use composer to install the dependencies. If you don't have composer you can download it on https://getcomposer.org/download
 	3. Enter command `composer update` to install dependencies.
