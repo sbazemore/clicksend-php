@@ -9,7 +9,7 @@ namespace ClickSendV3APILib;
 
 class Configuration {
     //The base Uri for API calls
-    public static $BASEURI = 'http://api.clicksend.local/v3';
+    public static $BASEURI = 'https://rest.clicksend.com/v3/';
 
     //your username
     //TODO: Replace the $username with an appropriate value
