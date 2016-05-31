@@ -68,7 +68,7 @@ $messages =  [
 
 try {
     $controller = new SMSController('your-username', 'your-api-key');
-    $response = $controller->sendSms($messages);
+    $response = $controller->sendSms(['messages' => $messages]);
     //response will return an object
     print_r($response);
 } catch(APIException $e) {
