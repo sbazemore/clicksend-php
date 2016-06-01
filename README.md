@@ -69,7 +69,7 @@ $messages =  [
 
 try {
 
-    $controller = new \ClickSendLib\Controllers\SMSController('your-username', 'your-api-key');
+    $controller = new \ClickSendLib\Controllers\SMSController();
     $response = $controller->sendSms(['messages' => $messages]);
 
     print_r($response);
