@@ -2,15 +2,15 @@
 /*
  * ClickSend
  *
- * This file was automatically generated for ClickSend by APIMATIC v2.0 ( https://apimatic.io ) on 05/31/2016
+ * This file was automatically generated for ClickSend by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
  */
 
-namespace ClickSend\Controllers;
+namespace ClickSendLib\Controllers;
 
-use ClickSend\APIException;
-use ClickSend\APIHelper;
-use ClickSend\Configuration;
-use ClickSend\Models;
+use ClickSendLib\APIException;
+use ClickSendLib\APIHelper;
+use ClickSendLib\Configuration;
+use ClickSendLib\Models;
 use Unirest\Request;
 use \apimatic\jsonmapper\JsonMapper;
 
