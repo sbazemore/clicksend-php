@@ -2,10 +2,10 @@
 /*
  * ClickSend
  *
- * This file was automatically generated for ClickSend by APIMATIC v2.0 ( https://apimatic.io ) on 05/31/2016
+ * This file was automatically generated for ClickSend by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
  */
 
-namespace ClickSend;
+namespace ClickSendLib;
 
 use Exception;
 
