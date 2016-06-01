@@ -45,8 +45,8 @@ Sample Code:
 
 require 'vendor/autoload.php';
 
-\ClickSend\Configuration::$username = 'YOUR USERNAME';
-\ClickSend\Configuration::$key = 'YOUR API KEY';
+\ClickSendLib\Configuration::$username = 'YOUR USERNAME';
+\ClickSendLib\Configuration::$key = 'YOUR API KEY';
 
 $messages =  [
     [
@@ -69,12 +69,12 @@ $messages =  [
 
 try {
 
-    $controller = new \ClickSend\Controllers\SMSController('your-username', 'your-api-key');
+    $controller = new \ClickSendLib\Controllers\SMSController('your-username', 'your-api-key');
     $response = $controller->sendSms(['messages' => $messages]);
 
     print_r($response);
 
-} catch(\ClickSend\APIException $e) {
+} catch(\ClickSendLib\APIException $e) {
 
     print_r($e->getResponseBody());
 
