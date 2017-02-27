@@ -115,7 +115,7 @@ class APIHelper {
                 foreach($val as $k => $v) {
                     if(is_array($v)) {
                         // flatten array and merge
-                        $data = array_merge($data, statis::httpBuildQueryDevelop(array( "{$key}[{$k}]" => $v)));
+                        $data = array_merge($data, static::httpBuildQueryDevelop(array( "{$key}[{$k}]" => $v)));
                     } else if(is_object($v)) {
                         // flatten object to array and merge
                         $data = array_merge($data, static::httpBuildQueryDevelop(array( "{$key}[{$k}]" => $v->jsonSerialize())));
