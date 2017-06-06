@@ -10,25 +10,26 @@ namespace ClickSendLib\Models;
 use JsonSerializable;
 
 /**
- * @todo Write general description for this model
+ * List of ReferralAccounts
  */
-class SmsMessageCollection implements JsonSerializable
+class ReferralAccountList implements JsonSerializable
 {
     /**
      * @todo Write general description for this property
      * @required
-     * @var SmsMessage[] $messages public property
+     * @maps referral_account
+     * @var ReferralAccount[] $referralAccount public property
      */
-    public $messages;
+    public $referralAccount;
 
     /**
      * Constructor to set initial or default values of member properties
-     * @param array $messages Initialization value for $this->messages
+     * @param array $referralAccount Initialization value for $this->referralAccount
      */
     public function __construct()
     {
         if (1 == func_num_args()) {
-            $this->messages = func_get_arg(0);
+            $this->referralAccount = func_get_arg(0);
         }
     }
 
@@ -39,7 +40,7 @@ class SmsMessageCollection implements JsonSerializable
     public function jsonSerialize()
     {
         $json = array();
-        $json['messages'] = $this->messages;
+        $json['referral_account'] = $this->referralAccount;
 
         return $json;
     }

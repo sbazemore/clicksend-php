@@ -12,23 +12,24 @@ use JsonSerializable;
 /**
  * @todo Write general description for this model
  */
-class SmsMessageCollection implements JsonSerializable
+class ResellerAccount extends Account implements JsonSerializable
 {
     /**
      * @todo Write general description for this property
      * @required
-     * @var SmsMessage[] $messages public property
+     * @maps reseller_account
+     * @var Account $resellerAccount public property
      */
-    public $messages;
+    public $resellerAccount;
 
     /**
      * Constructor to set initial or default values of member properties
-     * @param array $messages Initialization value for $this->messages
+     * @param Account $resellerAccount Initialization value for $this->resellerAccount
      */
     public function __construct()
     {
         if (1 == func_num_args()) {
-            $this->messages = func_get_arg(0);
+            $this->resellerAccount = func_get_arg(0);
         }
     }
 
@@ -39,7 +40,8 @@ class SmsMessageCollection implements JsonSerializable
     public function jsonSerialize()
     {
         $json = array();
-        $json['messages'] = $this->messages;
+        $json['reseller_account'] = $this->resellerAccount;
+        $json = array_merge($json, parent::jsonSerialize());
 
         return $json;
     }
