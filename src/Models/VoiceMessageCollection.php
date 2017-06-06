@@ -10,14 +10,14 @@ namespace ClickSendLib\Models;
 use JsonSerializable;
 
 /**
- * @todo Write general description for this model
+ * collection of voice messages
  */
-class SmsMessageCollection implements JsonSerializable
+class VoiceMessageCollection implements JsonSerializable
 {
     /**
-     * @todo Write general description for this property
+     * Array of Voice messages
      * @required
-     * @var SmsMessage[] $messages public property
+     * @var VoiceMessage[] $messages public property
      */
     public $messages;
 
