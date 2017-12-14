@@ -98,6 +98,7 @@ class AccountRechargeController extends BaseController
      * @param integer $expiryYear   TODO: type description here
      * @param integer $cvc          TODO: type description here
      * @param string  $name         TODO: type description here
+     * @param string  $bankName     TODO: type description here
      * @return string response from the API call
      * @throws APIException Thrown if API call fails
      */
@@ -106,7 +107,8 @@ class AccountRechargeController extends BaseController
         $expiryMonth,
         $expiryYear,
         $cvc,
-        $name
+        $name,
+        $bankName
     ) {
         //check that all required arguments are provided
         if (!isset($number, $expiryMonth, $expiryYear, $cvc, $name)) {
@@ -127,6 +129,7 @@ class AccountRechargeController extends BaseController
             'expiry_year'  => $expiryYear,
             'cvc'          => $cvc,
             'name'         => $name,
+            'bank_name'    => $bankName,
         ));
 
         //validate and preprocess url
