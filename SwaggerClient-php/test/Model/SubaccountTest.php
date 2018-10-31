@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClickSend.Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace ClickSend.Client;
 
 /**
  * SubaccountTest Class Doc Comment
  *
  * @category    Class
  * @description Accounts that are maintained under a main account
- * @package     Swagger\Client
+ * @package     ClickSend.Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

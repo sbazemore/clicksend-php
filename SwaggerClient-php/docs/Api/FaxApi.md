@@ -1,4 +1,4 @@
-# Swagger\Client\FaxApi
+# ClickSend.Client\FaxApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -24,12 +24,12 @@ Get a list of Fax History.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FaxApi(
+$apiInstance = new ClickSend.Client\Api\FaxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -90,18 +90,18 @@ Calculate Total Price for Fax Messages sent
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FaxApi(
+$apiInstance = new ClickSend.Client\Api\FaxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$fax_message = new \Swagger\Client\clicksend.model\FaxMessageCollection(); // \Swagger\Client\clicksend.model\FaxMessageCollection | FaxMessageCollection model
+$fax_message = new \ClickSend.Client\ClickSend.Client.Model\FaxMessageCollection(); // \ClickSend.Client\ClickSend.Client.Model\FaxMessageCollection | FaxMessageCollection model
 
 try {
     $result = $apiInstance->faxPricePost($fax_message);
@@ -116,7 +116,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fax_message** | [**\Swagger\Client\clicksend.model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
+ **fax_message** | [**\ClickSend.Client\ClickSend.Client.Model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
 
 ### Return type
 
@@ -146,12 +146,12 @@ Get a single fax receipt based on message id.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FaxApi(
+$apiInstance = new ClickSend.Client\Api\FaxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,12 +202,12 @@ Get List of Fax Receipts
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FaxApi(
+$apiInstance = new ClickSend.Client\Api\FaxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -254,18 +254,18 @@ Send a fax using supplied supported file-types.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FaxApi(
+$apiInstance = new ClickSend.Client\Api\FaxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$fax_message = new \Swagger\Client\clicksend.model\FaxMessageCollection(); // \Swagger\Client\clicksend.model\FaxMessageCollection | FaxMessageCollection model
+$fax_message = new \ClickSend.Client\ClickSend.Client.Model\FaxMessageCollection(); // \ClickSend.Client\ClickSend.Client.Model\FaxMessageCollection | FaxMessageCollection model
 
 try {
     $result = $apiInstance->faxSendPost($fax_message);
@@ -280,7 +280,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fax_message** | [**\Swagger\Client\clicksend.model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
+ **fax_message** | [**\ClickSend.Client\ClickSend.Client.Model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
 
 ### Return type
 

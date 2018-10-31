@@ -1,4 +1,4 @@
-# Swagger\Client\StatisticsApi
+# ClickSend.Client\StatisticsApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -22,12 +22,12 @@ Get mms statistics
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\StatisticsApi(
+$apiInstance = new ClickSend.Client\Api\StatisticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -74,12 +74,12 @@ Get sms statistics
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\StatisticsApi(
+$apiInstance = new ClickSend.Client\Api\StatisticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -126,12 +126,12 @@ Get voice statistics
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\StatisticsApi(
+$apiInstance = new ClickSend.Client\Api\StatisticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

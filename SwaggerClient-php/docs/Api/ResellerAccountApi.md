@@ -1,4 +1,4 @@
-# Swagger\Client\ResellerAccountApi
+# ClickSend.Client\ResellerAccountApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -23,12 +23,12 @@ Get Reseller clients Account
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ResellerAccountApi(
+$apiInstance = new ClickSend.Client\Api\ResellerAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -79,19 +79,19 @@ Update Reseller clients Account
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ResellerAccountApi(
+$apiInstance = new ClickSend.Client\Api\ResellerAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $client_user_id = 56; // int | User ID of client
-$reseller_account = new \Swagger\Client\clicksend.model\ResellerAccount(); // \Swagger\Client\clicksend.model\ResellerAccount | ResellerAccount model
+$reseller_account = new \ClickSend.Client\ClickSend.Client.Model\ResellerAccount(); // \ClickSend.Client\ClickSend.Client.Model\ResellerAccount | ResellerAccount model
 
 try {
     $result = $apiInstance->resellerAccountsByClientUserIdPut($client_user_id, $reseller_account);
@@ -107,7 +107,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **client_user_id** | **int**| User ID of client |
- **reseller_account** | [**\Swagger\Client\clicksend.model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
+ **reseller_account** | [**\ClickSend.Client\ClickSend.Client.Model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
 
 ### Return type
 
@@ -137,12 +137,12 @@ Get list of reseller accounts
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ResellerAccountApi(
+$apiInstance = new ClickSend.Client\Api\ResellerAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -195,18 +195,18 @@ Create reseller account
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ResellerAccountApi(
+$apiInstance = new ClickSend.Client\Api\ResellerAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$reseller_account = new \Swagger\Client\clicksend.model\ResellerAccount(); // \Swagger\Client\clicksend.model\ResellerAccount | ResellerAccount model
+$reseller_account = new \ClickSend.Client\ClickSend.Client.Model\ResellerAccount(); // \ClickSend.Client\ClickSend.Client.Model\ResellerAccount | ResellerAccount model
 
 try {
     $result = $apiInstance->resellerAccountsPost($reseller_account);
@@ -221,7 +221,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **reseller_account** | [**\Swagger\Client\clicksend.model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
+ **reseller_account** | [**\ClickSend.Client\ClickSend.Client.Model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
 
 ### Return type
 

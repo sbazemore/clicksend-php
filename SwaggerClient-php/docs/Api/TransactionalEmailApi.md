@@ -1,4 +1,4 @@
-# Swagger\Client\TransactionalEmailApi
+# ClickSend.Client\TransactionalEmailApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -23,12 +23,12 @@ Export all Transactional Email history
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TransactionalEmailApi(
+$apiInstance = new ClickSend.Client\Api\TransactionalEmailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -83,12 +83,12 @@ Get all transactional email history
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TransactionalEmailApi(
+$apiInstance = new ClickSend.Client\Api\TransactionalEmailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -145,18 +145,18 @@ Get transactional email price
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TransactionalEmailApi(
+$apiInstance = new ClickSend.Client\Api\TransactionalEmailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$email = new \Swagger\Client\clicksend.model\Email(); // \Swagger\Client\clicksend.model\Email | Email model
+$email = new \ClickSend.Client\ClickSend.Client.Model\Email(); // \ClickSend.Client\ClickSend.Client.Model\Email | Email model
 
 try {
     $result = $apiInstance->emailPricePost($email);
@@ -171,7 +171,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | [**\Swagger\Client\clicksend.model\Email**](../Model/Email.md)| Email model |
+ **email** | [**\ClickSend.Client\ClickSend.Client.Model\Email**](../Model/Email.md)| Email model |
 
 ### Return type
 
@@ -201,18 +201,18 @@ Send transactional email
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TransactionalEmailApi(
+$apiInstance = new ClickSend.Client\Api\TransactionalEmailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$email = new \Swagger\Client\clicksend.model\Email(); // \Swagger\Client\clicksend.model\Email | Email model
+$email = new \ClickSend.Client\ClickSend.Client.Model\Email(); // \ClickSend.Client\ClickSend.Client.Model\Email | Email model
 
 try {
     $result = $apiInstance->emailSendPost($email);
@@ -227,7 +227,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | [**\Swagger\Client\clicksend.model\Email**](../Model/Email.md)| Email model |
+ **email** | [**\ClickSend.Client\ClickSend.Client.Model\Email**](../Model/Email.md)| Email model |
 
 ### Return type
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ClickSend.Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace ClickSend.Client;
 
 /**
  * AccountVerifyTest Class Doc Comment
  *
  * @category    Class
  * @description Verifies an account by token that should have been sent to the user&#39;s phone
- * @package     Swagger\Client
+ * @package     ClickSend.Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

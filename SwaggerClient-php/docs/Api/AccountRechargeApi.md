@@ -1,4 +1,4 @@
-# Swagger\Client\AccountRechargeApi
+# ClickSend.Client\AccountRechargeApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -25,12 +25,12 @@ Get Credit Card info
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AccountRechargeApi(
+$apiInstance = new ClickSend.Client\Api\AccountRechargeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -77,18 +77,18 @@ Update credit card info
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AccountRechargeApi(
+$apiInstance = new ClickSend.Client\Api\AccountRechargeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$credit_card = new \Swagger\Client\clicksend.model\CreditCard(); // \Swagger\Client\clicksend.model\CreditCard | CreditCard model
+$credit_card = new \ClickSend.Client\ClickSend.Client.Model\CreditCard(); // \ClickSend.Client\ClickSend.Client.Model\CreditCard | CreditCard model
 
 try {
     $result = $apiInstance->rechargeCreditCardPut($credit_card);
@@ -103,7 +103,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **credit_card** | [**\Swagger\Client\clicksend.model\CreditCard**](../Model/CreditCard.md)| CreditCard model |
+ **credit_card** | [**\ClickSend.Client\ClickSend.Client.Model\CreditCard**](../Model/CreditCard.md)| CreditCard model |
 
 ### Return type
 
@@ -133,12 +133,12 @@ Get list of all packages
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AccountRechargeApi(
+$apiInstance = new ClickSend.Client\Api\AccountRechargeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -189,12 +189,12 @@ Purchase a package
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AccountRechargeApi(
+$apiInstance = new ClickSend.Client\Api\AccountRechargeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -245,12 +245,12 @@ Get specific Transaction
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AccountRechargeApi(
+$apiInstance = new ClickSend.Client\Api\AccountRechargeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -301,12 +301,12 @@ Get all transactions
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AccountRechargeApi(
+$apiInstance = new ClickSend.Client\Api\AccountRechargeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

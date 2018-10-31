@@ -1,4 +1,4 @@
-# Swagger\Client\InboundSMSRulesApi
+# ClickSend.Client\InboundSMSRulesApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -24,12 +24,12 @@ Delete inbound sms automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundSMSRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundSMSRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -80,12 +80,12 @@ Get specific inbound sms automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundSMSRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundSMSRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,18 +136,18 @@ Create new inbound sms automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundSMSRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundSMSRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$inbound_sms_rule = new \Swagger\Client\clicksend.model\InboundSMSRule(); // \Swagger\Client\clicksend.model\InboundSMSRule | Inbound sms rule model
+$inbound_sms_rule = new \ClickSend.Client\ClickSend.Client.Model\InboundSMSRule(); // \ClickSend.Client\ClickSend.Client.Model\InboundSMSRule | Inbound sms rule model
 
 try {
     $result = $apiInstance->smsInboundAutomationPost($inbound_sms_rule);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inbound_sms_rule** | [**\Swagger\Client\clicksend.model\InboundSMSRule**](../Model/InboundSMSRule.md)| Inbound sms rule model |
+ **inbound_sms_rule** | [**\ClickSend.Client\ClickSend.Client.Model\InboundSMSRule**](../Model/InboundSMSRule.md)| Inbound sms rule model |
 
 ### Return type
 
@@ -192,19 +192,19 @@ Update inbound sms automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundSMSRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundSMSRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $inbound_rule_id = 56; // int | Inbound rule id
-$inbound_sms_rule = new \Swagger\Client\clicksend.model\InboundSMSRule(); // \Swagger\Client\clicksend.model\InboundSMSRule | Inbound sms rule model
+$inbound_sms_rule = new \ClickSend.Client\ClickSend.Client.Model\InboundSMSRule(); // \ClickSend.Client\ClickSend.Client.Model\InboundSMSRule | Inbound sms rule model
 
 try {
     $result = $apiInstance->smsInboundAutomationPut($inbound_rule_id, $inbound_sms_rule);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inbound_rule_id** | **int**| Inbound rule id |
- **inbound_sms_rule** | [**\Swagger\Client\clicksend.model\InboundSMSRule**](../Model/InboundSMSRule.md)| Inbound sms rule model |
+ **inbound_sms_rule** | [**\ClickSend.Client\ClickSend.Client.Model\InboundSMSRule**](../Model/InboundSMSRule.md)| Inbound sms rule model |
 
 ### Return type
 
@@ -250,12 +250,12 @@ Get all inbound sms automations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundSMSRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundSMSRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

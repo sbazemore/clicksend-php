@@ -1,4 +1,4 @@
-# Swagger\Client\TransferCreditApi
+# ClickSend.Client\TransferCreditApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -20,18 +20,18 @@ Transfer Credit
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TransferCreditApi(
+$apiInstance = new ClickSend.Client\Api\TransferCreditApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$reseller_account_transfer_credit = new \Swagger\Client\clicksend.model\ResellerAccountTransferCredit(); // \Swagger\Client\clicksend.model\ResellerAccountTransferCredit | ResellerAccountTransferCredit model
+$reseller_account_transfer_credit = new \ClickSend.Client\ClickSend.Client.Model\ResellerAccountTransferCredit(); // \ClickSend.Client\ClickSend.Client.Model\ResellerAccountTransferCredit | ResellerAccountTransferCredit model
 
 try {
     $result = $apiInstance->resellerTransferCreditPut($reseller_account_transfer_credit);
@@ -46,7 +46,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **reseller_account_transfer_credit** | [**\Swagger\Client\clicksend.model\ResellerAccountTransferCredit**](../Model/ResellerAccountTransferCredit.md)| ResellerAccountTransferCredit model |
+ **reseller_account_transfer_credit** | [**\ClickSend.Client\ClickSend.Client.Model\ResellerAccountTransferCredit**](../Model/ResellerAccountTransferCredit.md)| ResellerAccountTransferCredit model |
 
 ### Return type
 

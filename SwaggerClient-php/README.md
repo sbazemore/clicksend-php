@@ -30,9 +30,9 @@ Run the following command to generate the DLL
 
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 ```csharp
-using .Swagger\Client\clicksend.api;
+using .ClickSend.Client\ClickSend.Client.Api;
 using .Client;
-using .Swagger\Client\clicksend.model;
+using .ClickSend.Client\ClickSend.Client.Model;
 ```
 <a name="packaging"></a>
 ## Packaging
@@ -53,9 +53,9 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ```csharp
 using System;
 using System.Diagnostics;
-using .Swagger\Client\clicksend.api;
+using .ClickSend.Client\ClickSend.Client.Api;
 using .Client;
-using .Swagger\Client\clicksend.model;
+using .ClickSend.Client\ClickSend.Client.Model;
 
 namespace Example
 {

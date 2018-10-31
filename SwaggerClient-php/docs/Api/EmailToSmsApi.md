@@ -1,4 +1,4 @@
-# Swagger\Client\EmailToSmsApi
+# ClickSend.Client\EmailToSmsApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -26,12 +26,12 @@ Get list of email to sms allowed addresses
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EmailToSmsApi(
+$apiInstance = new ClickSend.Client\Api\EmailToSmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -84,18 +84,18 @@ Create email to sms allowed address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EmailToSmsApi(
+$apiInstance = new ClickSend.Client\Api\EmailToSmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$email_sms_address = new \Swagger\Client\clicksend.model\EmailSMSAddress(); // \Swagger\Client\clicksend.model\EmailSMSAddress | EmailSMSAddress model
+$email_sms_address = new \ClickSend.Client\ClickSend.Client.Model\EmailSMSAddress(); // \ClickSend.Client\ClickSend.Client.Model\EmailSMSAddress | EmailSMSAddress model
 
 try {
     $result = $apiInstance->smsEmailSmsPost($email_sms_address);
@@ -110,7 +110,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_sms_address** | [**\Swagger\Client\clicksend.model\EmailSMSAddress**](../Model/EmailSMSAddress.md)| EmailSMSAddress model |
+ **email_sms_address** | [**\ClickSend.Client\ClickSend.Client.Model\EmailSMSAddress**](../Model/EmailSMSAddress.md)| EmailSMSAddress model |
 
 ### Return type
 
@@ -140,12 +140,12 @@ Delete email to sms stripped string rule
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EmailToSmsApi(
+$apiInstance = new ClickSend.Client\Api\EmailToSmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -196,12 +196,12 @@ Get email to sms stripped string rule
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EmailToSmsApi(
+$apiInstance = new ClickSend.Client\Api\EmailToSmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -252,12 +252,12 @@ Create email to sms stripped string rules
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EmailToSmsApi(
+$apiInstance = new ClickSend.Client\Api\EmailToSmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -308,12 +308,12 @@ Update email to sms stripped string rule
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EmailToSmsApi(
+$apiInstance = new ClickSend.Client\Api\EmailToSmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -366,12 +366,12 @@ Get list of email to sms stripped string rules
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EmailToSmsApi(
+$apiInstance = new ClickSend.Client\Api\EmailToSmsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

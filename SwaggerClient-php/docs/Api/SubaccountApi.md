@@ -1,4 +1,4 @@
-# Swagger\Client\SubaccountApi
+# ClickSend.Client\SubaccountApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -25,12 +25,12 @@ Delete a subaccount
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\SubaccountApi(
+$apiInstance = new ClickSend.Client\Api\SubaccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -81,12 +81,12 @@ Get specific subaccount
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\SubaccountApi(
+$apiInstance = new ClickSend.Client\Api\SubaccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -137,19 +137,19 @@ Update subaccount
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\SubaccountApi(
+$apiInstance = new ClickSend.Client\Api\SubaccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $subaccount_id = 56; // int | ID of subaccount to update
-$subaccount = new \Swagger\Client\clicksend.model\Subaccount(); // \Swagger\Client\clicksend.model\Subaccount | Subaccount model
+$subaccount = new \ClickSend.Client\ClickSend.Client.Model\Subaccount(); // \ClickSend.Client\ClickSend.Client.Model\Subaccount | Subaccount model
 
 try {
     $result = $apiInstance->subaccountsBySubaccountIdPut($subaccount_id, $subaccount);
@@ -165,7 +165,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **subaccount_id** | **int**| ID of subaccount to update |
- **subaccount** | [**\Swagger\Client\clicksend.model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
+ **subaccount** | [**\ClickSend.Client\ClickSend.Client.Model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
 
 ### Return type
 
@@ -195,12 +195,12 @@ Get all subaccounts
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\SubaccountApi(
+$apiInstance = new ClickSend.Client\Api\SubaccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -253,18 +253,18 @@ Create new subaccount
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\SubaccountApi(
+$apiInstance = new ClickSend.Client\Api\SubaccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$subaccount = new \Swagger\Client\clicksend.model\Subaccount(); // \Swagger\Client\clicksend.model\Subaccount | Subaccount model
+$subaccount = new \ClickSend.Client\ClickSend.Client.Model\Subaccount(); // \ClickSend.Client\ClickSend.Client.Model\Subaccount | Subaccount model
 
 try {
     $result = $apiInstance->subaccountsPost($subaccount);
@@ -279,7 +279,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **subaccount** | [**\Swagger\Client\clicksend.model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
+ **subaccount** | [**\ClickSend.Client\ClickSend.Client.Model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
 
 ### Return type
 
@@ -309,12 +309,12 @@ Regenerate an API Key
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\SubaccountApi(
+$apiInstance = new ClickSend.Client\Api\SubaccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

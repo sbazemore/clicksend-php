@@ -1,4 +1,4 @@
-# Swagger\Client\PostReturnAddressApi
+# ClickSend.Client\PostReturnAddressApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -24,12 +24,12 @@ Delete specific post return address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\PostReturnAddressApi(
+$apiInstance = new ClickSend.Client\Api\PostReturnAddressApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -80,12 +80,12 @@ Get specific post return address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\PostReturnAddressApi(
+$apiInstance = new ClickSend.Client\Api\PostReturnAddressApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,19 +136,19 @@ Update post return address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\PostReturnAddressApi(
+$apiInstance = new ClickSend.Client\Api\PostReturnAddressApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $return_address_id = 56; // int | Return address ID
-$return_address = new \Swagger\Client\clicksend.model\Address(); // \Swagger\Client\clicksend.model\Address | Address model
+$return_address = new \ClickSend.Client\ClickSend.Client.Model\Address(); // \ClickSend.Client\ClickSend.Client.Model\Address | Address model
 
 try {
     $result = $apiInstance->postReturnAddressesByReturnAddressIdPut($return_address_id, $return_address);
@@ -164,7 +164,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **return_address_id** | **int**| Return address ID |
- **return_address** | [**\Swagger\Client\clicksend.model\Address**](../Model/Address.md)| Address model |
+ **return_address** | [**\ClickSend.Client\ClickSend.Client.Model\Address**](../Model/Address.md)| Address model |
 
 ### Return type
 
@@ -194,12 +194,12 @@ Get list of post return addresses
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\PostReturnAddressApi(
+$apiInstance = new ClickSend.Client\Api\PostReturnAddressApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -252,18 +252,18 @@ Create post return address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\PostReturnAddressApi(
+$apiInstance = new ClickSend.Client\Api\PostReturnAddressApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$return_address = new \Swagger\Client\clicksend.model\Address(); // \Swagger\Client\clicksend.model\Address | Address model
+$return_address = new \ClickSend.Client\ClickSend.Client.Model\Address(); // \ClickSend.Client\ClickSend.Client.Model\Address | Address model
 
 try {
     $result = $apiInstance->postReturnAddressesPost($return_address);
@@ -278,7 +278,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **return_address** | [**\Swagger\Client\clicksend.model\Address**](../Model/Address.md)| Address model |
+ **return_address** | [**\ClickSend.Client\ClickSend.Client.Model\Address**](../Model/Address.md)| Address model |
 
 ### Return type
 

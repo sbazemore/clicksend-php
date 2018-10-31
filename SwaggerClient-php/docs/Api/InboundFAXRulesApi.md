@@ -1,4 +1,4 @@
-# Swagger\Client\InboundFAXRulesApi
+# ClickSend.Client\InboundFAXRulesApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -24,12 +24,12 @@ Delete inbound fax automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundFAXRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundFAXRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -80,12 +80,12 @@ Get specific inbound fax automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundFAXRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundFAXRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,18 +136,18 @@ Create new inbound fax automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundFAXRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundFAXRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$inbound_fax_rule = new \Swagger\Client\clicksend.model\InboundFAXRule(); // \Swagger\Client\clicksend.model\InboundFAXRule | Inbound fax rule model
+$inbound_fax_rule = new \ClickSend.Client\ClickSend.Client.Model\InboundFAXRule(); // \ClickSend.Client\ClickSend.Client.Model\InboundFAXRule | Inbound fax rule model
 
 try {
     $result = $apiInstance->faxInboundAutomationPost($inbound_fax_rule);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inbound_fax_rule** | [**\Swagger\Client\clicksend.model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
+ **inbound_fax_rule** | [**\ClickSend.Client\ClickSend.Client.Model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
 
 ### Return type
 
@@ -192,19 +192,19 @@ Update inbound fax automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundFAXRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundFAXRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $inbound_rule_id = 56; // int | Inbound rule id
-$inbound_fax_rule = new \Swagger\Client\clicksend.model\InboundFAXRule(); // \Swagger\Client\clicksend.model\InboundFAXRule | Inbound fax rule model
+$inbound_fax_rule = new \ClickSend.Client\ClickSend.Client.Model\InboundFAXRule(); // \ClickSend.Client\ClickSend.Client.Model\InboundFAXRule | Inbound fax rule model
 
 try {
     $result = $apiInstance->faxInboundAutomationPut($inbound_rule_id, $inbound_fax_rule);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inbound_rule_id** | **int**| Inbound rule id |
- **inbound_fax_rule** | [**\Swagger\Client\clicksend.model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
+ **inbound_fax_rule** | [**\ClickSend.Client\ClickSend.Client.Model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
 
 ### Return type
 
@@ -250,12 +250,12 @@ Get all inbound fax automations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\InboundFAXRulesApi(
+$apiInstance = new ClickSend.Client\Api\InboundFAXRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

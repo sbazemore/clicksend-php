@@ -1,4 +1,4 @@
-# Swagger\Client\PostPostcardApi
+# ClickSend.Client\PostPostcardApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -23,12 +23,12 @@ Export postcard history to a CSV file
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\PostPostcardApi(
+$apiInstance = new ClickSend.Client\Api\PostPostcardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -79,12 +79,12 @@ Retrieve the history of postcards sent or scheduled
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\PostPostcardApi(
+$apiInstance = new ClickSend.Client\Api\PostPostcardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -137,18 +137,18 @@ Calculate price for sending one or more postcards
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\PostPostcardApi(
+$apiInstance = new ClickSend.Client\Api\PostPostcardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_postcards = new \Swagger\Client\clicksend.model\PostPostcard(); // \Swagger\Client\clicksend.model\PostPostcard | PostPostcard model
+$post_postcards = new \ClickSend.Client\ClickSend.Client.Model\PostPostcard(); // \ClickSend.Client\ClickSend.Client.Model\PostPostcard | PostPostcard model
 
 try {
     $result = $apiInstance->postPostcardsPricePost($post_postcards);
@@ -163,7 +163,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_postcards** | [**\Swagger\Client\clicksend.model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
+ **post_postcards** | [**\ClickSend.Client\ClickSend.Client.Model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
 
 ### Return type
 
@@ -193,18 +193,18 @@ Send one or more postcards
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\PostPostcardApi(
+$apiInstance = new ClickSend.Client\Api\PostPostcardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_postcards = new \Swagger\Client\clicksend.model\PostPostcard(); // \Swagger\Client\clicksend.model\PostPostcard | PostPostcard model
+$post_postcards = new \ClickSend.Client\ClickSend.Client.Model\PostPostcard(); // \ClickSend.Client\ClickSend.Client.Model\PostPostcard | PostPostcard model
 
 try {
     $result = $apiInstance->postPostcardsSendPost($post_postcards);
@@ -219,7 +219,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_postcards** | [**\Swagger\Client\clicksend.model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
+ **post_postcards** | [**\ClickSend.Client\ClickSend.Client.Model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
 
 ### Return type
 

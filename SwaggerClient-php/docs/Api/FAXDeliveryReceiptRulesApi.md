@@ -1,4 +1,4 @@
-# Swagger\Client\FAXDeliveryReceiptRulesApi
+# ClickSend.Client\FAXDeliveryReceiptRulesApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -24,12 +24,12 @@ Delete fax delivery receipt automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FAXDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend.Client\Api\FAXDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -80,12 +80,12 @@ Get specific fax delivery receipt automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FAXDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend.Client\Api\FAXDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,18 +136,18 @@ Create fax delivery receipt automations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FAXDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend.Client\Api\FAXDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$delivery_receipt_rule = new \Swagger\Client\clicksend.model\DeliveryReceiptRule(); // \Swagger\Client\clicksend.model\DeliveryReceiptRule | fax delivery receipt rule model
+$delivery_receipt_rule = new \ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule(); // \ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule | fax delivery receipt rule model
 
 try {
     $result = $apiInstance->faxDeliveryReceiptAutomationPost($delivery_receipt_rule);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **delivery_receipt_rule** | [**\Swagger\Client\clicksend.model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| fax delivery receipt rule model |
+ **delivery_receipt_rule** | [**\ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| fax delivery receipt rule model |
 
 ### Return type
 
@@ -192,19 +192,19 @@ Update fax delivery receipt automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FAXDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend.Client\Api\FAXDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $receipt_rule_id = 56; // int | Receipt rule id
-$delivery_receipt_rule = new \Swagger\Client\clicksend.model\DeliveryReceiptRule(); // \Swagger\Client\clicksend.model\DeliveryReceiptRule | Delivery receipt rule model
+$delivery_receipt_rule = new \ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule(); // \ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule | Delivery receipt rule model
 
 try {
     $result = $apiInstance->faxDeliveryReceiptAutomationPut($receipt_rule_id, $delivery_receipt_rule);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **receipt_rule_id** | **int**| Receipt rule id |
- **delivery_receipt_rule** | [**\Swagger\Client\clicksend.model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| Delivery receipt rule model |
+ **delivery_receipt_rule** | [**\ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| Delivery receipt rule model |
 
 ### Return type
 
@@ -250,12 +250,12 @@ Get all fax delivery receipt automations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = ClickSend.Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FAXDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend.Client\Api\FAXDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
