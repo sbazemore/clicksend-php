@@ -95,7 +95,7 @@ $apiInstance = new Swagger\Client\Api\EmailToSmsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email_sms_address = new \Swagger\Client\Model\EmailSMSAddress(); // \Swagger\Client\Model\EmailSMSAddress | EmailSMSAddress model
+$email_sms_address = new \Swagger\Client\clicksend.model\EmailSMSAddress(); // \Swagger\Client\clicksend.model\EmailSMSAddress | EmailSMSAddress model
 
 try {
     $result = $apiInstance->smsEmailSmsPost($email_sms_address);
@@ -110,7 +110,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_sms_address** | [**\Swagger\Client\Model\EmailSMSAddress**](../Model/EmailSMSAddress.md)| EmailSMSAddress model |
+ **email_sms_address** | [**\Swagger\Client\clicksend.model\EmailSMSAddress**](../Model/EmailSMSAddress.md)| EmailSMSAddress model |
 
 ### Return type
 

@@ -89,7 +89,7 @@ $apiInstance = new Swagger\Client\Api\AccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$account = new \Swagger\Client\Model\Account(); // \Swagger\Client\Model\Account | Account model
+$account = new \Swagger\Client\clicksend.model\Account(); // \Swagger\Client\clicksend.model\Account | Account model
 
 try {
     $result = $apiInstance->accountPost($account);
@@ -104,7 +104,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account** | [**\Swagger\Client\Model\Account**](../Model/Account.md)| Account model |
+ **account** | [**\Swagger\Client\clicksend.model\Account**](../Model/Account.md)| Account model |
 
 ### Return type
 
@@ -145,7 +145,7 @@ $apiInstance = new Swagger\Client\Api\AccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$account_verify = new \Swagger\Client\Model\AccountVerify(); // \Swagger\Client\Model\AccountVerify | Account details
+$account_verify = new \Swagger\Client\clicksend.model\AccountVerify(); // \Swagger\Client\clicksend.model\AccountVerify | Account details
 
 try {
     $result = $apiInstance->accountVerifySendPut($account_verify);
@@ -160,7 +160,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_verify** | [**\Swagger\Client\Model\AccountVerify**](../Model/AccountVerify.md)| Account details |
+ **account_verify** | [**\Swagger\Client\clicksend.model\AccountVerify**](../Model/AccountVerify.md)| Account details |
 
 ### Return type
 
@@ -313,7 +313,7 @@ $apiInstance = new Swagger\Client\Api\AccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$verify_password = new \Swagger\Client\Model\AccountForgotPasswordVerify(); // \Swagger\Client\Model\AccountForgotPasswordVerify | verifyPassword data
+$verify_password = new \Swagger\Client\clicksend.model\AccountForgotPasswordVerify(); // \Swagger\Client\clicksend.model\AccountForgotPasswordVerify | verifyPassword data
 
 try {
     $result = $apiInstance->forgotPasswordVerifyPut($verify_password);
@@ -328,7 +328,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **verify_password** | [**\Swagger\Client\Model\AccountForgotPasswordVerify**](../Model/AccountForgotPasswordVerify.md)| verifyPassword data |
+ **verify_password** | [**\Swagger\Client\clicksend.model\AccountForgotPasswordVerify**](../Model/AccountForgotPasswordVerify.md)| verifyPassword data |
 
 ### Return type
 

@@ -92,7 +92,7 @@ $apiInstance = new Swagger\Client\Api\PostDirectMailApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_direct_mail = new \Swagger\Client\Model\PostDirectMail(); // \Swagger\Client\Model\PostDirectMail | PostDirectMail model
+$post_direct_mail = new \Swagger\Client\clicksend.model\PostDirectMail(); // \Swagger\Client\clicksend.model\PostDirectMail | PostDirectMail model
 
 try {
     $result = $apiInstance->postDirectMailCampaignsPricePost($post_direct_mail);
@@ -107,7 +107,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_direct_mail** | [**\Swagger\Client\Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
+ **post_direct_mail** | [**\Swagger\Client\clicksend.model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
 
 ### Return type
 
@@ -148,7 +148,7 @@ $apiInstance = new Swagger\Client\Api\PostDirectMailApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_direct_mail = new \Swagger\Client\Model\PostDirectMail(); // \Swagger\Client\Model\PostDirectMail | PostDirectMail model
+$post_direct_mail = new \Swagger\Client\clicksend.model\PostDirectMail(); // \Swagger\Client\clicksend.model\PostDirectMail | PostDirectMail model
 
 try {
     $result = $apiInstance->postDirectMailCampaignsSendPost($post_direct_mail);
@@ -163,7 +163,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_direct_mail** | [**\Swagger\Client\Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
+ **post_direct_mail** | [**\Swagger\Client\clicksend.model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
 
 ### Return type
 

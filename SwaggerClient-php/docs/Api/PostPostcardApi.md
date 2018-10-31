@@ -148,7 +148,7 @@ $apiInstance = new Swagger\Client\Api\PostPostcardApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_postcards = new \Swagger\Client\Model\PostPostcard(); // \Swagger\Client\Model\PostPostcard | PostPostcard model
+$post_postcards = new \Swagger\Client\clicksend.model\PostPostcard(); // \Swagger\Client\clicksend.model\PostPostcard | PostPostcard model
 
 try {
     $result = $apiInstance->postPostcardsPricePost($post_postcards);
@@ -163,7 +163,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_postcards** | [**\Swagger\Client\Model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
+ **post_postcards** | [**\Swagger\Client\clicksend.model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new Swagger\Client\Api\PostPostcardApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_postcards = new \Swagger\Client\Model\PostPostcard(); // \Swagger\Client\Model\PostPostcard | PostPostcard model
+$post_postcards = new \Swagger\Client\clicksend.model\PostPostcard(); // \Swagger\Client\clicksend.model\PostPostcard | PostPostcard model
 
 try {
     $result = $apiInstance->postPostcardsSendPost($post_postcards);
@@ -219,7 +219,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_postcards** | [**\Swagger\Client\Model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
+ **post_postcards** | [**\Swagger\Client\clicksend.model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
 
 ### Return type
 

@@ -148,7 +148,7 @@ $apiInstance = new Swagger\Client\Api\PostLetterApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_letter = new \Swagger\Client\Model\PostLetter(); // \Swagger\Client\Model\PostLetter | PostLetter model
+$post_letter = new \Swagger\Client\clicksend.model\PostLetter(); // \Swagger\Client\clicksend.model\PostLetter | PostLetter model
 
 try {
     $result = $apiInstance->postLettersPricePost($post_letter);
@@ -163,7 +163,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_letter** | [**\Swagger\Client\Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
+ **post_letter** | [**\Swagger\Client\clicksend.model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new Swagger\Client\Api\PostLetterApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_letter = new \Swagger\Client\Model\PostLetter(); // \Swagger\Client\Model\PostLetter | PostLetter model
+$post_letter = new \Swagger\Client\clicksend.model\PostLetter(); // \Swagger\Client\clicksend.model\PostLetter | PostLetter model
 
 try {
     $result = $apiInstance->postLettersSendPost($post_letter);
@@ -219,7 +219,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_letter** | [**\Swagger\Client\Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
+ **post_letter** | [**\Swagger\Client\clicksend.model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
 
 ### Return type
 

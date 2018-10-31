@@ -155,7 +155,7 @@ $apiInstance = new Swagger\Client\Api\ContactApi(
 );
 $list_id = 56; // int | Contact list id
 $contact_id = 56; // int | Contact ID
-$contact = new \Swagger\Client\Model\Contact(); // \Swagger\Client\Model\Contact | Contact model
+$contact = new \Swagger\Client\clicksend.model\Contact(); // \Swagger\Client\clicksend.model\Contact | Contact model
 
 try {
     $result = $apiInstance->listsContactsByListIdAndContactIdPut($list_id, $contact_id, $contact);
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_id** | **int**| Contact list id |
  **contact_id** | **int**| Contact ID |
- **contact** | [**\Swagger\Client\Model\Contact**](../Model/Contact.md)| Contact model |
+ **contact** | [**\Swagger\Client\clicksend.model\Contact**](../Model/Contact.md)| Contact model |
 
 ### Return type
 
@@ -273,7 +273,7 @@ $apiInstance = new Swagger\Client\Api\ContactApi(
     new GuzzleHttp\Client(),
     $config
 );
-$contact = new \Swagger\Client\Model\Contact(); // \Swagger\Client\Model\Contact | Contact model
+$contact = new \Swagger\Client\clicksend.model\Contact(); // \Swagger\Client\clicksend.model\Contact | Contact model
 $list_id = 56; // int | List id
 $page = 1; // int | Page number
 $limit = 10; // int | Number of records per page
@@ -291,7 +291,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contact** | [**\Swagger\Client\Model\Contact**](../Model/Contact.md)| Contact model |
+ **contact** | [**\Swagger\Client\clicksend.model\Contact**](../Model/Contact.md)| Contact model |
  **list_id** | **int**| List id |
  **page** | **int**| Page number | [optional] [default to 1]
  **limit** | **int**| Number of records per page | [optional] [default to 10]

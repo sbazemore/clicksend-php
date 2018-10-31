@@ -266,7 +266,7 @@ $apiInstance = new Swagger\Client\Api\ContactListApi(
     $config
 );
 $list_id = 56; // int | Your contact list id you want to access.
-$file = new \Swagger\Client\Model\ContactListImport(); // \Swagger\Client\Model\ContactListImport | ContactListImport model
+$file = new \Swagger\Client\clicksend.model\ContactListImport(); // \Swagger\Client\clicksend.model\ContactListImport | ContactListImport model
 
 try {
     $result = $apiInstance->listsImportByListIdPost($list_id, $file);
@@ -282,7 +282,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_id** | **int**| Your contact list id you want to access. |
- **file** | [**\Swagger\Client\Model\ContactListImport**](../Model/ContactListImport.md)| ContactListImport model |
+ **file** | [**\Swagger\Client\clicksend.model\ContactListImport**](../Model/ContactListImport.md)| ContactListImport model |
 
 ### Return type
 

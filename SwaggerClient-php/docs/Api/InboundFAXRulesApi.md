@@ -147,7 +147,7 @@ $apiInstance = new Swagger\Client\Api\InboundFAXRulesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$inbound_fax_rule = new \Swagger\Client\Model\InboundFAXRule(); // \Swagger\Client\Model\InboundFAXRule | Inbound fax rule model
+$inbound_fax_rule = new \Swagger\Client\clicksend.model\InboundFAXRule(); // \Swagger\Client\clicksend.model\InboundFAXRule | Inbound fax rule model
 
 try {
     $result = $apiInstance->faxInboundAutomationPost($inbound_fax_rule);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inbound_fax_rule** | [**\Swagger\Client\Model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
+ **inbound_fax_rule** | [**\Swagger\Client\clicksend.model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new Swagger\Client\Api\InboundFAXRulesApi(
     $config
 );
 $inbound_rule_id = 56; // int | Inbound rule id
-$inbound_fax_rule = new \Swagger\Client\Model\InboundFAXRule(); // \Swagger\Client\Model\InboundFAXRule | Inbound fax rule model
+$inbound_fax_rule = new \Swagger\Client\clicksend.model\InboundFAXRule(); // \Swagger\Client\clicksend.model\InboundFAXRule | Inbound fax rule model
 
 try {
     $result = $apiInstance->faxInboundAutomationPut($inbound_rule_id, $inbound_fax_rule);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inbound_rule_id** | **int**| Inbound rule id |
- **inbound_fax_rule** | [**\Swagger\Client\Model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
+ **inbound_fax_rule** | [**\Swagger\Client\clicksend.model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
 
 ### Return type
 

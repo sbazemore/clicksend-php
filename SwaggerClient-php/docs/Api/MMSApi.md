@@ -32,7 +32,7 @@ $apiInstance = new Swagger\Client\Api\MMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$mms_messages = new \Swagger\Client\Model\MmsMessageCollection(); // \Swagger\Client\Model\MmsMessageCollection | MmsMessageCollection model
+$mms_messages = new \Swagger\Client\clicksend.model\MmsMessageCollection(); // \Swagger\Client\clicksend.model\MmsMessageCollection | MmsMessageCollection model
 
 try {
     $result = $apiInstance->mmsPricePost($mms_messages);
@@ -47,7 +47,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mms_messages** | [**\Swagger\Client\Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
+ **mms_messages** | [**\Swagger\Client\clicksend.model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
 
 ### Return type
 
@@ -88,7 +88,7 @@ $apiInstance = new Swagger\Client\Api\MMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$mms_messages = new \Swagger\Client\Model\MmsMessageCollection(); // \Swagger\Client\Model\MmsMessageCollection | MmsMessageCollection model
+$mms_messages = new \Swagger\Client\clicksend.model\MmsMessageCollection(); // \Swagger\Client\clicksend.model\MmsMessageCollection | MmsMessageCollection model
 
 try {
     $result = $apiInstance->mmsSendPost($mms_messages);
@@ -103,7 +103,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mms_messages** | [**\Swagger\Client\Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
+ **mms_messages** | [**\Swagger\Client\clicksend.model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
 
 ### Return type
 

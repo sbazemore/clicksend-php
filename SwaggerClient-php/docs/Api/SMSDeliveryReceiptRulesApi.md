@@ -147,7 +147,7 @@ $apiInstance = new Swagger\Client\Api\SMSDeliveryReceiptRulesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$delivery_receipt_rule = new \Swagger\Client\Model\DeliveryReceiptRule(); // \Swagger\Client\Model\DeliveryReceiptRule | sms delivery receipt rule model
+$delivery_receipt_rule = new \Swagger\Client\clicksend.model\DeliveryReceiptRule(); // \Swagger\Client\clicksend.model\DeliveryReceiptRule | sms delivery receipt rule model
 
 try {
     $result = $apiInstance->smsDeliveryReceiptAutomationPost($delivery_receipt_rule);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **delivery_receipt_rule** | [**\Swagger\Client\Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| sms delivery receipt rule model |
+ **delivery_receipt_rule** | [**\Swagger\Client\clicksend.model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| sms delivery receipt rule model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new Swagger\Client\Api\SMSDeliveryReceiptRulesApi(
     $config
 );
 $receipt_rule_id = 56; // int | Receipt rule id
-$delivery_receipt_rule = new \Swagger\Client\Model\DeliveryReceiptRule(); // \Swagger\Client\Model\DeliveryReceiptRule | Delivery receipt rule model
+$delivery_receipt_rule = new \Swagger\Client\clicksend.model\DeliveryReceiptRule(); // \Swagger\Client\clicksend.model\DeliveryReceiptRule | Delivery receipt rule model
 
 try {
     $result = $apiInstance->smsDeliveryReceiptAutomationPut($receipt_rule_id, $delivery_receipt_rule);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **receipt_rule_id** | **int**| Receipt rule id |
- **delivery_receipt_rule** | [**\Swagger\Client\Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| Delivery receipt rule model |
+ **delivery_receipt_rule** | [**\Swagger\Client\clicksend.model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| Delivery receipt rule model |
 
 ### Return type
 

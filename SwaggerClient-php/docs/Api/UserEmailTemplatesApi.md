@@ -147,7 +147,7 @@ $apiInstance = new Swagger\Client\Api\UserEmailTemplatesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email_template = new \Swagger\Client\Model\EmailTemplateNew(); // \Swagger\Client\Model\EmailTemplateNew | Email template model
+$email_template = new \Swagger\Client\clicksend.model\EmailTemplateNew(); // \Swagger\Client\clicksend.model\EmailTemplateNew | Email template model
 
 try {
     $result = $apiInstance->emailTemplatePost($email_template);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_template** | [**\Swagger\Client\Model\EmailTemplateNew**](../Model/EmailTemplateNew.md)| Email template model |
+ **email_template** | [**\Swagger\Client\clicksend.model\EmailTemplateNew**](../Model/EmailTemplateNew.md)| Email template model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new Swagger\Client\Api\UserEmailTemplatesApi(
     $config
 );
 $template_id = 56; // int | Email template id
-$email_template = new \Swagger\Client\Model\EmailTemplateUpdate(); // \Swagger\Client\Model\EmailTemplateUpdate | Email template model
+$email_template = new \Swagger\Client\clicksend.model\EmailTemplateUpdate(); // \Swagger\Client\clicksend.model\EmailTemplateUpdate | Email template model
 
 try {
     $result = $apiInstance->emailTemplatePut($template_id, $email_template);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **template_id** | **int**| Email template id |
- **email_template** | [**\Swagger\Client\Model\EmailTemplateUpdate**](../Model/EmailTemplateUpdate.md)| Email template model |
+ **email_template** | [**\Swagger\Client\clicksend.model\EmailTemplateUpdate**](../Model/EmailTemplateUpdate.md)| Email template model |
 
 ### Return type
 

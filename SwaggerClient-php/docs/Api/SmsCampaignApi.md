@@ -93,7 +93,7 @@ $apiInstance = new Swagger\Client\Api\SmsCampaignApi(
     $config
 );
 $sms_campaign_id = 56; // int | ID of SMS campaign to update
-$campaign = new \Swagger\Client\Model\SmsCampaign(); // \Swagger\Client\Model\SmsCampaign | SmsCampaign model
+$campaign = new \Swagger\Client\clicksend.model\SmsCampaign(); // \Swagger\Client\clicksend.model\SmsCampaign | SmsCampaign model
 
 try {
     $result = $apiInstance->smsCampaignsBySmsCampaignIdPut($sms_campaign_id, $campaign);
@@ -109,7 +109,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sms_campaign_id** | **int**| ID of SMS campaign to update |
- **campaign** | [**\Swagger\Client\Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
+ **campaign** | [**\Swagger\Client\clicksend.model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
 
 ### Return type
 
@@ -264,7 +264,7 @@ $apiInstance = new Swagger\Client\Api\SmsCampaignApi(
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \Swagger\Client\Model\SmsCampaign(); // \Swagger\Client\Model\SmsCampaign | SmsCampaign model
+$campaign = new \Swagger\Client\clicksend.model\SmsCampaign(); // \Swagger\Client\clicksend.model\SmsCampaign | SmsCampaign model
 
 try {
     $result = $apiInstance->smsCampaignsPricePost($campaign);
@@ -279,7 +279,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\Swagger\Client\Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
+ **campaign** | [**\Swagger\Client\clicksend.model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
 
 ### Return type
 
@@ -320,7 +320,7 @@ $apiInstance = new Swagger\Client\Api\SmsCampaignApi(
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \Swagger\Client\Model\SmsCampaign(); // \Swagger\Client\Model\SmsCampaign | SmsCampaign model
+$campaign = new \Swagger\Client\clicksend.model\SmsCampaign(); // \Swagger\Client\clicksend.model\SmsCampaign | SmsCampaign model
 
 try {
     $result = $apiInstance->smsCampaignsSendPost($campaign);
@@ -335,7 +335,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\Swagger\Client\Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
+ **campaign** | [**\Swagger\Client\clicksend.model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
 
 ### Return type
 

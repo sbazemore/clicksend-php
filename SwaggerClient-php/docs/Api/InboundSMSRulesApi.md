@@ -147,7 +147,7 @@ $apiInstance = new Swagger\Client\Api\InboundSMSRulesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$inbound_sms_rule = new \Swagger\Client\Model\InboundSMSRule(); // \Swagger\Client\Model\InboundSMSRule | Inbound sms rule model
+$inbound_sms_rule = new \Swagger\Client\clicksend.model\InboundSMSRule(); // \Swagger\Client\clicksend.model\InboundSMSRule | Inbound sms rule model
 
 try {
     $result = $apiInstance->smsInboundAutomationPost($inbound_sms_rule);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inbound_sms_rule** | [**\Swagger\Client\Model\InboundSMSRule**](../Model/InboundSMSRule.md)| Inbound sms rule model |
+ **inbound_sms_rule** | [**\Swagger\Client\clicksend.model\InboundSMSRule**](../Model/InboundSMSRule.md)| Inbound sms rule model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new Swagger\Client\Api\InboundSMSRulesApi(
     $config
 );
 $inbound_rule_id = 56; // int | Inbound rule id
-$inbound_sms_rule = new \Swagger\Client\Model\InboundSMSRule(); // \Swagger\Client\Model\InboundSMSRule | Inbound sms rule model
+$inbound_sms_rule = new \Swagger\Client\clicksend.model\InboundSMSRule(); // \Swagger\Client\clicksend.model\InboundSMSRule | Inbound sms rule model
 
 try {
     $result = $apiInstance->smsInboundAutomationPut($inbound_rule_id, $inbound_sms_rule);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inbound_rule_id** | **int**| Inbound rule id |
- **inbound_sms_rule** | [**\Swagger\Client\Model\InboundSMSRule**](../Model/InboundSMSRule.md)| Inbound sms rule model |
+ **inbound_sms_rule** | [**\Swagger\Client\clicksend.model\InboundSMSRule**](../Model/InboundSMSRule.md)| Inbound sms rule model |
 
 ### Return type
 

@@ -93,7 +93,7 @@ $apiInstance = new Swagger\Client\Api\MmsCampaignApi(
     $config
 );
 $mms_campaign_id = 56; // int | ID of MMS campaign to update
-$campaign = new \Swagger\Client\Model\MmsCampaign(); // \Swagger\Client\Model\MmsCampaign | MmsCampaign model
+$campaign = new \Swagger\Client\clicksend.model\MmsCampaign(); // \Swagger\Client\clicksend.model\MmsCampaign | MmsCampaign model
 
 try {
     $result = $apiInstance->mmsCampaignsByMmsCampaignIdPut($mms_campaign_id, $campaign);
@@ -109,7 +109,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **mms_campaign_id** | **int**| ID of MMS campaign to update |
- **campaign** | [**\Swagger\Client\Model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
+ **campaign** | [**\Swagger\Client\clicksend.model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
 
 ### Return type
 
@@ -264,7 +264,7 @@ $apiInstance = new Swagger\Client\Api\MmsCampaignApi(
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \Swagger\Client\Model\MmsCampaign(); // \Swagger\Client\Model\MmsCampaign | MmsCampaign model
+$campaign = new \Swagger\Client\clicksend.model\MmsCampaign(); // \Swagger\Client\clicksend.model\MmsCampaign | MmsCampaign model
 
 try {
     $result = $apiInstance->mmsCampaignsPricePost($campaign);
@@ -279,7 +279,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\Swagger\Client\Model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
+ **campaign** | [**\Swagger\Client\clicksend.model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
 
 ### Return type
 
@@ -320,7 +320,7 @@ $apiInstance = new Swagger\Client\Api\MmsCampaignApi(
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \Swagger\Client\Model\MmsCampaign(); // \Swagger\Client\Model\MmsCampaign | MmsCampaign model
+$campaign = new \Swagger\Client\clicksend.model\MmsCampaign(); // \Swagger\Client\clicksend.model\MmsCampaign | MmsCampaign model
 
 try {
     $result = $apiInstance->mmsCampaignsSendPost($campaign);
@@ -335,7 +335,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\Swagger\Client\Model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
+ **campaign** | [**\Swagger\Client\clicksend.model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
 
 ### Return type
 

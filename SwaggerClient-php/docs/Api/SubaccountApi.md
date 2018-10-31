@@ -149,7 +149,7 @@ $apiInstance = new Swagger\Client\Api\SubaccountApi(
     $config
 );
 $subaccount_id = 56; // int | ID of subaccount to update
-$subaccount = new \Swagger\Client\Model\Subaccount(); // \Swagger\Client\Model\Subaccount | Subaccount model
+$subaccount = new \Swagger\Client\clicksend.model\Subaccount(); // \Swagger\Client\clicksend.model\Subaccount | Subaccount model
 
 try {
     $result = $apiInstance->subaccountsBySubaccountIdPut($subaccount_id, $subaccount);
@@ -165,7 +165,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **subaccount_id** | **int**| ID of subaccount to update |
- **subaccount** | [**\Swagger\Client\Model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
+ **subaccount** | [**\Swagger\Client\clicksend.model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
 
 ### Return type
 
@@ -264,7 +264,7 @@ $apiInstance = new Swagger\Client\Api\SubaccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$subaccount = new \Swagger\Client\Model\Subaccount(); // \Swagger\Client\Model\Subaccount | Subaccount model
+$subaccount = new \Swagger\Client\clicksend.model\Subaccount(); // \Swagger\Client\clicksend.model\Subaccount | Subaccount model
 
 try {
     $result = $apiInstance->subaccountsPost($subaccount);
@@ -279,7 +279,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **subaccount** | [**\Swagger\Client\Model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
+ **subaccount** | [**\Swagger\Client\clicksend.model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
 
 ### Return type
 

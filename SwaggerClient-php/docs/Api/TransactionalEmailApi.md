@@ -156,7 +156,7 @@ $apiInstance = new Swagger\Client\Api\TransactionalEmailApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email = new \Swagger\Client\Model\Email(); // \Swagger\Client\Model\Email | Email model
+$email = new \Swagger\Client\clicksend.model\Email(); // \Swagger\Client\clicksend.model\Email | Email model
 
 try {
     $result = $apiInstance->emailPricePost($email);
@@ -171,7 +171,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | [**\Swagger\Client\Model\Email**](../Model/Email.md)| Email model |
+ **email** | [**\Swagger\Client\clicksend.model\Email**](../Model/Email.md)| Email model |
 
 ### Return type
 
@@ -212,7 +212,7 @@ $apiInstance = new Swagger\Client\Api\TransactionalEmailApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email = new \Swagger\Client\Model\Email(); // \Swagger\Client\Model\Email | Email model
+$email = new \Swagger\Client\clicksend.model\Email(); // \Swagger\Client\clicksend.model\Email | Email model
 
 try {
     $result = $apiInstance->emailSendPost($email);
@@ -227,7 +227,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | [**\Swagger\Client\Model\Email**](../Model/Email.md)| Email model |
+ **email** | [**\Swagger\Client\clicksend.model\Email**](../Model/Email.md)| Email model |
 
 ### Return type
 

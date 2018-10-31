@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **file_url** | **string** | URL of file to send | 
-**recipients** | [**\Swagger\Client\Model\PostRecipient[]**](PostRecipient.md) | Array of PostRecipient models | 
+**recipients** | [**\Swagger\Client\clicksend.model\PostRecipient[]**](PostRecipient.md) | Array of PostRecipient models | 
 **template_used** | **int** | Whether using our template | [optional] [default to 0]
 **duplex** | **int** | Whether letter is duplex | [optional] [default to 0]
 **colour** | **int** | Whether letter is in colour | [optional] [default to 0]

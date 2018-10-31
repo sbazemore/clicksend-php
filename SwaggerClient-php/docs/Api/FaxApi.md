@@ -101,7 +101,7 @@ $apiInstance = new Swagger\Client\Api\FaxApi(
     new GuzzleHttp\Client(),
     $config
 );
-$fax_message = new \Swagger\Client\Model\FaxMessageCollection(); // \Swagger\Client\Model\FaxMessageCollection | FaxMessageCollection model
+$fax_message = new \Swagger\Client\clicksend.model\FaxMessageCollection(); // \Swagger\Client\clicksend.model\FaxMessageCollection | FaxMessageCollection model
 
 try {
     $result = $apiInstance->faxPricePost($fax_message);
@@ -116,7 +116,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fax_message** | [**\Swagger\Client\Model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
+ **fax_message** | [**\Swagger\Client\clicksend.model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
 
 ### Return type
 
@@ -265,7 +265,7 @@ $apiInstance = new Swagger\Client\Api\FaxApi(
     new GuzzleHttp\Client(),
     $config
 );
-$fax_message = new \Swagger\Client\Model\FaxMessageCollection(); // \Swagger\Client\Model\FaxMessageCollection | FaxMessageCollection model
+$fax_message = new \Swagger\Client\clicksend.model\FaxMessageCollection(); // \Swagger\Client\clicksend.model\FaxMessageCollection | FaxMessageCollection model
 
 try {
     $result = $apiInstance->faxSendPost($fax_message);
@@ -280,7 +280,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fax_message** | [**\Swagger\Client\Model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
+ **fax_message** | [**\Swagger\Client\clicksend.model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
 
 ### Return type
 

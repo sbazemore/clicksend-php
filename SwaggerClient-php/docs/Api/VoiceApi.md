@@ -316,7 +316,7 @@ $apiInstance = new Swagger\Client\Api\VoiceApi(
     new GuzzleHttp\Client(),
     $config
 );
-$voice_messages = new \Swagger\Client\Model\VoiceMessageCollection(); // \Swagger\Client\Model\VoiceMessageCollection | VoiceMessageCollection model
+$voice_messages = new \Swagger\Client\clicksend.model\VoiceMessageCollection(); // \Swagger\Client\clicksend.model\VoiceMessageCollection | VoiceMessageCollection model
 
 try {
     $result = $apiInstance->voicePricePost($voice_messages);
@@ -331,7 +331,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voice_messages** | [**\Swagger\Client\Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
+ **voice_messages** | [**\Swagger\Client\clicksend.model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
 
 ### Return type
 
@@ -430,7 +430,7 @@ $apiInstance = new Swagger\Client\Api\VoiceApi(
     new GuzzleHttp\Client(),
     $config
 );
-$voice_messages = new \Swagger\Client\Model\VoiceMessageCollection(); // \Swagger\Client\Model\VoiceMessageCollection | VoiceMessageCollection model
+$voice_messages = new \Swagger\Client\clicksend.model\VoiceMessageCollection(); // \Swagger\Client\clicksend.model\VoiceMessageCollection | VoiceMessageCollection model
 
 try {
     $result = $apiInstance->voiceSendPost($voice_messages);
@@ -445,7 +445,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voice_messages** | [**\Swagger\Client\Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
+ **voice_messages** | [**\Swagger\Client\clicksend.model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
 
 ### Return type
 

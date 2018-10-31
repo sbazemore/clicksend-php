@@ -90,7 +90,7 @@ $apiInstance = new Swagger\Client\Api\DeliveryIssuesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$delivery_issue = new \Swagger\Client\Model\DeliveryIssue(); // \Swagger\Client\Model\DeliveryIssue | DeliveryIssue model
+$delivery_issue = new \Swagger\Client\clicksend.model\DeliveryIssue(); // \Swagger\Client\clicksend.model\DeliveryIssue | DeliveryIssue model
 
 try {
     $result = $apiInstance->deliveryIssuesPost($delivery_issue);
@@ -105,7 +105,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **delivery_issue** | [**\Swagger\Client\Model\DeliveryIssue**](../Model/DeliveryIssue.md)| DeliveryIssue model |
+ **delivery_issue** | [**\Swagger\Client\clicksend.model\DeliveryIssue**](../Model/DeliveryIssue.md)| DeliveryIssue model |
 
 ### Return type
 

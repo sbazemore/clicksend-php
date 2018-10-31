@@ -88,7 +88,7 @@ $apiInstance = new Swagger\Client\Api\AccountRechargeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$credit_card = new \Swagger\Client\Model\CreditCard(); // \Swagger\Client\Model\CreditCard | CreditCard model
+$credit_card = new \Swagger\Client\clicksend.model\CreditCard(); // \Swagger\Client\clicksend.model\CreditCard | CreditCard model
 
 try {
     $result = $apiInstance->rechargeCreditCardPut($credit_card);
@@ -103,7 +103,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **credit_card** | [**\Swagger\Client\Model\CreditCard**](../Model/CreditCard.md)| CreditCard model |
+ **credit_card** | [**\Swagger\Client\clicksend.model\CreditCard**](../Model/CreditCard.md)| CreditCard model |
 
 ### Return type
 

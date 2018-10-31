@@ -31,7 +31,7 @@ $apiInstance = new Swagger\Client\Api\TransferCreditApi(
     new GuzzleHttp\Client(),
     $config
 );
-$reseller_account_transfer_credit = new \Swagger\Client\Model\ResellerAccountTransferCredit(); // \Swagger\Client\Model\ResellerAccountTransferCredit | ResellerAccountTransferCredit model
+$reseller_account_transfer_credit = new \Swagger\Client\clicksend.model\ResellerAccountTransferCredit(); // \Swagger\Client\clicksend.model\ResellerAccountTransferCredit | ResellerAccountTransferCredit model
 
 try {
     $result = $apiInstance->resellerTransferCreditPut($reseller_account_transfer_credit);
@@ -46,7 +46,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **reseller_account_transfer_credit** | [**\Swagger\Client\Model\ResellerAccountTransferCredit**](../Model/ResellerAccountTransferCredit.md)| ResellerAccountTransferCredit model |
+ **reseller_account_transfer_credit** | [**\Swagger\Client\clicksend.model\ResellerAccountTransferCredit**](../Model/ResellerAccountTransferCredit.md)| ResellerAccountTransferCredit model |
 
 ### Return type
 

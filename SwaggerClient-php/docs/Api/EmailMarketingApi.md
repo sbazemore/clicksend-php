@@ -394,7 +394,7 @@ $apiInstance = new Swagger\Client\Api\EmailMarketingApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email_campaign = new \Swagger\Client\Model\EmailCampaign(); // \Swagger\Client\Model\EmailCampaign | Email model
+$email_campaign = new \Swagger\Client\clicksend.model\EmailCampaign(); // \Swagger\Client\clicksend.model\EmailCampaign | Email model
 
 try {
     $result = $apiInstance->emailCampaignPost($email_campaign);
@@ -409,7 +409,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_campaign** | [**\Swagger\Client\Model\EmailCampaign**](../Model/EmailCampaign.md)| Email model |
+ **email_campaign** | [**\Swagger\Client\clicksend.model\EmailCampaign**](../Model/EmailCampaign.md)| Email model |
 
 ### Return type
 
@@ -450,7 +450,7 @@ $apiInstance = new Swagger\Client\Api\EmailMarketingApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email_campaign = new \Swagger\Client\Model\EmailCampaign(); // \Swagger\Client\Model\EmailCampaign | Email model
+$email_campaign = new \Swagger\Client\clicksend.model\EmailCampaign(); // \Swagger\Client\clicksend.model\EmailCampaign | Email model
 
 try {
     $result = $apiInstance->emailCampaignPricePost($email_campaign);
@@ -465,7 +465,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_campaign** | [**\Swagger\Client\Model\EmailCampaign**](../Model/EmailCampaign.md)| Email model |
+ **email_campaign** | [**\Swagger\Client\clicksend.model\EmailCampaign**](../Model/EmailCampaign.md)| Email model |
 
 ### Return type
 

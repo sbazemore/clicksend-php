@@ -91,7 +91,7 @@ $apiInstance = new Swagger\Client\Api\ResellerAccountApi(
     $config
 );
 $client_user_id = 56; // int | User ID of client
-$reseller_account = new \Swagger\Client\Model\ResellerAccount(); // \Swagger\Client\Model\ResellerAccount | ResellerAccount model
+$reseller_account = new \Swagger\Client\clicksend.model\ResellerAccount(); // \Swagger\Client\clicksend.model\ResellerAccount | ResellerAccount model
 
 try {
     $result = $apiInstance->resellerAccountsByClientUserIdPut($client_user_id, $reseller_account);
@@ -107,7 +107,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **client_user_id** | **int**| User ID of client |
- **reseller_account** | [**\Swagger\Client\Model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
+ **reseller_account** | [**\Swagger\Client\clicksend.model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
 
 ### Return type
 
@@ -206,7 +206,7 @@ $apiInstance = new Swagger\Client\Api\ResellerAccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$reseller_account = new \Swagger\Client\Model\ResellerAccount(); // \Swagger\Client\Model\ResellerAccount | ResellerAccount model
+$reseller_account = new \Swagger\Client\clicksend.model\ResellerAccount(); // \Swagger\Client\clicksend.model\ResellerAccount | ResellerAccount model
 
 try {
     $result = $apiInstance->resellerAccountsPost($reseller_account);
@@ -221,7 +221,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **reseller_account** | [**\Swagger\Client\Model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
+ **reseller_account** | [**\Swagger\Client\clicksend.model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
 
 ### Return type
 

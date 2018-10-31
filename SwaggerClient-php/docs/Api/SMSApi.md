@@ -443,7 +443,7 @@ $apiInstance = new Swagger\Client\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$sms_messages = new \Swagger\Client\Model\SmsMessageCollection(); // \Swagger\Client\Model\SmsMessageCollection | SmsMessageCollection model
+$sms_messages = new \Swagger\Client\clicksend.model\SmsMessageCollection(); // \Swagger\Client\clicksend.model\SmsMessageCollection | SmsMessageCollection model
 
 try {
     $result = $apiInstance->smsPricePost($sms_messages);
@@ -458,7 +458,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sms_messages** | [**\Swagger\Client\Model\SmsMessageCollection**](../Model/SmsMessageCollection.md)| SmsMessageCollection model |
+ **sms_messages** | [**\Swagger\Client\clicksend.model\SmsMessageCollection**](../Model/SmsMessageCollection.md)| SmsMessageCollection model |
 
 ### Return type
 
@@ -725,7 +725,7 @@ $apiInstance = new Swagger\Client\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$sms_messages = new \Swagger\Client\Model\SmsMessageCollection(); // \Swagger\Client\Model\SmsMessageCollection | SmsMessageCollection model
+$sms_messages = new \Swagger\Client\clicksend.model\SmsMessageCollection(); // \Swagger\Client\clicksend.model\SmsMessageCollection | SmsMessageCollection model
 
 try {
     $result = $apiInstance->smsSendPost($sms_messages);
@@ -740,7 +740,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sms_messages** | [**\Swagger\Client\Model\SmsMessageCollection**](../Model/SmsMessageCollection.md)| SmsMessageCollection model |
+ **sms_messages** | [**\Swagger\Client\clicksend.model\SmsMessageCollection**](../Model/SmsMessageCollection.md)| SmsMessageCollection model |
 
 ### Return type
 
@@ -838,7 +838,7 @@ $apiInstance = new Swagger\Client\Api\SMSApi(
     $config
 );
 $template_id = 56; // int | Template id
-$sms_template = new \Swagger\Client\Model\SmsTemplate(); // \Swagger\Client\Model\SmsTemplate | Template item
+$sms_template = new \Swagger\Client\clicksend.model\SmsTemplate(); // \Swagger\Client\clicksend.model\SmsTemplate | Template item
 
 try {
     $result = $apiInstance->smsTemplatesByTemplateIdPut($template_id, $sms_template);
@@ -854,7 +854,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **template_id** | **int**| Template id |
- **sms_template** | [**\Swagger\Client\Model\SmsTemplate**](../Model/SmsTemplate.md)| Template item |
+ **sms_template** | [**\Swagger\Client\clicksend.model\SmsTemplate**](../Model/SmsTemplate.md)| Template item |
 
 ### Return type
 
@@ -953,7 +953,7 @@ $apiInstance = new Swagger\Client\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$sms_template = new \Swagger\Client\Model\SmsTemplate(); // \Swagger\Client\Model\SmsTemplate | SmsTemplate model
+$sms_template = new \Swagger\Client\clicksend.model\SmsTemplate(); // \Swagger\Client\clicksend.model\SmsTemplate | SmsTemplate model
 
 try {
     $result = $apiInstance->smsTemplatesPost($sms_template);
@@ -968,7 +968,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sms_template** | [**\Swagger\Client\Model\SmsTemplate**](../Model/SmsTemplate.md)| SmsTemplate model |
+ **sms_template** | [**\Swagger\Client\clicksend.model\SmsTemplate**](../Model/SmsTemplate.md)| SmsTemplate model |
 
 ### Return type
 

@@ -148,7 +148,7 @@ $apiInstance = new Swagger\Client\Api\PostReturnAddressApi(
     $config
 );
 $return_address_id = 56; // int | Return address ID
-$return_address = new \Swagger\Client\Model\Address(); // \Swagger\Client\Model\Address | Address model
+$return_address = new \Swagger\Client\clicksend.model\Address(); // \Swagger\Client\clicksend.model\Address | Address model
 
 try {
     $result = $apiInstance->postReturnAddressesByReturnAddressIdPut($return_address_id, $return_address);
@@ -164,7 +164,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **return_address_id** | **int**| Return address ID |
- **return_address** | [**\Swagger\Client\Model\Address**](../Model/Address.md)| Address model |
+ **return_address** | [**\Swagger\Client\clicksend.model\Address**](../Model/Address.md)| Address model |
 
 ### Return type
 
@@ -263,7 +263,7 @@ $apiInstance = new Swagger\Client\Api\PostReturnAddressApi(
     new GuzzleHttp\Client(),
     $config
 );
-$return_address = new \Swagger\Client\Model\Address(); // \Swagger\Client\Model\Address | Address model
+$return_address = new \Swagger\Client\clicksend.model\Address(); // \Swagger\Client\clicksend.model\Address | Address model
 
 try {
     $result = $apiInstance->postReturnAddressesPost($return_address);
@@ -278,7 +278,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **return_address** | [**\Swagger\Client\Model\Address**](../Model/Address.md)| Address model |
+ **return_address** | [**\Swagger\Client\clicksend.model\Address**](../Model/Address.md)| Address model |
 
 ### Return type
 
