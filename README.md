@@ -9,30 +9,18 @@ PHP 5.5 and later
 ## Installation & Usage
 ### Composer
 
-To install the bindings via [Composer](http://getcomposer.org/), add the following to `composer.json`:
+To install the bindings via [Composer](http://getcomposer.org/), run the follow command in your project:
 
 ```
-{
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
-    }
-  ],
-  "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
-  }
-}
+    composer require clicksend/clicksend-php
 ```
-
-Then run `composer install`
 
 ### Manual Installation
 
 Download the files and include `autoload.php`:
 
 ```php
-    require_once('/path/to/SwaggerClient-php/vendor/autoload.php');
+    require_once('/path/to/clicksend-php/vendor/autoload.php');
 ```
 
 ## Tests
@@ -84,10 +72,5 @@ Documentation can be found here: [ClickSend API Docs](https://developers.clickse
 ## BasicAuth
 
 - **Type**: HTTP basic authentication
-
-
-## Author
-
-support@clicksend.com
 
 
