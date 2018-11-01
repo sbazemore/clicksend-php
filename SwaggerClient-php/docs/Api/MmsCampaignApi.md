@@ -1,4 +1,4 @@
-# ClickSend.Client\MmsCampaignApi
+# ClickSend\MmsCampaignApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -25,12 +25,12 @@ Get specific mms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\MmsCampaignApi(
+$apiInstance = new ClickSend\Api\MmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -81,19 +81,19 @@ Update mms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\MmsCampaignApi(
+$apiInstance = new ClickSend\Api\MmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $mms_campaign_id = 56; // int | ID of MMS campaign to update
-$campaign = new \ClickSend.Client\ClickSend.Client.Model\MmsCampaign(); // \ClickSend.Client\ClickSend.Client.Model\MmsCampaign | MmsCampaign model
+$campaign = new \ClickSend\ClickSend.Model\MmsCampaign(); // \ClickSend\ClickSend.Model\MmsCampaign | MmsCampaign model
 
 try {
     $result = $apiInstance->mmsCampaignsByMmsCampaignIdPut($mms_campaign_id, $campaign);
@@ -109,7 +109,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **mms_campaign_id** | **int**| ID of MMS campaign to update |
- **campaign** | [**\ClickSend.Client\ClickSend.Client.Model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
+ **campaign** | [**\ClickSend\ClickSend.Model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
 
 ### Return type
 
@@ -139,12 +139,12 @@ Cancel sms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\MmsCampaignApi(
+$apiInstance = new ClickSend\Api\MmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -195,12 +195,12 @@ Get list of mms campaigns
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\MmsCampaignApi(
+$apiInstance = new ClickSend\Api\MmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -253,18 +253,18 @@ Calculate price for sms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\MmsCampaignApi(
+$apiInstance = new ClickSend\Api\MmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \ClickSend.Client\ClickSend.Client.Model\MmsCampaign(); // \ClickSend.Client\ClickSend.Client.Model\MmsCampaign | MmsCampaign model
+$campaign = new \ClickSend\ClickSend.Model\MmsCampaign(); // \ClickSend\ClickSend.Model\MmsCampaign | MmsCampaign model
 
 try {
     $result = $apiInstance->mmsCampaignsPricePost($campaign);
@@ -279,7 +279,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\ClickSend.Client\ClickSend.Client.Model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
+ **campaign** | [**\ClickSend\ClickSend.Model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
 
 ### Return type
 
@@ -309,18 +309,18 @@ Create mms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\MmsCampaignApi(
+$apiInstance = new ClickSend\Api\MmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \ClickSend.Client\ClickSend.Client.Model\MmsCampaign(); // \ClickSend.Client\ClickSend.Client.Model\MmsCampaign | MmsCampaign model
+$campaign = new \ClickSend\ClickSend.Model\MmsCampaign(); // \ClickSend\ClickSend.Model\MmsCampaign | MmsCampaign model
 
 try {
     $result = $apiInstance->mmsCampaignsSendPost($campaign);
@@ -335,7 +335,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\ClickSend.Client\ClickSend.Client.Model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
+ **campaign** | [**\ClickSend\ClickSend.Model\MmsCampaign**](../Model/MmsCampaign.md)| MmsCampaign model |
 
 ### Return type
 

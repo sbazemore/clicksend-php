@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Api;
+namespace ClickSend\ClickSend.Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use ClickSend.Client\ApiException;
-use ClickSend.Client\Configuration;
-use ClickSend.Client\HeaderSelector;
-use ClickSend.Client\ObjectSerializer;
+use ClickSend\ApiException;
+use ClickSend\Configuration;
+use ClickSend\HeaderSelector;
+use ClickSend\ObjectSerializer;
 
 /**
  * ContactListApi Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class ContactListApi
      *
      * @param  int $list_id List ID (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -111,7 +111,7 @@ class ContactListApi
      *
      * @param  int $list_id List ID (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -416,7 +416,7 @@ class ContactListApi
      *
      * @param  int $list_id List ID (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -433,7 +433,7 @@ class ContactListApi
      *
      * @param  int $list_id List ID (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -739,7 +739,7 @@ class ContactListApi
      * @param  int $list_id Your list id (required)
      * @param  string $list_name Your new list name (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -757,7 +757,7 @@ class ContactListApi
      * @param  int $list_id Your list id (required)
      * @param  string $list_name Your new list name (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1075,7 +1075,7 @@ class ContactListApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1093,7 +1093,7 @@ class ContactListApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1402,9 +1402,9 @@ class ContactListApi
      * Import contacts to list
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1420,9 +1420,9 @@ class ContactListApi
      * Import contacts to list
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1552,7 +1552,7 @@ class ContactListApi
      * Import contacts to list
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1573,7 +1573,7 @@ class ContactListApi
      * Import contacts to list
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1624,7 +1624,7 @@ class ContactListApi
      * Create request for operation 'listsImportByListIdPost'
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1739,7 +1739,7 @@ class ContactListApi
      *
      * @param  string $list_name Your contact list name (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1756,7 +1756,7 @@ class ContactListApi
      *
      * @param  string $list_name Your contact list name (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2056,7 +2056,7 @@ class ContactListApi
      *
      * @param  int $list_id Your list id (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2073,7 +2073,7 @@ class ContactListApi
      *
      * @param  int $list_id Your list id (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

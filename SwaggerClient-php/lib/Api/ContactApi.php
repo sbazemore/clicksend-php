@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Api;
+namespace ClickSend\ClickSend.Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use ClickSend.Client\ApiException;
-use ClickSend.Client\Configuration;
-use ClickSend.Client\HeaderSelector;
-use ClickSend.Client\ObjectSerializer;
+use ClickSend\ApiException;
+use ClickSend\Configuration;
+use ClickSend\HeaderSelector;
+use ClickSend\ObjectSerializer;
 
 /**
  * ContactApi Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,7 +95,7 @@ class ContactApi
      * @param  int $list_id List ID (required)
      * @param  int $contact_id Contact ID (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -113,7 +113,7 @@ class ContactApi
      * @param  int $list_id List ID (required)
      * @param  int $contact_id Contact ID (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -436,7 +436,7 @@ class ContactApi
      * @param  int $list_id Your contact list id you want to access. (required)
      * @param  int $contact_id Your contact id you want to access. (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -454,7 +454,7 @@ class ContactApi
      * @param  int $list_id Your contact list id you want to access. (required)
      * @param  int $contact_id Your contact id you want to access. (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -776,9 +776,9 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -795,9 +795,9 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -928,7 +928,7 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -950,7 +950,7 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1002,7 +1002,7 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1133,7 +1133,7 @@ class ContactApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1152,7 +1152,7 @@ class ContactApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1477,12 +1477,12 @@ class ContactApi
      *
      * Create new contact
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1497,12 +1497,12 @@ class ContactApi
      *
      * Create new contact
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1631,7 +1631,7 @@ class ContactApi
      *
      * Create new contact
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
@@ -1654,7 +1654,7 @@ class ContactApi
      *
      * Create new contact
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
@@ -1707,7 +1707,7 @@ class ContactApi
     /**
      * Create request for operation 'listsContactsByListIdPost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
@@ -1842,7 +1842,7 @@ class ContactApi
      * @param  int $list_id Your list id (required)
      * @param  int $opt_out_list_id Your opt out list id (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1860,7 +1860,7 @@ class ContactApi
      * @param  int $list_id Your list id (required)
      * @param  int $opt_out_list_id Your opt out list id (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2184,7 +2184,7 @@ class ContactApi
      * @param  int $contact_id Contact ID (required)
      * @param  int $to_list_id List ID for list you want to transfer contact to. (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2203,7 +2203,7 @@ class ContactApi
      * @param  int $contact_id Contact ID (required)
      * @param  int $to_list_id List ID for list you want to transfer contact to. (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

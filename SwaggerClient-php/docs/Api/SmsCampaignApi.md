@@ -1,4 +1,4 @@
-# ClickSend.Client\SmsCampaignApi
+# ClickSend\SmsCampaignApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -25,12 +25,12 @@ Get specific sms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SmsCampaignApi(
+$apiInstance = new ClickSend\Api\SmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -81,19 +81,19 @@ Update sms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SmsCampaignApi(
+$apiInstance = new ClickSend\Api\SmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $sms_campaign_id = 56; // int | ID of SMS campaign to update
-$campaign = new \ClickSend.Client\ClickSend.Client.Model\SmsCampaign(); // \ClickSend.Client\ClickSend.Client.Model\SmsCampaign | SmsCampaign model
+$campaign = new \ClickSend\ClickSend.Model\SmsCampaign(); // \ClickSend\ClickSend.Model\SmsCampaign | SmsCampaign model
 
 try {
     $result = $apiInstance->smsCampaignsBySmsCampaignIdPut($sms_campaign_id, $campaign);
@@ -109,7 +109,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sms_campaign_id** | **int**| ID of SMS campaign to update |
- **campaign** | [**\ClickSend.Client\ClickSend.Client.Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
+ **campaign** | [**\ClickSend\ClickSend.Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
 
 ### Return type
 
@@ -139,12 +139,12 @@ Cancel sms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SmsCampaignApi(
+$apiInstance = new ClickSend\Api\SmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -195,12 +195,12 @@ Get list of sms campaigns
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SmsCampaignApi(
+$apiInstance = new ClickSend\Api\SmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -253,18 +253,18 @@ Calculate price for sms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SmsCampaignApi(
+$apiInstance = new ClickSend\Api\SmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \ClickSend.Client\ClickSend.Client.Model\SmsCampaign(); // \ClickSend.Client\ClickSend.Client.Model\SmsCampaign | SmsCampaign model
+$campaign = new \ClickSend\ClickSend.Model\SmsCampaign(); // \ClickSend\ClickSend.Model\SmsCampaign | SmsCampaign model
 
 try {
     $result = $apiInstance->smsCampaignsPricePost($campaign);
@@ -279,7 +279,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\ClickSend.Client\ClickSend.Client.Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
+ **campaign** | [**\ClickSend\ClickSend.Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
 
 ### Return type
 
@@ -309,18 +309,18 @@ Create sms campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SmsCampaignApi(
+$apiInstance = new ClickSend\Api\SmsCampaignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \ClickSend.Client\ClickSend.Client.Model\SmsCampaign(); // \ClickSend.Client\ClickSend.Client.Model\SmsCampaign | SmsCampaign model
+$campaign = new \ClickSend\ClickSend.Model\SmsCampaign(); // \ClickSend\ClickSend.Model\SmsCampaign | SmsCampaign model
 
 try {
     $result = $apiInstance->smsCampaignsSendPost($campaign);
@@ -335,7 +335,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\ClickSend.Client\ClickSend.Client.Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
+ **campaign** | [**\ClickSend\ClickSend.Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
 
 ### Return type
 

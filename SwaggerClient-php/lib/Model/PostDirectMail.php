@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Model;
+namespace ClickSend\ClickSend.Model;
 
 use \ArrayAccess;
-use \ClickSend.Client\ObjectSerializer;
+use \ClickSend\ObjectSerializer;
 
 /**
  * PostDirectMail Class Doc Comment
  *
  * @category Class
  * @description Post direct mail model
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class PostDirectMail implements ModelInterface, ArrayAccess
         'name' => 'string',
         'file_urls' => 'string[]',
         'size' => 'string',
-        'areas' => '\ClickSend.Client\ClickSend.Client.Model\PostDirectMailArea[]',
+        'areas' => '\ClickSend\ClickSend.Model\PostDirectMailArea[]',
         'schedule' => 'int',
         'source' => 'string',
         'custom_string' => 'string'
@@ -332,7 +332,7 @@ class PostDirectMail implements ModelInterface, ArrayAccess
     /**
      * Gets areas
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\PostDirectMailArea[]
+     * @return \ClickSend\ClickSend.Model\PostDirectMailArea[]
      */
     public function getAreas()
     {
@@ -342,7 +342,7 @@ class PostDirectMail implements ModelInterface, ArrayAccess
     /**
      * Sets areas
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\PostDirectMailArea[] $areas PostDirectMailArea model
+     * @param \ClickSend\ClickSend.Model\PostDirectMailArea[] $areas PostDirectMailArea model
      *
      * @return $this
      */

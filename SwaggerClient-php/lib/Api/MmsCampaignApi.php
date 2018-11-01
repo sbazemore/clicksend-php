@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Api;
+namespace ClickSend\ClickSend.Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use ClickSend.Client\ApiException;
-use ClickSend.Client\Configuration;
-use ClickSend.Client\HeaderSelector;
-use ClickSend.Client\ObjectSerializer;
+use ClickSend\ApiException;
+use ClickSend\Configuration;
+use ClickSend\HeaderSelector;
+use ClickSend\ObjectSerializer;
 
 /**
  * MmsCampaignApi Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class MmsCampaignApi
      *
      * @param  int $mms_campaign_id ID of MMS campaign to retrieve (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -111,7 +111,7 @@ class MmsCampaignApi
      *
      * @param  int $mms_campaign_id ID of MMS campaign to retrieve (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -415,9 +415,9 @@ class MmsCampaignApi
      * Update mms campaign
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -433,9 +433,9 @@ class MmsCampaignApi
      * Update mms campaign
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -565,7 +565,7 @@ class MmsCampaignApi
      * Update mms campaign
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -586,7 +586,7 @@ class MmsCampaignApi
      * Update mms campaign
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -637,7 +637,7 @@ class MmsCampaignApi
      * Create request for operation 'mmsCampaignsByMmsCampaignIdPut'
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -752,7 +752,7 @@ class MmsCampaignApi
      *
      * @param  int $mms_campaign_id ID of MMS Campaign to cancel (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -769,7 +769,7 @@ class MmsCampaignApi
      *
      * @param  int $mms_campaign_id ID of MMS Campaign to cancel (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1075,7 +1075,7 @@ class MmsCampaignApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1093,7 +1093,7 @@ class MmsCampaignApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1401,9 +1401,9 @@ class MmsCampaignApi
      *
      * Calculate price for mms campaign
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1418,9 +1418,9 @@ class MmsCampaignApi
      *
      * Calculate price for mms campaign
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1549,7 +1549,7 @@ class MmsCampaignApi
      *
      * Calculate price for mms campaign
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1569,7 +1569,7 @@ class MmsCampaignApi
      *
      * Calculate price for mms campaign
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1619,7 +1619,7 @@ class MmsCampaignApi
     /**
      * Create request for operation 'mmsCampaignsPricePost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1718,9 +1718,9 @@ class MmsCampaignApi
      *
      * Create mms campaign
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1735,9 +1735,9 @@ class MmsCampaignApi
      *
      * Create mms campaign
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1866,7 +1866,7 @@ class MmsCampaignApi
      *
      * Create mms campaign
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1886,7 +1886,7 @@ class MmsCampaignApi
      *
      * Create mms campaign
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1936,7 +1936,7 @@ class MmsCampaignApi
     /**
      * Create request for operation 'mmsCampaignsSendPost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

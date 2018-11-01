@@ -1,4 +1,4 @@
-# ClickSend.Client\SMSApi
+# ClickSend\SMSApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -36,12 +36,12 @@ Update all scheduled message as cancelled
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -88,12 +88,12 @@ Update scheduled message as cancelled
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -144,12 +144,12 @@ Export all sms history
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -200,12 +200,12 @@ Get all sms history
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -262,12 +262,12 @@ Get all inbound sms
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -320,12 +320,12 @@ Create inbound sms
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -376,12 +376,12 @@ Mark all inbound SMS as read optionally before a certain date
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -432,18 +432,18 @@ Calculate sms price
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$sms_messages = new \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection(); // \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection | SmsMessageCollection model
+$sms_messages = new \ClickSend\ClickSend.Model\SmsMessageCollection(); // \ClickSend\ClickSend.Model\SmsMessageCollection | SmsMessageCollection model
 
 try {
     $result = $apiInstance->smsPricePost($sms_messages);
@@ -458,7 +458,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sms_messages** | [**\ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection**](../Model/SmsMessageCollection.md)| SmsMessageCollection model |
+ **sms_messages** | [**\ClickSend\ClickSend.Model\SmsMessageCollection**](../Model/SmsMessageCollection.md)| SmsMessageCollection model |
 
 ### Return type
 
@@ -488,12 +488,12 @@ Get a Specific Delivery Receipt
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -544,12 +544,12 @@ Get all delivery receipts
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -602,12 +602,12 @@ Add a delivery receipt
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -658,12 +658,12 @@ Mark delivery receipts as read
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -714,18 +714,18 @@ Send sms message(s)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$sms_messages = new \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection(); // \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection | SmsMessageCollection model
+$sms_messages = new \ClickSend\ClickSend.Model\SmsMessageCollection(); // \ClickSend\ClickSend.Model\SmsMessageCollection | SmsMessageCollection model
 
 try {
     $result = $apiInstance->smsSendPost($sms_messages);
@@ -740,7 +740,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sms_messages** | [**\ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection**](../Model/SmsMessageCollection.md)| SmsMessageCollection model |
+ **sms_messages** | [**\ClickSend\ClickSend.Model\SmsMessageCollection**](../Model/SmsMessageCollection.md)| SmsMessageCollection model |
 
 ### Return type
 
@@ -770,12 +770,12 @@ Delete sms template
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -826,19 +826,19 @@ Update sms template
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $template_id = 56; // int | Template id
-$sms_template = new \ClickSend.Client\ClickSend.Client.Model\SmsTemplate(); // \ClickSend.Client\ClickSend.Client.Model\SmsTemplate | Template item
+$sms_template = new \ClickSend\ClickSend.Model\SmsTemplate(); // \ClickSend\ClickSend.Model\SmsTemplate | Template item
 
 try {
     $result = $apiInstance->smsTemplatesByTemplateIdPut($template_id, $sms_template);
@@ -854,7 +854,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **template_id** | **int**| Template id |
- **sms_template** | [**\ClickSend.Client\ClickSend.Client.Model\SmsTemplate**](../Model/SmsTemplate.md)| Template item |
+ **sms_template** | [**\ClickSend\ClickSend.Model\SmsTemplate**](../Model/SmsTemplate.md)| Template item |
 
 ### Return type
 
@@ -884,12 +884,12 @@ Get lists of all sms templates
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -942,18 +942,18 @@ Create sms template
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\SMSApi(
+$apiInstance = new ClickSend\Api\SMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$sms_template = new \ClickSend.Client\ClickSend.Client.Model\SmsTemplate(); // \ClickSend.Client\ClickSend.Client.Model\SmsTemplate | SmsTemplate model
+$sms_template = new \ClickSend\ClickSend.Model\SmsTemplate(); // \ClickSend\ClickSend.Model\SmsTemplate | SmsTemplate model
 
 try {
     $result = $apiInstance->smsTemplatesPost($sms_template);
@@ -968,7 +968,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sms_template** | [**\ClickSend.Client\ClickSend.Client.Model\SmsTemplate**](../Model/SmsTemplate.md)| SmsTemplate model |
+ **sms_template** | [**\ClickSend\ClickSend.Model\SmsTemplate**](../Model/SmsTemplate.md)| SmsTemplate model |
 
 ### Return type
 

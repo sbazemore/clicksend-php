@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Model;
+namespace ClickSend\ClickSend.Model;
 
 use \ArrayAccess;
-use \ClickSend.Client\ObjectSerializer;
+use \ClickSend\ObjectSerializer;
 
 /**
  * VoiceMessageCollection Class Doc Comment
  *
  * @category Class
  * @description Array of VoiceMessage items
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class VoiceMessageCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'messages' => '\ClickSend.Client\ClickSend.Client.Model\VoiceMessage[]'
+        'messages' => '\ClickSend\ClickSend.Model\VoiceMessage[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class VoiceMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\VoiceMessage[]
+     * @return \ClickSend\ClickSend.Model\VoiceMessage[]
      */
     public function getMessages()
     {
@@ -225,7 +225,7 @@ class VoiceMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\VoiceMessage[] $messages Array of VoiceMessage items
+     * @param \ClickSend\ClickSend.Model\VoiceMessage[] $messages Array of VoiceMessage items
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client\ClickSend.Client.Model
+ * @package  ClickSend\ClickSend.Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Model;
+namespace ClickSend\ClickSend.Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package ClickSend.Client\ClickSend.Client.Model
+ * @package ClickSend\ClickSend.Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

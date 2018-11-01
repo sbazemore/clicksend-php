@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Model;
+namespace ClickSend\ClickSend.Model;
 
 use \ArrayAccess;
-use \ClickSend.Client\ObjectSerializer;
+use \ClickSend\ObjectSerializer;
 
 /**
  * Contact Class Doc Comment
  *
  * @category Class
  * @description Contains all details for the main contact.
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

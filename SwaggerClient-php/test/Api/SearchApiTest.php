@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace ClickSend.Client;
+namespace ClickSend;
 
-use \ClickSend.Client\Configuration;
-use \ClickSend.Client\ApiException;
-use \ClickSend.Client\ObjectSerializer;
+use \ClickSend\Configuration;
+use \ClickSend\ApiException;
+use \ClickSend\ObjectSerializer;
 
 /**
  * SearchApiTest Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Model;
+namespace ClickSend\ClickSend.Model;
 
 use \ArrayAccess;
-use \ClickSend.Client\ObjectSerializer;
+use \ClickSend\ObjectSerializer;
 
 /**
  * PostPostcard Class Doc Comment
  *
  * @category Class
  * @description PostPostcard model
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PostPostcard implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'file_urls' => 'string[]',
-        'recipients' => '\ClickSend.Client\ClickSend.Client.Model\PostRecipient[]'
+        'recipients' => '\ClickSend\ClickSend.Model\PostRecipient[]'
     ];
 
     /**
@@ -248,7 +248,7 @@ class PostPostcard implements ModelInterface, ArrayAccess
     /**
      * Gets recipients
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\PostRecipient[]
+     * @return \ClickSend\ClickSend.Model\PostRecipient[]
      */
     public function getRecipients()
     {
@@ -258,7 +258,7 @@ class PostPostcard implements ModelInterface, ArrayAccess
     /**
      * Sets recipients
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\PostRecipient[] $recipients Array of recipients
+     * @param \ClickSend\ClickSend.Model\PostRecipient[] $recipients Array of recipients
      *
      * @return $this
      */

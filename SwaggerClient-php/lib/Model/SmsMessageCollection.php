@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Model;
+namespace ClickSend\ClickSend.Model;
 
 use \ArrayAccess;
-use \ClickSend.Client\ObjectSerializer;
+use \ClickSend\ObjectSerializer;
 
 /**
  * SmsMessageCollection Class Doc Comment
  *
  * @category Class
  * @description Array of SmsMessage items
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class SmsMessageCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'messages' => '\ClickSend.Client\ClickSend.Client.Model\SmsMessage[]'
+        'messages' => '\ClickSend\ClickSend.Model\SmsMessage[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class SmsMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\SmsMessage[]
+     * @return \ClickSend\ClickSend.Model\SmsMessage[]
      */
     public function getMessages()
     {
@@ -225,7 +225,7 @@ class SmsMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\SmsMessage[] $messages Array of SmsMessage items
+     * @param \ClickSend\ClickSend.Model\SmsMessage[] $messages Array of SmsMessage items
      *
      * @return $this
      */

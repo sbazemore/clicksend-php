@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Api;
+namespace ClickSend\ClickSend.Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use ClickSend.Client\ApiException;
-use ClickSend.Client\Configuration;
-use ClickSend.Client\HeaderSelector;
-use ClickSend.Client\ObjectSerializer;
+use ClickSend\ApiException;
+use ClickSend\Configuration;
+use ClickSend\HeaderSelector;
+use ClickSend\ObjectSerializer;
 
 /**
  * ResellerAccountApi Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class ResellerAccountApi
      *
      * @param  int $client_user_id User ID of client (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -111,7 +111,7 @@ class ResellerAccountApi
      *
      * @param  int $client_user_id User ID of client (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -415,9 +415,9 @@ class ResellerAccountApi
      * Update Reseller clients Account
      *
      * @param  int $client_user_id User ID of client (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -433,9 +433,9 @@ class ResellerAccountApi
      * Update Reseller clients Account
      *
      * @param  int $client_user_id User ID of client (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -565,7 +565,7 @@ class ResellerAccountApi
      * Update Reseller clients Account
      *
      * @param  int $client_user_id User ID of client (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -586,7 +586,7 @@ class ResellerAccountApi
      * Update Reseller clients Account
      *
      * @param  int $client_user_id User ID of client (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -637,7 +637,7 @@ class ResellerAccountApi
      * Create request for operation 'resellerAccountsByClientUserIdPut'
      *
      * @param  int $client_user_id User ID of client (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -753,7 +753,7 @@ class ResellerAccountApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -771,7 +771,7 @@ class ResellerAccountApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1079,9 +1079,9 @@ class ResellerAccountApi
      *
      * Create reseller account
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1096,9 +1096,9 @@ class ResellerAccountApi
      *
      * Create reseller account
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1227,7 +1227,7 @@ class ResellerAccountApi
      *
      * Create reseller account
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1247,7 +1247,7 @@ class ResellerAccountApi
      *
      * Create reseller account
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1297,7 +1297,7 @@ class ResellerAccountApi
     /**
      * Create request for operation 'resellerAccountsPost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\ResellerAccount $reseller_account ResellerAccount model (required)
+     * @param  \ClickSend\ClickSend.Model\ResellerAccount $reseller_account ResellerAccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

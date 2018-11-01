@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Api;
+namespace ClickSend\ClickSend.Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use ClickSend.Client\ApiException;
-use ClickSend.Client\Configuration;
-use ClickSend.Client\HeaderSelector;
-use ClickSend.Client\ObjectSerializer;
+use ClickSend\ApiException;
+use ClickSend\Configuration;
+use ClickSend\HeaderSelector;
+use ClickSend\ObjectSerializer;
 
 /**
  * SubaccountApi Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class SubaccountApi
      *
      * @param  int $subaccount_id ID of subaccount to delete (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -111,7 +111,7 @@ class SubaccountApi
      *
      * @param  int $subaccount_id ID of subaccount to delete (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -416,7 +416,7 @@ class SubaccountApi
      *
      * @param  int $subaccount_id ID of subaccount to get (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -433,7 +433,7 @@ class SubaccountApi
      *
      * @param  int $subaccount_id ID of subaccount to get (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -737,9 +737,9 @@ class SubaccountApi
      * Update subaccount
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -755,9 +755,9 @@ class SubaccountApi
      * Update subaccount
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -887,7 +887,7 @@ class SubaccountApi
      * Update subaccount
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -908,7 +908,7 @@ class SubaccountApi
      * Update subaccount
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -959,7 +959,7 @@ class SubaccountApi
      * Create request for operation 'subaccountsBySubaccountIdPut'
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1075,7 +1075,7 @@ class SubaccountApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1093,7 +1093,7 @@ class SubaccountApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1401,9 +1401,9 @@ class SubaccountApi
      *
      * Create new subaccount
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1418,9 +1418,9 @@ class SubaccountApi
      *
      * Create new subaccount
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1549,7 +1549,7 @@ class SubaccountApi
      *
      * Create new subaccount
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1569,7 +1569,7 @@ class SubaccountApi
      *
      * Create new subaccount
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1619,7 +1619,7 @@ class SubaccountApi
     /**
      * Create request for operation 'subaccountsPost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1720,7 +1720,7 @@ class SubaccountApi
      *
      * @param  int $subaccount_id ID of subaccount to regenerate API key for (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1737,7 +1737,7 @@ class SubaccountApi
      *
      * @param  int $subaccount_id ID of subaccount to regenerate API key for (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Model;
+namespace ClickSend\ClickSend.Model;
 
 use \ArrayAccess;
-use \ClickSend.Client\ObjectSerializer;
+use \ClickSend\ObjectSerializer;
 
 /**
  * FaxMessageCollection Class Doc Comment
  *
  * @category Class
  * @description Array of FaxMessage items
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class FaxMessageCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'messages' => '\ClickSend.Client\ClickSend.Client.Model\FaxMessage[]',
+        'messages' => '\ClickSend\ClickSend.Model\FaxMessage[]',
         'file_url' => 'string'
     ];
 
@@ -224,7 +224,7 @@ class FaxMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\FaxMessage[]
+     * @return \ClickSend\ClickSend.Model\FaxMessage[]
      */
     public function getMessages()
     {
@@ -234,7 +234,7 @@ class FaxMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\FaxMessage[] $messages Array of FaxMessage items
+     * @param \ClickSend\ClickSend.Model\FaxMessage[] $messages Array of FaxMessage items
      *
      * @return $this
      */

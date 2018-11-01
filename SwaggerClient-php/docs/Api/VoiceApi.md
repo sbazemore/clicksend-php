@@ -1,4 +1,4 @@
-# ClickSend.Client\VoiceApi
+# ClickSend\VoiceApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -27,12 +27,12 @@ Update all voice messages as cancelled
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceApi(
+$apiInstance = new ClickSend\Api\VoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -79,12 +79,12 @@ Update voice message status as cancelled
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceApi(
+$apiInstance = new ClickSend\Api\VoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -135,12 +135,12 @@ Export voice history
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceApi(
+$apiInstance = new ClickSend\Api\VoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -191,12 +191,12 @@ Get all voice history
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceApi(
+$apiInstance = new ClickSend\Api\VoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -253,12 +253,12 @@ Get all voice languages
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceApi(
+$apiInstance = new ClickSend\Api\VoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -305,18 +305,18 @@ Calculate voice price
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceApi(
+$apiInstance = new ClickSend\Api\VoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$voice_messages = new \ClickSend.Client\ClickSend.Client.Model\VoiceMessageCollection(); // \ClickSend.Client\ClickSend.Client.Model\VoiceMessageCollection | VoiceMessageCollection model
+$voice_messages = new \ClickSend\ClickSend.Model\VoiceMessageCollection(); // \ClickSend\ClickSend.Model\VoiceMessageCollection | VoiceMessageCollection model
 
 try {
     $result = $apiInstance->voicePricePost($voice_messages);
@@ -331,7 +331,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voice_messages** | [**\ClickSend.Client\ClickSend.Client.Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
+ **voice_messages** | [**\ClickSend\ClickSend.Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
 
 ### Return type
 
@@ -361,12 +361,12 @@ Get all voice receipts
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceApi(
+$apiInstance = new ClickSend\Api\VoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -419,18 +419,18 @@ Send a voice call
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceApi(
+$apiInstance = new ClickSend\Api\VoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$voice_messages = new \ClickSend.Client\ClickSend.Client.Model\VoiceMessageCollection(); // \ClickSend.Client\ClickSend.Client.Model\VoiceMessageCollection | VoiceMessageCollection model
+$voice_messages = new \ClickSend\ClickSend.Model\VoiceMessageCollection(); // \ClickSend\ClickSend.Model\VoiceMessageCollection | VoiceMessageCollection model
 
 try {
     $result = $apiInstance->voiceSendPost($voice_messages);
@@ -445,7 +445,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voice_messages** | [**\ClickSend.Client\ClickSend.Client.Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
+ **voice_messages** | [**\ClickSend\ClickSend.Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
 
 ### Return type
 

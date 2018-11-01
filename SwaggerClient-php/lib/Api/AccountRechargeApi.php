@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Api;
+namespace ClickSend\ClickSend.Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use ClickSend.Client\ApiException;
-use ClickSend.Client\Configuration;
-use ClickSend.Client\HeaderSelector;
-use ClickSend.Client\ObjectSerializer;
+use ClickSend\ApiException;
+use ClickSend\Configuration;
+use ClickSend\HeaderSelector;
+use ClickSend\ObjectSerializer;
 
 /**
  * AccountRechargeApi Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class AccountRechargeApi
      * Get Credit Card info
      *
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -109,7 +109,7 @@ class AccountRechargeApi
      * Get Credit Card info
      *
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -395,9 +395,9 @@ class AccountRechargeApi
      *
      * Update credit card info
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -412,9 +412,9 @@ class AccountRechargeApi
      *
      * Update credit card info
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -543,7 +543,7 @@ class AccountRechargeApi
      *
      * Update credit card info
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -563,7 +563,7 @@ class AccountRechargeApi
      *
      * Update credit card info
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -613,7 +613,7 @@ class AccountRechargeApi
     /**
      * Create request for operation 'rechargeCreditCardPut'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -714,7 +714,7 @@ class AccountRechargeApi
      *
      * @param  string $country Country code (optional)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -731,7 +731,7 @@ class AccountRechargeApi
      *
      * @param  string $country Country code (optional)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1026,7 +1026,7 @@ class AccountRechargeApi
      *
      * @param  int $package_id ID of package to purchase (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1043,7 +1043,7 @@ class AccountRechargeApi
      *
      * @param  int $package_id ID of package to purchase (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1348,7 +1348,7 @@ class AccountRechargeApi
      *
      * @param  string $transaction_id ID of transaction to retrieve (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1365,7 +1365,7 @@ class AccountRechargeApi
      *
      * @param  string $transaction_id ID of transaction to retrieve (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1671,7 +1671,7 @@ class AccountRechargeApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1689,7 +1689,7 @@ class AccountRechargeApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

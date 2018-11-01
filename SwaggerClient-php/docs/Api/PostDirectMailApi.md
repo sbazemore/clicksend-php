@@ -1,4 +1,4 @@
-# ClickSend.Client\PostDirectMailApi
+# ClickSend\PostDirectMailApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -23,12 +23,12 @@ Get direct mail campaigns
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\PostDirectMailApi(
+$apiInstance = new ClickSend\Api\PostDirectMailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -81,18 +81,18 @@ Calculate direct mail campaign price
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\PostDirectMailApi(
+$apiInstance = new ClickSend\Api\PostDirectMailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_direct_mail = new \ClickSend.Client\ClickSend.Client.Model\PostDirectMail(); // \ClickSend.Client\ClickSend.Client.Model\PostDirectMail | PostDirectMail model
+$post_direct_mail = new \ClickSend\ClickSend.Model\PostDirectMail(); // \ClickSend\ClickSend.Model\PostDirectMail | PostDirectMail model
 
 try {
     $result = $apiInstance->postDirectMailCampaignsPricePost($post_direct_mail);
@@ -107,7 +107,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_direct_mail** | [**\ClickSend.Client\ClickSend.Client.Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
+ **post_direct_mail** | [**\ClickSend\ClickSend.Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
 
 ### Return type
 
@@ -137,18 +137,18 @@ Send direct mail campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\PostDirectMailApi(
+$apiInstance = new ClickSend\Api\PostDirectMailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_direct_mail = new \ClickSend.Client\ClickSend.Client.Model\PostDirectMail(); // \ClickSend.Client\ClickSend.Client.Model\PostDirectMail | PostDirectMail model
+$post_direct_mail = new \ClickSend\ClickSend.Model\PostDirectMail(); // \ClickSend\ClickSend.Model\PostDirectMail | PostDirectMail model
 
 try {
     $result = $apiInstance->postDirectMailCampaignsSendPost($post_direct_mail);
@@ -163,7 +163,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_direct_mail** | [**\ClickSend.Client\ClickSend.Client.Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
+ **post_direct_mail** | [**\ClickSend\ClickSend.Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
 
 ### Return type
 
@@ -193,12 +193,12 @@ Search for a location
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\PostDirectMailApi(
+$apiInstance = new ClickSend\Api\PostDirectMailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

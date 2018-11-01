@@ -1,4 +1,4 @@
-# ClickSend.Client\UserEmailTemplatesApi
+# ClickSend\UserEmailTemplatesApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -24,12 +24,12 @@ Delete user email template
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\UserEmailTemplatesApi(
+$apiInstance = new ClickSend\Api\UserEmailTemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -80,12 +80,12 @@ Get specific user email templates
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\UserEmailTemplatesApi(
+$apiInstance = new ClickSend\Api\UserEmailTemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,18 +136,18 @@ Create email template
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\UserEmailTemplatesApi(
+$apiInstance = new ClickSend\Api\UserEmailTemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$email_template = new \ClickSend.Client\ClickSend.Client.Model\EmailTemplateNew(); // \ClickSend.Client\ClickSend.Client.Model\EmailTemplateNew | Email template model
+$email_template = new \ClickSend\ClickSend.Model\EmailTemplateNew(); // \ClickSend\ClickSend.Model\EmailTemplateNew | Email template model
 
 try {
     $result = $apiInstance->emailTemplatePost($email_template);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_template** | [**\ClickSend.Client\ClickSend.Client.Model\EmailTemplateNew**](../Model/EmailTemplateNew.md)| Email template model |
+ **email_template** | [**\ClickSend\ClickSend.Model\EmailTemplateNew**](../Model/EmailTemplateNew.md)| Email template model |
 
 ### Return type
 
@@ -192,19 +192,19 @@ Update email template
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\UserEmailTemplatesApi(
+$apiInstance = new ClickSend\Api\UserEmailTemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $template_id = 56; // int | Email template id
-$email_template = new \ClickSend.Client\ClickSend.Client.Model\EmailTemplateUpdate(); // \ClickSend.Client\ClickSend.Client.Model\EmailTemplateUpdate | Email template model
+$email_template = new \ClickSend\ClickSend.Model\EmailTemplateUpdate(); // \ClickSend\ClickSend.Model\EmailTemplateUpdate | Email template model
 
 try {
     $result = $apiInstance->emailTemplatePut($template_id, $email_template);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **template_id** | **int**| Email template id |
- **email_template** | [**\ClickSend.Client\ClickSend.Client.Model\EmailTemplateUpdate**](../Model/EmailTemplateUpdate.md)| Email template model |
+ **email_template** | [**\ClickSend\ClickSend.Model\EmailTemplateUpdate**](../Model/EmailTemplateUpdate.md)| Email template model |
 
 ### Return type
 
@@ -250,12 +250,12 @@ Get all user email templates
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\UserEmailTemplatesApi(
+$apiInstance = new ClickSend\Api\UserEmailTemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

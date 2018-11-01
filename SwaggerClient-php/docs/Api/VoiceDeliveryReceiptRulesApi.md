@@ -1,4 +1,4 @@
-# ClickSend.Client\VoiceDeliveryReceiptRulesApi
+# ClickSend\VoiceDeliveryReceiptRulesApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -24,12 +24,12 @@ Delete voice delivery receipt automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend\Api\VoiceDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -80,12 +80,12 @@ Get specific voice delivery receipt automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend\Api\VoiceDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,18 +136,18 @@ Create voice delivery receipt automations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend\Api\VoiceDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$delivery_receipt_rule = new \ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule(); // \ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule | voice delivery receipt rule model
+$delivery_receipt_rule = new \ClickSend\ClickSend.Model\DeliveryReceiptRule(); // \ClickSend\ClickSend.Model\DeliveryReceiptRule | voice delivery receipt rule model
 
 try {
     $result = $apiInstance->voiceDeliveryReceiptAutomationPost($delivery_receipt_rule);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **delivery_receipt_rule** | [**\ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| voice delivery receipt rule model |
+ **delivery_receipt_rule** | [**\ClickSend\ClickSend.Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| voice delivery receipt rule model |
 
 ### Return type
 
@@ -192,19 +192,19 @@ Update voice delivery receipt automation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend\Api\VoiceDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $receipt_rule_id = 56; // int | Receipt rule id
-$delivery_receipt_rule = new \ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule(); // \ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule | Delivery receipt rule model
+$delivery_receipt_rule = new \ClickSend\ClickSend.Model\DeliveryReceiptRule(); // \ClickSend\ClickSend.Model\DeliveryReceiptRule | Delivery receipt rule model
 
 try {
     $result = $apiInstance->voiceDeliveryReceiptAutomationPut($receipt_rule_id, $delivery_receipt_rule);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **receipt_rule_id** | **int**| Receipt rule id |
- **delivery_receipt_rule** | [**\ClickSend.Client\ClickSend.Client.Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| Delivery receipt rule model |
+ **delivery_receipt_rule** | [**\ClickSend\ClickSend.Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| Delivery receipt rule model |
 
 ### Return type
 
@@ -250,12 +250,12 @@ Get all voice delivery receipt automations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\VoiceDeliveryReceiptRulesApi(
+$apiInstance = new ClickSend\Api\VoiceDeliveryReceiptRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

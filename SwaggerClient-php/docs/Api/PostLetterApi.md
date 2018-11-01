@@ -1,4 +1,4 @@
-# ClickSend.Client\PostLetterApi
+# ClickSend\PostLetterApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -23,12 +23,12 @@ export post letter history
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\PostLetterApi(
+$apiInstance = new ClickSend\Api\PostLetterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -79,12 +79,12 @@ Get all post letter history
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\PostLetterApi(
+$apiInstance = new ClickSend\Api\PostLetterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -137,18 +137,18 @@ Calculate post letter price
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\PostLetterApi(
+$apiInstance = new ClickSend\Api\PostLetterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_letter = new \ClickSend.Client\ClickSend.Client.Model\PostLetter(); // \ClickSend.Client\ClickSend.Client.Model\PostLetter | PostLetter model
+$post_letter = new \ClickSend\ClickSend.Model\PostLetter(); // \ClickSend\ClickSend.Model\PostLetter | PostLetter model
 
 try {
     $result = $apiInstance->postLettersPricePost($post_letter);
@@ -163,7 +163,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_letter** | [**\ClickSend.Client\ClickSend.Client.Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
+ **post_letter** | [**\ClickSend\ClickSend.Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
 
 ### Return type
 
@@ -193,18 +193,18 @@ Send post letter
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\PostLetterApi(
+$apiInstance = new ClickSend\Api\PostLetterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_letter = new \ClickSend.Client\ClickSend.Client.Model\PostLetter(); // \ClickSend.Client\ClickSend.Client.Model\PostLetter | PostLetter model
+$post_letter = new \ClickSend\ClickSend.Model\PostLetter(); // \ClickSend\ClickSend.Model\PostLetter | PostLetter model
 
 try {
     $result = $apiInstance->postLettersSendPost($post_letter);
@@ -219,7 +219,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_letter** | [**\ClickSend.Client\ClickSend.Client.Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
+ **post_letter** | [**\ClickSend\ClickSend.Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
 
 ### Return type
 

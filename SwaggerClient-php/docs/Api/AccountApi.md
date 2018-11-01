@@ -1,4 +1,4 @@
-# ClickSend.Client\AccountApi
+# ClickSend\AccountApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -26,12 +26,12 @@ Get account details
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\AccountApi(
+$apiInstance = new ClickSend\Api\AccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -78,18 +78,18 @@ Create An Account
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\AccountApi(
+$apiInstance = new ClickSend\Api\AccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$account = new \ClickSend.Client\ClickSend.Client.Model\Account(); // \ClickSend.Client\ClickSend.Client.Model\Account | Account model
+$account = new \ClickSend\ClickSend.Model\Account(); // \ClickSend\ClickSend.Model\Account | Account model
 
 try {
     $result = $apiInstance->accountPost($account);
@@ -104,7 +104,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account** | [**\ClickSend.Client\ClickSend.Client.Model\Account**](../Model/Account.md)| Account model |
+ **account** | [**\ClickSend\ClickSend.Model\Account**](../Model/Account.md)| Account model |
 
 ### Return type
 
@@ -134,18 +134,18 @@ Send account activation token
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\AccountApi(
+$apiInstance = new ClickSend\Api\AccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$account_verify = new \ClickSend.Client\ClickSend.Client.Model\AccountVerify(); // \ClickSend.Client\ClickSend.Client.Model\AccountVerify | Account details
+$account_verify = new \ClickSend\ClickSend.Model\AccountVerify(); // \ClickSend\ClickSend.Model\AccountVerify | Account details
 
 try {
     $result = $apiInstance->accountVerifySendPut($account_verify);
@@ -160,7 +160,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_verify** | [**\ClickSend.Client\ClickSend.Client.Model\AccountVerify**](../Model/AccountVerify.md)| Account details |
+ **account_verify** | [**\ClickSend\ClickSend.Model\AccountVerify**](../Model/AccountVerify.md)| Account details |
 
 ### Return type
 
@@ -190,12 +190,12 @@ Verify new account
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\AccountApi(
+$apiInstance = new ClickSend\Api\AccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -246,12 +246,12 @@ Forgot password
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\AccountApi(
+$apiInstance = new ClickSend\Api\AccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -302,18 +302,18 @@ Verify forgot password
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\AccountApi(
+$apiInstance = new ClickSend\Api\AccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$verify_password = new \ClickSend.Client\ClickSend.Client.Model\AccountForgotPasswordVerify(); // \ClickSend.Client\ClickSend.Client.Model\AccountForgotPasswordVerify | verifyPassword data
+$verify_password = new \ClickSend\ClickSend.Model\AccountForgotPasswordVerify(); // \ClickSend\ClickSend.Model\AccountForgotPasswordVerify | verifyPassword data
 
 try {
     $result = $apiInstance->forgotPasswordVerifyPut($verify_password);
@@ -328,7 +328,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **verify_password** | [**\ClickSend.Client\ClickSend.Client.Model\AccountForgotPasswordVerify**](../Model/AccountForgotPasswordVerify.md)| verifyPassword data |
+ **verify_password** | [**\ClickSend\ClickSend.Model\AccountForgotPasswordVerify**](../Model/AccountForgotPasswordVerify.md)| verifyPassword data |
 
 ### Return type
 
@@ -357,7 +357,7 @@ Forgot username
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new ClickSend.Client\Api\AccountApi(
+$apiInstance = new ClickSend\Api\AccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

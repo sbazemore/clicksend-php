@@ -1,4 +1,4 @@
-# ClickSend.Client\DeliveryIssuesApi
+# ClickSend\DeliveryIssuesApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -21,12 +21,12 @@ Get all delivery issues
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\DeliveryIssuesApi(
+$apiInstance = new ClickSend\Api\DeliveryIssuesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -79,18 +79,18 @@ Create delivery Issue
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\DeliveryIssuesApi(
+$apiInstance = new ClickSend\Api\DeliveryIssuesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$delivery_issue = new \ClickSend.Client\ClickSend.Client.Model\DeliveryIssue(); // \ClickSend.Client\ClickSend.Client.Model\DeliveryIssue | DeliveryIssue model
+$delivery_issue = new \ClickSend\ClickSend.Model\DeliveryIssue(); // \ClickSend\ClickSend.Model\DeliveryIssue | DeliveryIssue model
 
 try {
     $result = $apiInstance->deliveryIssuesPost($delivery_issue);
@@ -105,7 +105,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **delivery_issue** | [**\ClickSend.Client\ClickSend.Client.Model\DeliveryIssue**](../Model/DeliveryIssue.md)| DeliveryIssue model |
+ **delivery_issue** | [**\ClickSend\ClickSend.Model\DeliveryIssue**](../Model/DeliveryIssue.md)| DeliveryIssue model |
 
 ### Return type
 

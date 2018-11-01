@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace ClickSend.Client;
+namespace ClickSend;
 
 /**
  * CreditCardTest Class Doc Comment
  *
  * @category    Class
  * @description Credit card model
- * @package     ClickSend.Client
+ * @package     ClickSend
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

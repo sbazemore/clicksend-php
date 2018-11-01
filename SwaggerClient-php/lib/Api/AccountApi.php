@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Api;
+namespace ClickSend\ClickSend.Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use ClickSend.Client\ApiException;
-use ClickSend.Client\Configuration;
-use ClickSend.Client\HeaderSelector;
-use ClickSend.Client\ObjectSerializer;
+use ClickSend\ApiException;
+use ClickSend\Configuration;
+use ClickSend\HeaderSelector;
+use ClickSend\ObjectSerializer;
 
 /**
  * AccountApi Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class AccountApi
      * Get account information
      *
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -109,7 +109,7 @@ class AccountApi
      * Get account information
      *
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -395,9 +395,9 @@ class AccountApi
      *
      * Create a new account
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Account $account Account model (required)
+     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -412,9 +412,9 @@ class AccountApi
      *
      * Create a new account
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Account $account Account model (required)
+     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -543,7 +543,7 @@ class AccountApi
      *
      * Create a new account
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Account $account Account model (required)
+     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -563,7 +563,7 @@ class AccountApi
      *
      * Create a new account
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Account $account Account model (required)
+     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -613,7 +613,7 @@ class AccountApi
     /**
      * Create request for operation 'accountPost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Account $account Account model (required)
+     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -712,9 +712,9 @@ class AccountApi
      *
      * Send account activation token
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -729,9 +729,9 @@ class AccountApi
      *
      * Send account activation token
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -860,7 +860,7 @@ class AccountApi
      *
      * Send account activation token
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -880,7 +880,7 @@ class AccountApi
      *
      * Send account activation token
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -930,7 +930,7 @@ class AccountApi
     /**
      * Create request for operation 'accountVerifySendPut'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1031,7 +1031,7 @@ class AccountApi
      *
      * @param  int $activation_token  (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1048,7 +1048,7 @@ class AccountApi
      *
      * @param  int $activation_token  (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1353,7 +1353,7 @@ class AccountApi
      *
      * @param  string $username Username belonging to account (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1370,7 +1370,7 @@ class AccountApi
      *
      * @param  string $username Username belonging to account (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1668,9 +1668,9 @@ class AccountApi
      *
      * Verify forgot password
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1685,9 +1685,9 @@ class AccountApi
      *
      * Verify forgot password
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1816,7 +1816,7 @@ class AccountApi
      *
      * Verify forgot password
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1836,7 +1836,7 @@ class AccountApi
      *
      * Verify forgot password
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1886,7 +1886,7 @@ class AccountApi
     /**
      * Create request for operation 'forgotPasswordVerifyPut'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1987,7 +1987,7 @@ class AccountApi
      *
      * @param  string $email Email belonging to account (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2004,7 +2004,7 @@ class AccountApi
      *
      * @param  string $email Email belonging to account (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

@@ -1,4 +1,4 @@
-# ClickSend.Client\ContactApi
+# ClickSend\ContactApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -26,12 +26,12 @@ Delete a contact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\ContactApi(
+$apiInstance = new ClickSend\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -84,12 +84,12 @@ Get a specific contact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\ContactApi(
+$apiInstance = new ClickSend\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -142,12 +142,12 @@ Update specific contact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\ContactApi(
+$apiInstance = new ClickSend\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -155,7 +155,7 @@ $apiInstance = new ClickSend.Client\Api\ContactApi(
 );
 $list_id = 56; // int | Contact list id
 $contact_id = 56; // int | Contact ID
-$contact = new \ClickSend.Client\ClickSend.Client.Model\Contact(); // \ClickSend.Client\ClickSend.Client.Model\Contact | Contact model
+$contact = new \ClickSend\ClickSend.Model\Contact(); // \ClickSend\ClickSend.Model\Contact | Contact model
 
 try {
     $result = $apiInstance->listsContactsByListIdAndContactIdPut($list_id, $contact_id, $contact);
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_id** | **int**| Contact list id |
  **contact_id** | **int**| Contact ID |
- **contact** | [**\ClickSend.Client\ClickSend.Client.Model\Contact**](../Model/Contact.md)| Contact model |
+ **contact** | [**\ClickSend\ClickSend.Model\Contact**](../Model/Contact.md)| Contact model |
 
 ### Return type
 
@@ -202,12 +202,12 @@ Get all contacts in a list
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\ContactApi(
+$apiInstance = new ClickSend\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -262,18 +262,18 @@ Create new contact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\ContactApi(
+$apiInstance = new ClickSend\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$contact = new \ClickSend.Client\ClickSend.Client.Model\Contact(); // \ClickSend.Client\ClickSend.Client.Model\Contact | Contact model
+$contact = new \ClickSend\ClickSend.Model\Contact(); // \ClickSend\ClickSend.Model\Contact | Contact model
 $list_id = 56; // int | List id
 $page = 1; // int | Page number
 $limit = 10; // int | Number of records per page
@@ -291,7 +291,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contact** | [**\ClickSend.Client\ClickSend.Client.Model\Contact**](../Model/Contact.md)| Contact model |
+ **contact** | [**\ClickSend\ClickSend.Model\Contact**](../Model/Contact.md)| Contact model |
  **list_id** | **int**| List id |
  **page** | **int**| Page number | [optional] [default to 1]
  **limit** | **int**| Number of records per page | [optional] [default to 10]
@@ -324,12 +324,12 @@ Remove all opted out contacts
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\ContactApi(
+$apiInstance = new ClickSend\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -382,12 +382,12 @@ Transfer contact to another list
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\ContactApi(
+$apiInstance = new ClickSend\Api\ContactApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

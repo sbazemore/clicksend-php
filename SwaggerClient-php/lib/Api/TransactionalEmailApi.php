@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Api;
+namespace ClickSend\ClickSend.Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use ClickSend.Client\ApiException;
-use ClickSend.Client\Configuration;
-use ClickSend.Client\HeaderSelector;
-use ClickSend.Client\ObjectSerializer;
+use ClickSend\ApiException;
+use ClickSend\Configuration;
+use ClickSend\HeaderSelector;
+use ClickSend\ObjectSerializer;
 
 /**
  * TransactionalEmailApi Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,7 +96,7 @@ class TransactionalEmailApi
      * @param  int $date_from Start date (optional)
      * @param  int $date_to End date (optional)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -115,7 +115,7 @@ class TransactionalEmailApi
      * @param  int $date_from Start date (optional)
      * @param  int $date_to End date (optional)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -433,7 +433,7 @@ class TransactionalEmailApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -453,7 +453,7 @@ class TransactionalEmailApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -775,9 +775,9 @@ class TransactionalEmailApi
      *
      * Get transactional email price
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -792,9 +792,9 @@ class TransactionalEmailApi
      *
      * Get transactional email price
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -923,7 +923,7 @@ class TransactionalEmailApi
      *
      * Get transactional email price
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -943,7 +943,7 @@ class TransactionalEmailApi
      *
      * Get transactional email price
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -993,7 +993,7 @@ class TransactionalEmailApi
     /**
      * Create request for operation 'emailPricePost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1092,9 +1092,9 @@ class TransactionalEmailApi
      *
      * Send transactional email
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1109,9 +1109,9 @@ class TransactionalEmailApi
      *
      * Send transactional email
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1240,7 +1240,7 @@ class TransactionalEmailApi
      *
      * Send transactional email
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1260,7 +1260,7 @@ class TransactionalEmailApi
      *
      * Send transactional email
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1310,7 +1310,7 @@ class TransactionalEmailApi
     /**
      * Create request for operation 'emailSendPost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\Email $email Email model (required)
+     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

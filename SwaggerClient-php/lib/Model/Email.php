@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Model;
+namespace ClickSend\ClickSend.Model;
 
 use \ArrayAccess;
-use \ClickSend.Client\ObjectSerializer;
+use \ClickSend\ObjectSerializer;
 
 /**
  * Email Class Doc Comment
  *
  * @category Class
  * @description Send Email
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class Email implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'to' => '\ClickSend.Client\ClickSend.Client.Model\EmailRecipient[]',
-        'cc' => '\ClickSend.Client\ClickSend.Client.Model\EmailRecipient[]',
-        'bcc' => '\ClickSend.Client\ClickSend.Client.Model\EmailRecipient[]',
-        'from' => '\ClickSend.Client\ClickSend.Client.Model\EmailFrom[]',
+        'to' => '\ClickSend\ClickSend.Model\EmailRecipient[]',
+        'cc' => '\ClickSend\ClickSend.Model\EmailRecipient[]',
+        'bcc' => '\ClickSend\ClickSend.Model\EmailRecipient[]',
+        'from' => '\ClickSend\ClickSend.Model\EmailFrom[]',
         'body' => 'string',
-        'attachments' => '\ClickSend.Client\ClickSend.Client.Model\Attachment[]',
+        'attachments' => '\ClickSend\ClickSend.Model\Attachment[]',
         'schedule' => 'float'
     ];
 
@@ -257,7 +257,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Gets to
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\EmailRecipient[]
+     * @return \ClickSend\ClickSend.Model\EmailRecipient[]
      */
     public function getTo()
     {
@@ -267,7 +267,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Sets to
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\EmailRecipient[] $to Array of To Recipient items.
+     * @param \ClickSend\ClickSend.Model\EmailRecipient[] $to Array of To Recipient items.
      *
      * @return $this
      */
@@ -281,7 +281,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Gets cc
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\EmailRecipient[]
+     * @return \ClickSend\ClickSend.Model\EmailRecipient[]
      */
     public function getCc()
     {
@@ -291,7 +291,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Sets cc
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\EmailRecipient[] $cc Array of Cc Recipient items.
+     * @param \ClickSend\ClickSend.Model\EmailRecipient[] $cc Array of Cc Recipient items.
      *
      * @return $this
      */
@@ -305,7 +305,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Gets bcc
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\EmailRecipient[]
+     * @return \ClickSend\ClickSend.Model\EmailRecipient[]
      */
     public function getBcc()
     {
@@ -315,7 +315,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Sets bcc
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\EmailRecipient[] $bcc Array of Bcc Recipient items.
+     * @param \ClickSend\ClickSend.Model\EmailRecipient[] $bcc Array of Bcc Recipient items.
      *
      * @return $this
      */
@@ -329,7 +329,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Gets from
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\EmailFrom[]
+     * @return \ClickSend\ClickSend.Model\EmailFrom[]
      */
     public function getFrom()
     {
@@ -339,7 +339,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Sets from
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\EmailFrom[] $from From Email object.
+     * @param \ClickSend\ClickSend.Model\EmailFrom[] $from From Email object.
      *
      * @return $this
      */
@@ -377,7 +377,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Gets attachments
      *
-     * @return \ClickSend.Client\ClickSend.Client.Model\Attachment[]
+     * @return \ClickSend\ClickSend.Model\Attachment[]
      */
     public function getAttachments()
     {
@@ -387,7 +387,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Sets attachments
      *
-     * @param \ClickSend.Client\ClickSend.Client.Model\Attachment[] $attachments Array of Attachment items.
+     * @param \ClickSend\ClickSend.Model\Attachment[] $attachments Array of Attachment items.
      *
      * @return $this
      */

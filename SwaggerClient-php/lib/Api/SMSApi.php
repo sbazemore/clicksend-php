@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend.Client\ClickSend.Client.Api;
+namespace ClickSend\ClickSend.Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use ClickSend.Client\ApiException;
-use ClickSend.Client\Configuration;
-use ClickSend.Client\HeaderSelector;
-use ClickSend.Client\ObjectSerializer;
+use ClickSend\ApiException;
+use ClickSend\Configuration;
+use ClickSend\HeaderSelector;
+use ClickSend\ObjectSerializer;
 
 /**
  * SMSApi Class Doc Comment
  *
  * @category Class
- * @package  ClickSend.Client
+ * @package  ClickSend
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class SMSApi
      * Update all scheduled message as cancelled
      *
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -109,7 +109,7 @@ class SMSApi
      * Update all scheduled message as cancelled
      *
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -397,7 +397,7 @@ class SMSApi
      *
      * @param  string $message_id The message ID you want to cancel (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -414,7 +414,7 @@ class SMSApi
      *
      * @param  string $message_id The message ID you want to cancel (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -719,7 +719,7 @@ class SMSApi
      *
      * @param  string $filename Filename to download history as (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -736,7 +736,7 @@ class SMSApi
      *
      * @param  string $filename Filename to download history as (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1040,7 +1040,7 @@ class SMSApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1060,7 +1060,7 @@ class SMSApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1385,7 +1385,7 @@ class SMSApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1403,7 +1403,7 @@ class SMSApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1713,7 +1713,7 @@ class SMSApi
      *
      * @param  string $url Your url (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1730,7 +1730,7 @@ class SMSApi
      *
      * @param  string $url Your url (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2030,7 +2030,7 @@ class SMSApi
      *
      * @param  string $date_before An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. (optional)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2047,7 +2047,7 @@ class SMSApi
      *
      * @param  string $date_before An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. (optional)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2339,9 +2339,9 @@ class SMSApi
      *
      * Calculate sms price
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2356,9 +2356,9 @@ class SMSApi
      *
      * Calculate sms price
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2487,7 +2487,7 @@ class SMSApi
      *
      * Calculate sms price
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2507,7 +2507,7 @@ class SMSApi
      *
      * Calculate sms price
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2557,7 +2557,7 @@ class SMSApi
     /**
      * Create request for operation 'smsPricePost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2658,7 +2658,7 @@ class SMSApi
      *
      * @param  string $message_id Message ID (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2675,7 +2675,7 @@ class SMSApi
      *
      * @param  string $message_id Message ID (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2981,7 +2981,7 @@ class SMSApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2999,7 +2999,7 @@ class SMSApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3309,7 +3309,7 @@ class SMSApi
      *
      * @param  string $url Your url (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -3326,7 +3326,7 @@ class SMSApi
      *
      * @param  string $url Your url (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3626,7 +3626,7 @@ class SMSApi
      *
      * @param  string $date_before Mark all as read before this timestamp (optional)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -3643,7 +3643,7 @@ class SMSApi
      *
      * @param  string $date_before Mark all as read before this timestamp (optional)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3935,9 +3935,9 @@ class SMSApi
      *
      * Send sms message(s)
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -3952,9 +3952,9 @@ class SMSApi
      *
      * Send sms message(s)
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4083,7 +4083,7 @@ class SMSApi
      *
      * Send sms message(s)
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4103,7 +4103,7 @@ class SMSApi
      *
      * Send sms message(s)
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4153,7 +4153,7 @@ class SMSApi
     /**
      * Create request for operation 'smsSendPost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4254,7 +4254,7 @@ class SMSApi
      *
      * @param  int $template_id Template id (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -4271,7 +4271,7 @@ class SMSApi
      *
      * @param  int $template_id Template id (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4575,9 +4575,9 @@ class SMSApi
      * Update sms template
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -4593,9 +4593,9 @@ class SMSApi
      * Update sms template
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4725,7 +4725,7 @@ class SMSApi
      * Update sms template
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4746,7 +4746,7 @@ class SMSApi
      * Update sms template
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4797,7 +4797,7 @@ class SMSApi
      * Create request for operation 'smsTemplatesByTemplateIdPut'
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4913,7 +4913,7 @@ class SMSApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -4931,7 +4931,7 @@ class SMSApi
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5239,9 +5239,9 @@ class SMSApi
      *
      * Create sms template
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -5256,9 +5256,9 @@ class SMSApi
      *
      * Create sms template
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
-     * @throws \ClickSend.Client\ApiException on non-2xx response
+     * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5387,7 +5387,7 @@ class SMSApi
      *
      * Create sms template
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5407,7 +5407,7 @@ class SMSApi
      *
      * Create sms template
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5457,7 +5457,7 @@ class SMSApi
     /**
      * Create request for operation 'smsTemplatesPost'
      *
-     * @param  \ClickSend.Client\ClickSend.Client.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

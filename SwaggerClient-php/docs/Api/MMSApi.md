@@ -1,4 +1,4 @@
-# ClickSend.Client\MMSApi
+# ClickSend\MMSApi
 
 All URIs are relative to *https://rest.clicksend.com/v3*
 
@@ -21,18 +21,18 @@ Get Price for MMS sent
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\MMSApi(
+$apiInstance = new ClickSend\Api\MMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$mms_messages = new \ClickSend.Client\ClickSend.Client.Model\MmsMessageCollection(); // \ClickSend.Client\ClickSend.Client.Model\MmsMessageCollection | MmsMessageCollection model
+$mms_messages = new \ClickSend\ClickSend.Model\MmsMessageCollection(); // \ClickSend\ClickSend.Model\MmsMessageCollection | MmsMessageCollection model
 
 try {
     $result = $apiInstance->mmsPricePost($mms_messages);
@@ -47,7 +47,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mms_messages** | [**\ClickSend.Client\ClickSend.Client.Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
+ **mms_messages** | [**\ClickSend\ClickSend.Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
 
 ### Return type
 
@@ -77,18 +77,18 @@ Send MMS
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: BasicAuth
-$config = ClickSend.Client\Configuration::getDefaultConfiguration()
+$config = ClickSend\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new ClickSend.Client\Api\MMSApi(
+$apiInstance = new ClickSend\Api\MMSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$mms_messages = new \ClickSend.Client\ClickSend.Client.Model\MmsMessageCollection(); // \ClickSend.Client\ClickSend.Client.Model\MmsMessageCollection | MmsMessageCollection model
+$mms_messages = new \ClickSend\ClickSend.Model\MmsMessageCollection(); // \ClickSend\ClickSend.Model\MmsMessageCollection | MmsMessageCollection model
 
 try {
     $result = $apiInstance->mmsSendPost($mms_messages);
@@ -103,7 +103,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mms_messages** | [**\ClickSend.Client\ClickSend.Client.Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
+ **mms_messages** | [**\ClickSend\ClickSend.Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
 
 ### Return type
 
