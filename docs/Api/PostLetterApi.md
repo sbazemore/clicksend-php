@@ -148,7 +148,7 @@ $apiInstance = new ClickSend\Api\PostLetterApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_letter = new \ClickSend\ClickSend.Model\PostLetter(); // \ClickSend\ClickSend.Model\PostLetter | PostLetter model
+$post_letter = new \ClickSend\Model\PostLetter(); // \ClickSend\Model\PostLetter | PostLetter model
 
 try {
     $result = $apiInstance->postLettersPricePost($post_letter);
@@ -163,7 +163,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_letter** | [**\ClickSend\ClickSend.Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
+ **post_letter** | [**\ClickSend\Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new ClickSend\Api\PostLetterApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_letter = new \ClickSend\ClickSend.Model\PostLetter(); // \ClickSend\ClickSend.Model\PostLetter | PostLetter model
+$post_letter = new \ClickSend\Model\PostLetter(); // \ClickSend\Model\PostLetter | PostLetter model
 
 try {
     $result = $apiInstance->postLettersSendPost($post_letter);
@@ -219,7 +219,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_letter** | [**\ClickSend\ClickSend.Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
+ **post_letter** | [**\ClickSend\Model\PostLetter**](../Model/PostLetter.md)| PostLetter model |
 
 ### Return type
 

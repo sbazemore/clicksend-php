@@ -91,7 +91,7 @@ $apiInstance = new ClickSend\Api\ResellerAccountApi(
     $config
 );
 $client_user_id = 56; // int | User ID of client
-$reseller_account = new \ClickSend\ClickSend.Model\ResellerAccount(); // \ClickSend\ClickSend.Model\ResellerAccount | ResellerAccount model
+$reseller_account = new \ClickSend\Model\ResellerAccount(); // \ClickSend\Model\ResellerAccount | ResellerAccount model
 
 try {
     $result = $apiInstance->resellerAccountsByClientUserIdPut($client_user_id, $reseller_account);
@@ -107,7 +107,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **client_user_id** | **int**| User ID of client |
- **reseller_account** | [**\ClickSend\ClickSend.Model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
+ **reseller_account** | [**\ClickSend\Model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
 
 ### Return type
 
@@ -206,7 +206,7 @@ $apiInstance = new ClickSend\Api\ResellerAccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$reseller_account = new \ClickSend\ClickSend.Model\ResellerAccount(); // \ClickSend\ClickSend.Model\ResellerAccount | ResellerAccount model
+$reseller_account = new \ClickSend\Model\ResellerAccount(); // \ClickSend\Model\ResellerAccount | ResellerAccount model
 
 try {
     $result = $apiInstance->resellerAccountsPost($reseller_account);
@@ -221,7 +221,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **reseller_account** | [**\ClickSend\ClickSend.Model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
+ **reseller_account** | [**\ClickSend\Model\ResellerAccount**](../Model/ResellerAccount.md)| ResellerAccount model |
 
 ### Return type
 

@@ -101,7 +101,7 @@ $apiInstance = new ClickSend\Api\FaxApi(
     new GuzzleHttp\Client(),
     $config
 );
-$fax_message = new \ClickSend\ClickSend.Model\FaxMessageCollection(); // \ClickSend\ClickSend.Model\FaxMessageCollection | FaxMessageCollection model
+$fax_message = new \ClickSend\Model\FaxMessageCollection(); // \ClickSend\Model\FaxMessageCollection | FaxMessageCollection model
 
 try {
     $result = $apiInstance->faxPricePost($fax_message);
@@ -116,7 +116,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fax_message** | [**\ClickSend\ClickSend.Model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
+ **fax_message** | [**\ClickSend\Model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
 
 ### Return type
 
@@ -265,7 +265,7 @@ $apiInstance = new ClickSend\Api\FaxApi(
     new GuzzleHttp\Client(),
     $config
 );
-$fax_message = new \ClickSend\ClickSend.Model\FaxMessageCollection(); // \ClickSend\ClickSend.Model\FaxMessageCollection | FaxMessageCollection model
+$fax_message = new \ClickSend\Model\FaxMessageCollection(); // \ClickSend\Model\FaxMessageCollection | FaxMessageCollection model
 
 try {
     $result = $apiInstance->faxSendPost($fax_message);
@@ -280,7 +280,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fax_message** | [**\ClickSend\ClickSend.Model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
+ **fax_message** | [**\ClickSend\Model\FaxMessageCollection**](../Model/FaxMessageCollection.md)| FaxMessageCollection model |
 
 ### Return type
 

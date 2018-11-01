@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -736,7 +736,7 @@ class FAXDeliveryReceiptRulesApi
      *
      * Create fax delivery receipt automations
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -753,7 +753,7 @@ class FAXDeliveryReceiptRulesApi
      *
      * Create fax delivery receipt automations
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -884,7 +884,7 @@ class FAXDeliveryReceiptRulesApi
      *
      * Create fax delivery receipt automations
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -904,7 +904,7 @@ class FAXDeliveryReceiptRulesApi
      *
      * Create fax delivery receipt automations
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -954,7 +954,7 @@ class FAXDeliveryReceiptRulesApi
     /**
      * Create request for operation 'faxDeliveryReceiptAutomationPost'
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule fax delivery receipt rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1054,7 +1054,7 @@ class FAXDeliveryReceiptRulesApi
      * Update fax delivery receipt automation
      *
      * @param  int $receipt_rule_id Receipt rule id (required)
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1072,7 +1072,7 @@ class FAXDeliveryReceiptRulesApi
      * Update fax delivery receipt automation
      *
      * @param  int $receipt_rule_id Receipt rule id (required)
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1204,7 +1204,7 @@ class FAXDeliveryReceiptRulesApi
      * Update fax delivery receipt automation
      *
      * @param  int $receipt_rule_id Receipt rule id (required)
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1225,7 +1225,7 @@ class FAXDeliveryReceiptRulesApi
      * Update fax delivery receipt automation
      *
      * @param  int $receipt_rule_id Receipt rule id (required)
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1276,7 +1276,7 @@ class FAXDeliveryReceiptRulesApi
      * Create request for operation 'faxDeliveryReceiptAutomationPut'
      *
      * @param  int $receipt_rule_id Receipt rule id (required)
-     * @param  \ClickSend\ClickSend.Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
+     * @param  \ClickSend\Model\DeliveryReceiptRule $delivery_receipt_rule Delivery receipt rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

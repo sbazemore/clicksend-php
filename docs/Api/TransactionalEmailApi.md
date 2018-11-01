@@ -156,7 +156,7 @@ $apiInstance = new ClickSend\Api\TransactionalEmailApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email = new \ClickSend\ClickSend.Model\Email(); // \ClickSend\ClickSend.Model\Email | Email model
+$email = new \ClickSend\Model\Email(); // \ClickSend\Model\Email | Email model
 
 try {
     $result = $apiInstance->emailPricePost($email);
@@ -171,7 +171,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | [**\ClickSend\ClickSend.Model\Email**](../Model/Email.md)| Email model |
+ **email** | [**\ClickSend\Model\Email**](../Model/Email.md)| Email model |
 
 ### Return type
 
@@ -212,7 +212,7 @@ $apiInstance = new ClickSend\Api\TransactionalEmailApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email = new \ClickSend\ClickSend.Model\Email(); // \ClickSend\ClickSend.Model\Email | Email model
+$email = new \ClickSend\Model\Email(); // \ClickSend\Model\Email | Email model
 
 try {
     $result = $apiInstance->emailSendPost($email);
@@ -227,7 +227,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | [**\ClickSend\ClickSend.Model\Email**](../Model/Email.md)| Email model |
+ **email** | [**\ClickSend\Model\Email**](../Model/Email.md)| Email model |
 
 ### Return type
 

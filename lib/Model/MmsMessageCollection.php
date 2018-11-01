@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Model;
+namespace ClickSend\Model;
 
 use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
@@ -59,7 +59,7 @@ class MmsMessageCollection implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'media_file' => 'string',
-        'messages' => '\ClickSend\ClickSend.Model\MmsMessage[]'
+        'messages' => '\ClickSend\Model\MmsMessage[]'
     ];
 
     /**
@@ -248,7 +248,7 @@ class MmsMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \ClickSend\ClickSend.Model\MmsMessage[]
+     * @return \ClickSend\Model\MmsMessage[]
      */
     public function getMessages()
     {
@@ -258,7 +258,7 @@ class MmsMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \ClickSend\ClickSend.Model\MmsMessage[] $messages Array of MmsMessage models
+     * @param \ClickSend\Model\MmsMessage[] $messages Array of MmsMessage models
      *
      * @return $this
      */

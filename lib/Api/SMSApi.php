@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -2339,7 +2339,7 @@ class SMSApi
      *
      * Calculate sms price
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2356,7 +2356,7 @@ class SMSApi
      *
      * Calculate sms price
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2487,7 +2487,7 @@ class SMSApi
      *
      * Calculate sms price
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2507,7 +2507,7 @@ class SMSApi
      *
      * Calculate sms price
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2557,7 +2557,7 @@ class SMSApi
     /**
      * Create request for operation 'smsPricePost'
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3935,7 +3935,7 @@ class SMSApi
      *
      * Send sms message(s)
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3952,7 +3952,7 @@ class SMSApi
      *
      * Send sms message(s)
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4083,7 +4083,7 @@ class SMSApi
      *
      * Send sms message(s)
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4103,7 +4103,7 @@ class SMSApi
      *
      * Send sms message(s)
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4153,7 +4153,7 @@ class SMSApi
     /**
      * Create request for operation 'smsSendPost'
      *
-     * @param  \ClickSend\ClickSend.Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
+     * @param  \ClickSend\Model\SmsMessageCollection $sms_messages SmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4575,7 +4575,7 @@ class SMSApi
      * Update sms template
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template Template item (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4593,7 +4593,7 @@ class SMSApi
      * Update sms template
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template Template item (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4725,7 +4725,7 @@ class SMSApi
      * Update sms template
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template Template item (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4746,7 +4746,7 @@ class SMSApi
      * Update sms template
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template Template item (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4797,7 +4797,7 @@ class SMSApi
      * Create request for operation 'smsTemplatesByTemplateIdPut'
      *
      * @param  int $template_id Template id (required)
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template Template item (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template Template item (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5239,7 +5239,7 @@ class SMSApi
      *
      * Create sms template
      *
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5256,7 +5256,7 @@ class SMSApi
      *
      * Create sms template
      *
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5387,7 +5387,7 @@ class SMSApi
      *
      * Create sms template
      *
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5407,7 +5407,7 @@ class SMSApi
      *
      * Create sms template
      *
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5457,7 +5457,7 @@ class SMSApi
     /**
      * Create request for operation 'smsTemplatesPost'
      *
-     * @param  \ClickSend\ClickSend.Model\SmsTemplate $sms_template SmsTemplate model (required)
+     * @param  \ClickSend\Model\SmsTemplate $sms_template SmsTemplate model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -739,7 +739,7 @@ class PostPostcardApi
      *
      * Calculate price for sending one or more postcards
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -756,7 +756,7 @@ class PostPostcardApi
      *
      * Calculate price for sending one or more postcards
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -887,7 +887,7 @@ class PostPostcardApi
      *
      * Calculate price for sending one or more postcards
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -907,7 +907,7 @@ class PostPostcardApi
      *
      * Calculate price for sending one or more postcards
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -957,7 +957,7 @@ class PostPostcardApi
     /**
      * Create request for operation 'postPostcardsPricePost'
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1056,7 +1056,7 @@ class PostPostcardApi
      *
      * Send one or more postcards
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1073,7 +1073,7 @@ class PostPostcardApi
      *
      * Send one or more postcards
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1204,7 +1204,7 @@ class PostPostcardApi
      *
      * Send one or more postcards
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1224,7 +1224,7 @@ class PostPostcardApi
      *
      * Send one or more postcards
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1274,7 +1274,7 @@ class PostPostcardApi
     /**
      * Create request for operation 'postPostcardsSendPost'
      *
-     * @param  \ClickSend\ClickSend.Model\PostPostcard $post_postcards PostPostcard model (required)
+     * @param  \ClickSend\Model\PostPostcard $post_postcards PostPostcard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

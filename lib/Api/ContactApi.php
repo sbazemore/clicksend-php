@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -776,7 +776,7 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -795,7 +795,7 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -928,7 +928,7 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -950,7 +950,7 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1002,7 +1002,7 @@ class ContactApi
      *
      * @param  int $list_id Contact list id (required)
      * @param  int $contact_id Contact ID (required)
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1477,7 +1477,7 @@ class ContactApi
      *
      * Create new contact
      *
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
@@ -1497,7 +1497,7 @@ class ContactApi
      *
      * Create new contact
      *
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
@@ -1631,7 +1631,7 @@ class ContactApi
      *
      * Create new contact
      *
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
@@ -1654,7 +1654,7 @@ class ContactApi
      *
      * Create new contact
      *
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
@@ -1707,7 +1707,7 @@ class ContactApi
     /**
      * Create request for operation 'listsContactsByListIdPost'
      *
-     * @param  \ClickSend\ClickSend.Model\Contact $contact Contact model (required)
+     * @param  \ClickSend\Model\Contact $contact Contact model (required)
      * @param  int $list_id List id (required)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)

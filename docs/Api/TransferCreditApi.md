@@ -31,7 +31,7 @@ $apiInstance = new ClickSend\Api\TransferCreditApi(
     new GuzzleHttp\Client(),
     $config
 );
-$reseller_account_transfer_credit = new \ClickSend\ClickSend.Model\ResellerAccountTransferCredit(); // \ClickSend\ClickSend.Model\ResellerAccountTransferCredit | ResellerAccountTransferCredit model
+$reseller_account_transfer_credit = new \ClickSend\Model\ResellerAccountTransferCredit(); // \ClickSend\Model\ResellerAccountTransferCredit | ResellerAccountTransferCredit model
 
 try {
     $result = $apiInstance->resellerTransferCreditPut($reseller_account_transfer_credit);
@@ -46,7 +46,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **reseller_account_transfer_credit** | [**\ClickSend\ClickSend.Model\ResellerAccountTransferCredit**](../Model/ResellerAccountTransferCredit.md)| ResellerAccountTransferCredit model |
+ **reseller_account_transfer_credit** | [**\ClickSend\Model\ResellerAccountTransferCredit**](../Model/ResellerAccountTransferCredit.md)| ResellerAccountTransferCredit model |
 
 ### Return type
 

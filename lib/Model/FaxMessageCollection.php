@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Model;
+namespace ClickSend\Model;
 
 use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
@@ -58,7 +58,7 @@ class FaxMessageCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'messages' => '\ClickSend\ClickSend.Model\FaxMessage[]',
+        'messages' => '\ClickSend\Model\FaxMessage[]',
         'file_url' => 'string'
     ];
 
@@ -224,7 +224,7 @@ class FaxMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \ClickSend\ClickSend.Model\FaxMessage[]
+     * @return \ClickSend\Model\FaxMessage[]
      */
     public function getMessages()
     {
@@ -234,7 +234,7 @@ class FaxMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \ClickSend\ClickSend.Model\FaxMessage[] $messages Array of FaxMessage items
+     * @param \ClickSend\Model\FaxMessage[] $messages Array of FaxMessage items
      *
      * @return $this
      */

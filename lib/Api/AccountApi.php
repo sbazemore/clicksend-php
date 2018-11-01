@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -395,7 +395,7 @@ class AccountApi
      *
      * Create a new account
      *
-     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
+     * @param  \ClickSend\Model\Account $account Account model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -412,7 +412,7 @@ class AccountApi
      *
      * Create a new account
      *
-     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
+     * @param  \ClickSend\Model\Account $account Account model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -543,7 +543,7 @@ class AccountApi
      *
      * Create a new account
      *
-     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
+     * @param  \ClickSend\Model\Account $account Account model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -563,7 +563,7 @@ class AccountApi
      *
      * Create a new account
      *
-     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
+     * @param  \ClickSend\Model\Account $account Account model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -613,7 +613,7 @@ class AccountApi
     /**
      * Create request for operation 'accountPost'
      *
-     * @param  \ClickSend\ClickSend.Model\Account $account Account model (required)
+     * @param  \ClickSend\Model\Account $account Account model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -712,7 +712,7 @@ class AccountApi
      *
      * Send account activation token
      *
-     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\Model\AccountVerify $account_verify Account details (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -729,7 +729,7 @@ class AccountApi
      *
      * Send account activation token
      *
-     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\Model\AccountVerify $account_verify Account details (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -860,7 +860,7 @@ class AccountApi
      *
      * Send account activation token
      *
-     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\Model\AccountVerify $account_verify Account details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -880,7 +880,7 @@ class AccountApi
      *
      * Send account activation token
      *
-     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\Model\AccountVerify $account_verify Account details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -930,7 +930,7 @@ class AccountApi
     /**
      * Create request for operation 'accountVerifySendPut'
      *
-     * @param  \ClickSend\ClickSend.Model\AccountVerify $account_verify Account details (required)
+     * @param  \ClickSend\Model\AccountVerify $account_verify Account details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1668,7 +1668,7 @@ class AccountApi
      *
      * Verify forgot password
      *
-     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1685,7 +1685,7 @@ class AccountApi
      *
      * Verify forgot password
      *
-     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1816,7 +1816,7 @@ class AccountApi
      *
      * Verify forgot password
      *
-     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1836,7 +1836,7 @@ class AccountApi
      *
      * Verify forgot password
      *
-     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1886,7 +1886,7 @@ class AccountApi
     /**
      * Create request for operation 'forgotPasswordVerifyPut'
      *
-     * @param  \ClickSend\ClickSend.Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
+     * @param  \ClickSend\Model\AccountForgotPasswordVerify $verify_password verifyPassword data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

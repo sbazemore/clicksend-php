@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -421,7 +421,7 @@ class PostDirectMailApi
      *
      * Calculate direct mail campaign price
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -438,7 +438,7 @@ class PostDirectMailApi
      *
      * Calculate direct mail campaign price
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -569,7 +569,7 @@ class PostDirectMailApi
      *
      * Calculate direct mail campaign price
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -589,7 +589,7 @@ class PostDirectMailApi
      *
      * Calculate direct mail campaign price
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -639,7 +639,7 @@ class PostDirectMailApi
     /**
      * Create request for operation 'postDirectMailCampaignsPricePost'
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -738,7 +738,7 @@ class PostDirectMailApi
      *
      * Send direct mail campaign
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -755,7 +755,7 @@ class PostDirectMailApi
      *
      * Send direct mail campaign
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -886,7 +886,7 @@ class PostDirectMailApi
      *
      * Send direct mail campaign
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -906,7 +906,7 @@ class PostDirectMailApi
      *
      * Send direct mail campaign
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -956,7 +956,7 @@ class PostDirectMailApi
     /**
      * Create request for operation 'postDirectMailCampaignsSendPost'
      *
-     * @param  \ClickSend\ClickSend.Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
+     * @param  \ClickSend\Model\PostDirectMail $post_direct_mail PostDirectMail model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

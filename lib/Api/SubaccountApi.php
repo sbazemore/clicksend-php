@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -737,7 +737,7 @@ class SubaccountApi
      * Update subaccount
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -755,7 +755,7 @@ class SubaccountApi
      * Update subaccount
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -887,7 +887,7 @@ class SubaccountApi
      * Update subaccount
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -908,7 +908,7 @@ class SubaccountApi
      * Update subaccount
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -959,7 +959,7 @@ class SubaccountApi
      * Create request for operation 'subaccountsBySubaccountIdPut'
      *
      * @param  int $subaccount_id ID of subaccount to update (required)
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1401,7 +1401,7 @@ class SubaccountApi
      *
      * Create new subaccount
      *
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1418,7 +1418,7 @@ class SubaccountApi
      *
      * Create new subaccount
      *
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1549,7 +1549,7 @@ class SubaccountApi
      *
      * Create new subaccount
      *
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1569,7 +1569,7 @@ class SubaccountApi
      *
      * Create new subaccount
      *
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1619,7 +1619,7 @@ class SubaccountApi
     /**
      * Create request for operation 'subaccountsPost'
      *
-     * @param  \ClickSend\ClickSend.Model\Subaccount $subaccount Subaccount model (required)
+     * @param  \ClickSend\Model\Subaccount $subaccount Subaccount model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

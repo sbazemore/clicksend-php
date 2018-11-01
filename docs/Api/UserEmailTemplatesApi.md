@@ -147,7 +147,7 @@ $apiInstance = new ClickSend\Api\UserEmailTemplatesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email_template = new \ClickSend\ClickSend.Model\EmailTemplateNew(); // \ClickSend\ClickSend.Model\EmailTemplateNew | Email template model
+$email_template = new \ClickSend\Model\EmailTemplateNew(); // \ClickSend\Model\EmailTemplateNew | Email template model
 
 try {
     $result = $apiInstance->emailTemplatePost($email_template);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_template** | [**\ClickSend\ClickSend.Model\EmailTemplateNew**](../Model/EmailTemplateNew.md)| Email template model |
+ **email_template** | [**\ClickSend\Model\EmailTemplateNew**](../Model/EmailTemplateNew.md)| Email template model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new ClickSend\Api\UserEmailTemplatesApi(
     $config
 );
 $template_id = 56; // int | Email template id
-$email_template = new \ClickSend\ClickSend.Model\EmailTemplateUpdate(); // \ClickSend\ClickSend.Model\EmailTemplateUpdate | Email template model
+$email_template = new \ClickSend\Model\EmailTemplateUpdate(); // \ClickSend\Model\EmailTemplateUpdate | Email template model
 
 try {
     $result = $apiInstance->emailTemplatePut($template_id, $email_template);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **template_id** | **int**| Email template id |
- **email_template** | [**\ClickSend\ClickSend.Model\EmailTemplateUpdate**](../Model/EmailTemplateUpdate.md)| Email template model |
+ **email_template** | [**\ClickSend\Model\EmailTemplateUpdate**](../Model/EmailTemplateUpdate.md)| Email template model |
 
 ### Return type
 

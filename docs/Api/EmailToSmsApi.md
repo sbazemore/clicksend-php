@@ -95,7 +95,7 @@ $apiInstance = new ClickSend\Api\EmailToSmsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email_sms_address = new \ClickSend\ClickSend.Model\EmailSMSAddress(); // \ClickSend\ClickSend.Model\EmailSMSAddress | EmailSMSAddress model
+$email_sms_address = new \ClickSend\Model\EmailSMSAddress(); // \ClickSend\Model\EmailSMSAddress | EmailSMSAddress model
 
 try {
     $result = $apiInstance->smsEmailSmsPost($email_sms_address);
@@ -110,7 +110,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_sms_address** | [**\ClickSend\ClickSend.Model\EmailSMSAddress**](../Model/EmailSMSAddress.md)| EmailSMSAddress model |
+ **email_sms_address** | [**\ClickSend\Model\EmailSMSAddress**](../Model/EmailSMSAddress.md)| EmailSMSAddress model |
 
 ### Return type
 

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -1402,7 +1402,7 @@ class ContactListApi
      * Import contacts to list
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\Model\ContactListImport $file ContactListImport model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1420,7 +1420,7 @@ class ContactListApi
      * Import contacts to list
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\Model\ContactListImport $file ContactListImport model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1552,7 +1552,7 @@ class ContactListApi
      * Import contacts to list
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\Model\ContactListImport $file ContactListImport model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1573,7 +1573,7 @@ class ContactListApi
      * Import contacts to list
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\Model\ContactListImport $file ContactListImport model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1624,7 +1624,7 @@ class ContactListApi
      * Create request for operation 'listsImportByListIdPost'
      *
      * @param  int $list_id Your contact list id you want to access. (required)
-     * @param  \ClickSend\ClickSend.Model\ContactListImport $file ContactListImport model (required)
+     * @param  \ClickSend\Model\ContactListImport $file ContactListImport model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -395,7 +395,7 @@ class AccountRechargeApi
      *
      * Update credit card info
      *
-     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\Model\CreditCard $credit_card CreditCard model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -412,7 +412,7 @@ class AccountRechargeApi
      *
      * Update credit card info
      *
-     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\Model\CreditCard $credit_card CreditCard model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -543,7 +543,7 @@ class AccountRechargeApi
      *
      * Update credit card info
      *
-     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\Model\CreditCard $credit_card CreditCard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -563,7 +563,7 @@ class AccountRechargeApi
      *
      * Update credit card info
      *
-     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\Model\CreditCard $credit_card CreditCard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -613,7 +613,7 @@ class AccountRechargeApi
     /**
      * Create request for operation 'rechargeCreditCardPut'
      *
-     * @param  \ClickSend\ClickSend.Model\CreditCard $credit_card CreditCard model (required)
+     * @param  \ClickSend\Model\CreditCard $credit_card CreditCard model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

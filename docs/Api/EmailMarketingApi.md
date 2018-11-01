@@ -394,7 +394,7 @@ $apiInstance = new ClickSend\Api\EmailMarketingApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email_campaign = new \ClickSend\ClickSend.Model\EmailCampaign(); // \ClickSend\ClickSend.Model\EmailCampaign | Email model
+$email_campaign = new \ClickSend\Model\EmailCampaign(); // \ClickSend\Model\EmailCampaign | Email model
 
 try {
     $result = $apiInstance->emailCampaignPost($email_campaign);
@@ -409,7 +409,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_campaign** | [**\ClickSend\ClickSend.Model\EmailCampaign**](../Model/EmailCampaign.md)| Email model |
+ **email_campaign** | [**\ClickSend\Model\EmailCampaign**](../Model/EmailCampaign.md)| Email model |
 
 ### Return type
 
@@ -450,7 +450,7 @@ $apiInstance = new ClickSend\Api\EmailMarketingApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email_campaign = new \ClickSend\ClickSend.Model\EmailCampaign(); // \ClickSend\ClickSend.Model\EmailCampaign | Email model
+$email_campaign = new \ClickSend\Model\EmailCampaign(); // \ClickSend\Model\EmailCampaign | Email model
 
 try {
     $result = $apiInstance->emailCampaignPricePost($email_campaign);
@@ -465,7 +465,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_campaign** | [**\ClickSend\ClickSend.Model\EmailCampaign**](../Model/EmailCampaign.md)| Email model |
+ **email_campaign** | [**\ClickSend\Model\EmailCampaign**](../Model/EmailCampaign.md)| Email model |
 
 ### Return type
 

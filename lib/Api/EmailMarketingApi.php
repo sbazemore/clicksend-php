@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -2088,7 +2088,7 @@ class EmailMarketingApi
      *
      * Send email campaign
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2105,7 +2105,7 @@ class EmailMarketingApi
      *
      * Send email campaign
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2236,7 +2236,7 @@ class EmailMarketingApi
      *
      * Send email campaign
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2256,7 +2256,7 @@ class EmailMarketingApi
      *
      * Send email campaign
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2306,7 +2306,7 @@ class EmailMarketingApi
     /**
      * Create request for operation 'emailCampaignPost'
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2405,7 +2405,7 @@ class EmailMarketingApi
      *
      * Calculate email campaign price
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2422,7 +2422,7 @@ class EmailMarketingApi
      *
      * Calculate email campaign price
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2553,7 +2553,7 @@ class EmailMarketingApi
      *
      * Calculate email campaign price
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2573,7 +2573,7 @@ class EmailMarketingApi
      *
      * Calculate email campaign price
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2623,7 +2623,7 @@ class EmailMarketingApi
     /**
      * Create request for operation 'emailCampaignPricePost'
      *
-     * @param  \ClickSend\ClickSend.Model\EmailCampaign $email_campaign Email model (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

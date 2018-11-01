@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -736,7 +736,7 @@ class UserEmailTemplatesApi
      *
      * Create email template
      *
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateNew $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateNew $email_template Email template model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -753,7 +753,7 @@ class UserEmailTemplatesApi
      *
      * Create email template
      *
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateNew $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateNew $email_template Email template model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -884,7 +884,7 @@ class UserEmailTemplatesApi
      *
      * Create email template
      *
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateNew $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateNew $email_template Email template model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -904,7 +904,7 @@ class UserEmailTemplatesApi
      *
      * Create email template
      *
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateNew $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateNew $email_template Email template model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -954,7 +954,7 @@ class UserEmailTemplatesApi
     /**
      * Create request for operation 'emailTemplatePost'
      *
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateNew $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateNew $email_template Email template model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1054,7 +1054,7 @@ class UserEmailTemplatesApi
      * Update email template
      *
      * @param  int $template_id Email template id (required)
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateUpdate $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateUpdate $email_template Email template model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1072,7 +1072,7 @@ class UserEmailTemplatesApi
      * Update email template
      *
      * @param  int $template_id Email template id (required)
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateUpdate $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateUpdate $email_template Email template model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1204,7 +1204,7 @@ class UserEmailTemplatesApi
      * Update email template
      *
      * @param  int $template_id Email template id (required)
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateUpdate $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateUpdate $email_template Email template model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1225,7 +1225,7 @@ class UserEmailTemplatesApi
      * Update email template
      *
      * @param  int $template_id Email template id (required)
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateUpdate $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateUpdate $email_template Email template model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1276,7 +1276,7 @@ class UserEmailTemplatesApi
      * Create request for operation 'emailTemplatePut'
      *
      * @param  int $template_id Email template id (required)
-     * @param  \ClickSend\ClickSend.Model\EmailTemplateUpdate $email_template Email template model (required)
+     * @param  \ClickSend\Model\EmailTemplateUpdate $email_template Email template model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

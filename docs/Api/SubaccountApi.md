@@ -149,7 +149,7 @@ $apiInstance = new ClickSend\Api\SubaccountApi(
     $config
 );
 $subaccount_id = 56; // int | ID of subaccount to update
-$subaccount = new \ClickSend\ClickSend.Model\Subaccount(); // \ClickSend\ClickSend.Model\Subaccount | Subaccount model
+$subaccount = new \ClickSend\Model\Subaccount(); // \ClickSend\Model\Subaccount | Subaccount model
 
 try {
     $result = $apiInstance->subaccountsBySubaccountIdPut($subaccount_id, $subaccount);
@@ -165,7 +165,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **subaccount_id** | **int**| ID of subaccount to update |
- **subaccount** | [**\ClickSend\ClickSend.Model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
+ **subaccount** | [**\ClickSend\Model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
 
 ### Return type
 
@@ -264,7 +264,7 @@ $apiInstance = new ClickSend\Api\SubaccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$subaccount = new \ClickSend\ClickSend.Model\Subaccount(); // \ClickSend\ClickSend.Model\Subaccount | Subaccount model
+$subaccount = new \ClickSend\Model\Subaccount(); // \ClickSend\Model\Subaccount | Subaccount model
 
 try {
     $result = $apiInstance->subaccountsPost($subaccount);
@@ -279,7 +279,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **subaccount** | [**\ClickSend\ClickSend.Model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
+ **subaccount** | [**\ClickSend\Model\Subaccount**](../Model/Subaccount.md)| Subaccount model |
 
 ### Return type
 

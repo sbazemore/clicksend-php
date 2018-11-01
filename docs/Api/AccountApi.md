@@ -89,7 +89,7 @@ $apiInstance = new ClickSend\Api\AccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$account = new \ClickSend\ClickSend.Model\Account(); // \ClickSend\ClickSend.Model\Account | Account model
+$account = new \ClickSend\Model\Account(); // \ClickSend\Model\Account | Account model
 
 try {
     $result = $apiInstance->accountPost($account);
@@ -104,7 +104,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account** | [**\ClickSend\ClickSend.Model\Account**](../Model/Account.md)| Account model |
+ **account** | [**\ClickSend\Model\Account**](../Model/Account.md)| Account model |
 
 ### Return type
 
@@ -145,7 +145,7 @@ $apiInstance = new ClickSend\Api\AccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$account_verify = new \ClickSend\ClickSend.Model\AccountVerify(); // \ClickSend\ClickSend.Model\AccountVerify | Account details
+$account_verify = new \ClickSend\Model\AccountVerify(); // \ClickSend\Model\AccountVerify | Account details
 
 try {
     $result = $apiInstance->accountVerifySendPut($account_verify);
@@ -160,7 +160,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_verify** | [**\ClickSend\ClickSend.Model\AccountVerify**](../Model/AccountVerify.md)| Account details |
+ **account_verify** | [**\ClickSend\Model\AccountVerify**](../Model/AccountVerify.md)| Account details |
 
 ### Return type
 
@@ -313,7 +313,7 @@ $apiInstance = new ClickSend\Api\AccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$verify_password = new \ClickSend\ClickSend.Model\AccountForgotPasswordVerify(); // \ClickSend\ClickSend.Model\AccountForgotPasswordVerify | verifyPassword data
+$verify_password = new \ClickSend\Model\AccountForgotPasswordVerify(); // \ClickSend\Model\AccountForgotPasswordVerify | verifyPassword data
 
 try {
     $result = $apiInstance->forgotPasswordVerifyPut($verify_password);
@@ -328,7 +328,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **verify_password** | [**\ClickSend\ClickSend.Model\AccountForgotPasswordVerify**](../Model/AccountForgotPasswordVerify.md)| verifyPassword data |
+ **verify_password** | [**\ClickSend\Model\AccountForgotPasswordVerify**](../Model/AccountForgotPasswordVerify.md)| verifyPassword data |
 
 ### Return type
 

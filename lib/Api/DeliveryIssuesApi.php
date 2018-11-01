@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -421,7 +421,7 @@ class DeliveryIssuesApi
      *
      * Create delivery Issue
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
+     * @param  \ClickSend\Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -438,7 +438,7 @@ class DeliveryIssuesApi
      *
      * Create delivery Issue
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
+     * @param  \ClickSend\Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -569,7 +569,7 @@ class DeliveryIssuesApi
      *
      * Create delivery Issue
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
+     * @param  \ClickSend\Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -589,7 +589,7 @@ class DeliveryIssuesApi
      *
      * Create delivery Issue
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
+     * @param  \ClickSend\Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -639,7 +639,7 @@ class DeliveryIssuesApi
     /**
      * Create request for operation 'deliveryIssuesPost'
      *
-     * @param  \ClickSend\ClickSend.Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
+     * @param  \ClickSend\Model\DeliveryIssue $delivery_issue DeliveryIssue model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

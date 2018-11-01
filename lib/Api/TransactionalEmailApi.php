@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -775,7 +775,7 @@ class TransactionalEmailApi
      *
      * Get transactional email price
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -792,7 +792,7 @@ class TransactionalEmailApi
      *
      * Get transactional email price
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -923,7 +923,7 @@ class TransactionalEmailApi
      *
      * Get transactional email price
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -943,7 +943,7 @@ class TransactionalEmailApi
      *
      * Get transactional email price
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -993,7 +993,7 @@ class TransactionalEmailApi
     /**
      * Create request for operation 'emailPricePost'
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1092,7 +1092,7 @@ class TransactionalEmailApi
      *
      * Send transactional email
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1109,7 +1109,7 @@ class TransactionalEmailApi
      *
      * Send transactional email
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1240,7 +1240,7 @@ class TransactionalEmailApi
      *
      * Send transactional email
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1260,7 +1260,7 @@ class TransactionalEmailApi
      *
      * Send transactional email
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1310,7 +1310,7 @@ class TransactionalEmailApi
     /**
      * Create request for operation 'emailSendPost'
      *
-     * @param  \ClickSend\ClickSend.Model\Email $email Email model (required)
+     * @param  \ClickSend\Model\Email $email Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

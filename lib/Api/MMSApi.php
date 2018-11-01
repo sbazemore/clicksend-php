@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -92,7 +92,7 @@ class MMSApi
      *
      * Get Price for MMS sent
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class MMSApi
      *
      * Get Price for MMS sent
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -240,7 +240,7 @@ class MMSApi
      *
      * Get Price for MMS sent
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -260,7 +260,7 @@ class MMSApi
      *
      * Get Price for MMS sent
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -310,7 +310,7 @@ class MMSApi
     /**
      * Create request for operation 'mmsPricePost'
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -409,7 +409,7 @@ class MMSApi
      *
      * Send MMS
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -426,7 +426,7 @@ class MMSApi
      *
      * Send MMS
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -557,7 +557,7 @@ class MMSApi
      *
      * Send MMS
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -577,7 +577,7 @@ class MMSApi
      *
      * Send MMS
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -627,7 +627,7 @@ class MMSApi
     /**
      * Create request for operation 'mmsSendPost'
      *
-     * @param  \ClickSend\ClickSend.Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
+     * @param  \ClickSend\Model\MmsMessageCollection $mms_messages MmsMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

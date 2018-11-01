@@ -148,7 +148,7 @@ $apiInstance = new ClickSend\Api\PostPostcardApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_postcards = new \ClickSend\ClickSend.Model\PostPostcard(); // \ClickSend\ClickSend.Model\PostPostcard | PostPostcard model
+$post_postcards = new \ClickSend\Model\PostPostcard(); // \ClickSend\Model\PostPostcard | PostPostcard model
 
 try {
     $result = $apiInstance->postPostcardsPricePost($post_postcards);
@@ -163,7 +163,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_postcards** | [**\ClickSend\ClickSend.Model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
+ **post_postcards** | [**\ClickSend\Model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new ClickSend\Api\PostPostcardApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_postcards = new \ClickSend\ClickSend.Model\PostPostcard(); // \ClickSend\ClickSend.Model\PostPostcard | PostPostcard model
+$post_postcards = new \ClickSend\Model\PostPostcard(); // \ClickSend\Model\PostPostcard | PostPostcard model
 
 try {
     $result = $apiInstance->postPostcardsSendPost($post_postcards);
@@ -219,7 +219,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_postcards** | [**\ClickSend\ClickSend.Model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
+ **post_postcards** | [**\ClickSend\Model\PostPostcard**](../Model/PostPostcard.md)| PostPostcard model |
 
 ### Return type
 

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Model;
+namespace ClickSend\Model;
 
 use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
@@ -58,7 +58,7 @@ class VoiceMessageCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'messages' => '\ClickSend\ClickSend.Model\VoiceMessage[]'
+        'messages' => '\ClickSend\Model\VoiceMessage[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class VoiceMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \ClickSend\ClickSend.Model\VoiceMessage[]
+     * @return \ClickSend\Model\VoiceMessage[]
      */
     public function getMessages()
     {
@@ -225,7 +225,7 @@ class VoiceMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \ClickSend\ClickSend.Model\VoiceMessage[] $messages Array of VoiceMessage items
+     * @param \ClickSend\Model\VoiceMessage[] $messages Array of VoiceMessage items
      *
      * @return $this
      */

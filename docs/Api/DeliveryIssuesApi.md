@@ -90,7 +90,7 @@ $apiInstance = new ClickSend\Api\DeliveryIssuesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$delivery_issue = new \ClickSend\ClickSend.Model\DeliveryIssue(); // \ClickSend\ClickSend.Model\DeliveryIssue | DeliveryIssue model
+$delivery_issue = new \ClickSend\Model\DeliveryIssue(); // \ClickSend\Model\DeliveryIssue | DeliveryIssue model
 
 try {
     $result = $apiInstance->deliveryIssuesPost($delivery_issue);
@@ -105,7 +105,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **delivery_issue** | [**\ClickSend\ClickSend.Model\DeliveryIssue**](../Model/DeliveryIssue.md)| DeliveryIssue model |
+ **delivery_issue** | [**\ClickSend\Model\DeliveryIssue**](../Model/DeliveryIssue.md)| DeliveryIssue model |
 
 ### Return type
 

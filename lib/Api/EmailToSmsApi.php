@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -421,7 +421,7 @@ class EmailToSmsApi
      *
      * Create email to sms allowed address
      *
-     * @param  \ClickSend\ClickSend.Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
+     * @param  \ClickSend\Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -438,7 +438,7 @@ class EmailToSmsApi
      *
      * Create email to sms allowed address
      *
-     * @param  \ClickSend\ClickSend.Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
+     * @param  \ClickSend\Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -569,7 +569,7 @@ class EmailToSmsApi
      *
      * Create email to sms allowed address
      *
-     * @param  \ClickSend\ClickSend.Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
+     * @param  \ClickSend\Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -589,7 +589,7 @@ class EmailToSmsApi
      *
      * Create email to sms allowed address
      *
-     * @param  \ClickSend\ClickSend.Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
+     * @param  \ClickSend\Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -639,7 +639,7 @@ class EmailToSmsApi
     /**
      * Create request for operation 'smsEmailSmsPost'
      *
-     * @param  \ClickSend\ClickSend.Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
+     * @param  \ClickSend\Model\EmailSMSAddress $email_sms_address EmailSMSAddress model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

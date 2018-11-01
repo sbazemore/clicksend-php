@@ -316,7 +316,7 @@ $apiInstance = new ClickSend\Api\VoiceApi(
     new GuzzleHttp\Client(),
     $config
 );
-$voice_messages = new \ClickSend\ClickSend.Model\VoiceMessageCollection(); // \ClickSend\ClickSend.Model\VoiceMessageCollection | VoiceMessageCollection model
+$voice_messages = new \ClickSend\Model\VoiceMessageCollection(); // \ClickSend\Model\VoiceMessageCollection | VoiceMessageCollection model
 
 try {
     $result = $apiInstance->voicePricePost($voice_messages);
@@ -331,7 +331,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voice_messages** | [**\ClickSend\ClickSend.Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
+ **voice_messages** | [**\ClickSend\Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
 
 ### Return type
 
@@ -430,7 +430,7 @@ $apiInstance = new ClickSend\Api\VoiceApi(
     new GuzzleHttp\Client(),
     $config
 );
-$voice_messages = new \ClickSend\ClickSend.Model\VoiceMessageCollection(); // \ClickSend\ClickSend.Model\VoiceMessageCollection | VoiceMessageCollection model
+$voice_messages = new \ClickSend\Model\VoiceMessageCollection(); // \ClickSend\Model\VoiceMessageCollection | VoiceMessageCollection model
 
 try {
     $result = $apiInstance->voiceSendPost($voice_messages);
@@ -445,7 +445,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voice_messages** | [**\ClickSend\ClickSend.Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
+ **voice_messages** | [**\ClickSend\Model\VoiceMessageCollection**](../Model/VoiceMessageCollection.md)| VoiceMessageCollection model |
 
 ### Return type
 

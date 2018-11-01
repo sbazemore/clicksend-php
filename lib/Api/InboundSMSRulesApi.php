@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -736,7 +736,7 @@ class InboundSMSRulesApi
      *
      * Create new inbound sms automation
      *
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -753,7 +753,7 @@ class InboundSMSRulesApi
      *
      * Create new inbound sms automation
      *
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -884,7 +884,7 @@ class InboundSMSRulesApi
      *
      * Create new inbound sms automation
      *
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -904,7 +904,7 @@ class InboundSMSRulesApi
      *
      * Create new inbound sms automation
      *
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -954,7 +954,7 @@ class InboundSMSRulesApi
     /**
      * Create request for operation 'smsInboundAutomationPost'
      *
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1054,7 +1054,7 @@ class InboundSMSRulesApi
      * Update inbound sms automation
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1072,7 +1072,7 @@ class InboundSMSRulesApi
      * Update inbound sms automation
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1204,7 +1204,7 @@ class InboundSMSRulesApi
      * Update inbound sms automation
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1225,7 +1225,7 @@ class InboundSMSRulesApi
      * Update inbound sms automation
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1276,7 +1276,7 @@ class InboundSMSRulesApi
      * Create request for operation 'smsInboundAutomationPut'
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\ClickSend.Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
+     * @param  \ClickSend\Model\InboundSMSRule $inbound_sms_rule Inbound sms rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

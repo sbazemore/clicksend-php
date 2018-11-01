@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -415,7 +415,7 @@ class MmsCampaignApi
      * Update mms campaign
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -433,7 +433,7 @@ class MmsCampaignApi
      * Update mms campaign
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -565,7 +565,7 @@ class MmsCampaignApi
      * Update mms campaign
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -586,7 +586,7 @@ class MmsCampaignApi
      * Update mms campaign
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -637,7 +637,7 @@ class MmsCampaignApi
      * Create request for operation 'mmsCampaignsByMmsCampaignIdPut'
      *
      * @param  int $mms_campaign_id ID of MMS campaign to update (required)
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1401,7 +1401,7 @@ class MmsCampaignApi
      *
      * Calculate price for mms campaign
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1418,7 +1418,7 @@ class MmsCampaignApi
      *
      * Calculate price for mms campaign
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1549,7 +1549,7 @@ class MmsCampaignApi
      *
      * Calculate price for mms campaign
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1569,7 +1569,7 @@ class MmsCampaignApi
      *
      * Calculate price for mms campaign
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1619,7 +1619,7 @@ class MmsCampaignApi
     /**
      * Create request for operation 'mmsCampaignsPricePost'
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1718,7 +1718,7 @@ class MmsCampaignApi
      *
      * Create mms campaign
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1735,7 +1735,7 @@ class MmsCampaignApi
      *
      * Create mms campaign
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1866,7 +1866,7 @@ class MmsCampaignApi
      *
      * Create mms campaign
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1886,7 +1886,7 @@ class MmsCampaignApi
      *
      * Create mms campaign
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1936,7 +1936,7 @@ class MmsCampaignApi
     /**
      * Create request for operation 'mmsCampaignsSendPost'
      *
-     * @param  \ClickSend\ClickSend.Model\MmsCampaign $campaign MmsCampaign model (required)
+     * @param  \ClickSend\Model\MmsCampaign $campaign MmsCampaign model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

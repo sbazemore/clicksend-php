@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Model;
+namespace ClickSend\Model;
 
 use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
@@ -58,7 +58,7 @@ class SmsMessageCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'messages' => '\ClickSend\ClickSend.Model\SmsMessage[]'
+        'messages' => '\ClickSend\Model\SmsMessage[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class SmsMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \ClickSend\ClickSend.Model\SmsMessage[]
+     * @return \ClickSend\Model\SmsMessage[]
      */
     public function getMessages()
     {
@@ -225,7 +225,7 @@ class SmsMessageCollection implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \ClickSend\ClickSend.Model\SmsMessage[] $messages Array of SmsMessage items
+     * @param \ClickSend\Model\SmsMessage[] $messages Array of SmsMessage items
      *
      * @return $this
      */

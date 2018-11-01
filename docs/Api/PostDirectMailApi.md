@@ -92,7 +92,7 @@ $apiInstance = new ClickSend\Api\PostDirectMailApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_direct_mail = new \ClickSend\ClickSend.Model\PostDirectMail(); // \ClickSend\ClickSend.Model\PostDirectMail | PostDirectMail model
+$post_direct_mail = new \ClickSend\Model\PostDirectMail(); // \ClickSend\Model\PostDirectMail | PostDirectMail model
 
 try {
     $result = $apiInstance->postDirectMailCampaignsPricePost($post_direct_mail);
@@ -107,7 +107,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_direct_mail** | [**\ClickSend\ClickSend.Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
+ **post_direct_mail** | [**\ClickSend\Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
 
 ### Return type
 
@@ -148,7 +148,7 @@ $apiInstance = new ClickSend\Api\PostDirectMailApi(
     new GuzzleHttp\Client(),
     $config
 );
-$post_direct_mail = new \ClickSend\ClickSend.Model\PostDirectMail(); // \ClickSend\ClickSend.Model\PostDirectMail | PostDirectMail model
+$post_direct_mail = new \ClickSend\Model\PostDirectMail(); // \ClickSend\Model\PostDirectMail | PostDirectMail model
 
 try {
     $result = $apiInstance->postDirectMailCampaignsSendPost($post_direct_mail);
@@ -163,7 +163,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_direct_mail** | [**\ClickSend\ClickSend.Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
+ **post_direct_mail** | [**\ClickSend\Model\PostDirectMail**](../Model/PostDirectMail.md)| PostDirectMail model |
 
 ### Return type
 

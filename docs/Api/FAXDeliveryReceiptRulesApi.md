@@ -147,7 +147,7 @@ $apiInstance = new ClickSend\Api\FAXDeliveryReceiptRulesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$delivery_receipt_rule = new \ClickSend\ClickSend.Model\DeliveryReceiptRule(); // \ClickSend\ClickSend.Model\DeliveryReceiptRule | fax delivery receipt rule model
+$delivery_receipt_rule = new \ClickSend\Model\DeliveryReceiptRule(); // \ClickSend\Model\DeliveryReceiptRule | fax delivery receipt rule model
 
 try {
     $result = $apiInstance->faxDeliveryReceiptAutomationPost($delivery_receipt_rule);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **delivery_receipt_rule** | [**\ClickSend\ClickSend.Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| fax delivery receipt rule model |
+ **delivery_receipt_rule** | [**\ClickSend\Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| fax delivery receipt rule model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new ClickSend\Api\FAXDeliveryReceiptRulesApi(
     $config
 );
 $receipt_rule_id = 56; // int | Receipt rule id
-$delivery_receipt_rule = new \ClickSend\ClickSend.Model\DeliveryReceiptRule(); // \ClickSend\ClickSend.Model\DeliveryReceiptRule | Delivery receipt rule model
+$delivery_receipt_rule = new \ClickSend\Model\DeliveryReceiptRule(); // \ClickSend\Model\DeliveryReceiptRule | Delivery receipt rule model
 
 try {
     $result = $apiInstance->faxDeliveryReceiptAutomationPut($receipt_rule_id, $delivery_receipt_rule);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **receipt_rule_id** | **int**| Receipt rule id |
- **delivery_receipt_rule** | [**\ClickSend\ClickSend.Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| Delivery receipt rule model |
+ **delivery_receipt_rule** | [**\ClickSend\Model\DeliveryReceiptRule**](../Model/DeliveryReceiptRule.md)| Delivery receipt rule model |
 
 ### Return type
 

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -92,7 +92,7 @@ class TransferCreditApi
      *
      * Transfer Credit
      *
-     * @param  \ClickSend\ClickSend.Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
+     * @param  \ClickSend\Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class TransferCreditApi
      *
      * Transfer Credit
      *
-     * @param  \ClickSend\ClickSend.Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
+     * @param  \ClickSend\Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -240,7 +240,7 @@ class TransferCreditApi
      *
      * Transfer Credit
      *
-     * @param  \ClickSend\ClickSend.Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
+     * @param  \ClickSend\Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -260,7 +260,7 @@ class TransferCreditApi
      *
      * Transfer Credit
      *
-     * @param  \ClickSend\ClickSend.Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
+     * @param  \ClickSend\Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -310,7 +310,7 @@ class TransferCreditApi
     /**
      * Create request for operation 'resellerTransferCreditPut'
      *
-     * @param  \ClickSend\ClickSend.Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
+     * @param  \ClickSend\Model\ResellerAccountTransferCredit $reseller_account_transfer_credit ResellerAccountTransferCredit model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

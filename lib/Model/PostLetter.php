@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Model;
+namespace ClickSend\Model;
 
 use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
@@ -59,7 +59,7 @@ class PostLetter implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'file_url' => 'string',
-        'recipients' => '\ClickSend\ClickSend.Model\PostRecipient[]',
+        'recipients' => '\ClickSend\Model\PostRecipient[]',
         'template_used' => 'int',
         'duplex' => 'int',
         'colour' => 'int',
@@ -272,7 +272,7 @@ class PostLetter implements ModelInterface, ArrayAccess
     /**
      * Gets recipients
      *
-     * @return \ClickSend\ClickSend.Model\PostRecipient[]
+     * @return \ClickSend\Model\PostRecipient[]
      */
     public function getRecipients()
     {
@@ -282,7 +282,7 @@ class PostLetter implements ModelInterface, ArrayAccess
     /**
      * Sets recipients
      *
-     * @param \ClickSend\ClickSend.Model\PostRecipient[] $recipients Array of PostRecipient models
+     * @param \ClickSend\Model\PostRecipient[] $recipients Array of PostRecipient models
      *
      * @return $this
      */

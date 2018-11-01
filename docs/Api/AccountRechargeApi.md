@@ -88,7 +88,7 @@ $apiInstance = new ClickSend\Api\AccountRechargeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$credit_card = new \ClickSend\ClickSend.Model\CreditCard(); // \ClickSend\ClickSend.Model\CreditCard | CreditCard model
+$credit_card = new \ClickSend\Model\CreditCard(); // \ClickSend\Model\CreditCard | CreditCard model
 
 try {
     $result = $apiInstance->rechargeCreditCardPut($credit_card);
@@ -103,7 +103,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **credit_card** | [**\ClickSend\ClickSend.Model\CreditCard**](../Model/CreditCard.md)| CreditCard model |
+ **credit_card** | [**\ClickSend\Model\CreditCard**](../Model/CreditCard.md)| CreditCard model |
 
 ### Return type
 

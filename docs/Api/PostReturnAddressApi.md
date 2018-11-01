@@ -148,7 +148,7 @@ $apiInstance = new ClickSend\Api\PostReturnAddressApi(
     $config
 );
 $return_address_id = 56; // int | Return address ID
-$return_address = new \ClickSend\ClickSend.Model\Address(); // \ClickSend\ClickSend.Model\Address | Address model
+$return_address = new \ClickSend\Model\Address(); // \ClickSend\Model\Address | Address model
 
 try {
     $result = $apiInstance->postReturnAddressesByReturnAddressIdPut($return_address_id, $return_address);
@@ -164,7 +164,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **return_address_id** | **int**| Return address ID |
- **return_address** | [**\ClickSend\ClickSend.Model\Address**](../Model/Address.md)| Address model |
+ **return_address** | [**\ClickSend\Model\Address**](../Model/Address.md)| Address model |
 
 ### Return type
 
@@ -263,7 +263,7 @@ $apiInstance = new ClickSend\Api\PostReturnAddressApi(
     new GuzzleHttp\Client(),
     $config
 );
-$return_address = new \ClickSend\ClickSend.Model\Address(); // \ClickSend\ClickSend.Model\Address | Address model
+$return_address = new \ClickSend\Model\Address(); // \ClickSend\Model\Address | Address model
 
 try {
     $result = $apiInstance->postReturnAddressesPost($return_address);
@@ -278,7 +278,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **return_address** | [**\ClickSend\ClickSend.Model\Address**](../Model/Address.md)| Address model |
+ **return_address** | [**\ClickSend\Model\Address**](../Model/Address.md)| Address model |
 
 ### Return type
 

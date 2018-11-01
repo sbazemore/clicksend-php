@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -1685,7 +1685,7 @@ class VoiceApi
      *
      * Calculate voice price
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1702,7 +1702,7 @@ class VoiceApi
      *
      * Calculate voice price
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1833,7 +1833,7 @@ class VoiceApi
      *
      * Calculate voice price
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1853,7 +1853,7 @@ class VoiceApi
      *
      * Calculate voice price
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1903,7 +1903,7 @@ class VoiceApi
     /**
      * Create request for operation 'voicePricePost'
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2331,7 +2331,7 @@ class VoiceApi
      *
      * Send voice message(s)
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2348,7 +2348,7 @@ class VoiceApi
      *
      * Send voice message(s)
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2479,7 +2479,7 @@ class VoiceApi
      *
      * Send voice message(s)
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2499,7 +2499,7 @@ class VoiceApi
      *
      * Send voice message(s)
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2549,7 +2549,7 @@ class VoiceApi
     /**
      * Create request for operation 'voiceSendPost'
      *
-     * @param  \ClickSend\ClickSend.Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
+     * @param  \ClickSend\Model\VoiceMessageCollection $voice_messages VoiceMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

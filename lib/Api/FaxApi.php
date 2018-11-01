@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Api;
+namespace ClickSend\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -457,7 +457,7 @@ class FaxApi
      *
      * Calculate Total Price for Fax Messages sent
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -474,7 +474,7 @@ class FaxApi
      *
      * Calculate Total Price for Fax Messages sent
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -605,7 +605,7 @@ class FaxApi
      *
      * Calculate Total Price for Fax Messages sent
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -625,7 +625,7 @@ class FaxApi
      *
      * Calculate Total Price for Fax Messages sent
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -675,7 +675,7 @@ class FaxApi
     /**
      * Create request for operation 'faxPricePost'
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1399,7 +1399,7 @@ class FaxApi
      *
      * Send a fax using supplied supported file-types.
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1416,7 +1416,7 @@ class FaxApi
      *
      * Send a fax using supplied supported file-types.
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1547,7 +1547,7 @@ class FaxApi
      *
      * Send a fax using supplied supported file-types.
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1567,7 +1567,7 @@ class FaxApi
      *
      * Send a fax using supplied supported file-types.
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1617,7 +1617,7 @@ class FaxApi
     /**
      * Create request for operation 'faxSendPost'
      *
-     * @param  \ClickSend\ClickSend.Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

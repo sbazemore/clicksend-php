@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Model;
+namespace ClickSend\Model;
 
 use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
@@ -59,7 +59,7 @@ class PostPostcard implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'file_urls' => 'string[]',
-        'recipients' => '\ClickSend\ClickSend.Model\PostRecipient[]'
+        'recipients' => '\ClickSend\Model\PostRecipient[]'
     ];
 
     /**
@@ -248,7 +248,7 @@ class PostPostcard implements ModelInterface, ArrayAccess
     /**
      * Gets recipients
      *
-     * @return \ClickSend\ClickSend.Model\PostRecipient[]
+     * @return \ClickSend\Model\PostRecipient[]
      */
     public function getRecipients()
     {
@@ -258,7 +258,7 @@ class PostPostcard implements ModelInterface, ArrayAccess
     /**
      * Sets recipients
      *
-     * @param \ClickSend\ClickSend.Model\PostRecipient[] $recipients Array of recipients
+     * @param \ClickSend\Model\PostRecipient[] $recipients Array of recipients
      *
      * @return $this
      */

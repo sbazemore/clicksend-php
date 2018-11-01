@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ClickSend\ClickSend.Model;
+namespace ClickSend\Model;
 
 use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
@@ -61,7 +61,7 @@ class PostDirectMail implements ModelInterface, ArrayAccess
         'name' => 'string',
         'file_urls' => 'string[]',
         'size' => 'string',
-        'areas' => '\ClickSend\ClickSend.Model\PostDirectMailArea[]',
+        'areas' => '\ClickSend\Model\PostDirectMailArea[]',
         'schedule' => 'int',
         'source' => 'string',
         'custom_string' => 'string'
@@ -332,7 +332,7 @@ class PostDirectMail implements ModelInterface, ArrayAccess
     /**
      * Gets areas
      *
-     * @return \ClickSend\ClickSend.Model\PostDirectMailArea[]
+     * @return \ClickSend\Model\PostDirectMailArea[]
      */
     public function getAreas()
     {
@@ -342,7 +342,7 @@ class PostDirectMail implements ModelInterface, ArrayAccess
     /**
      * Sets areas
      *
-     * @param \ClickSend\ClickSend.Model\PostDirectMailArea[] $areas PostDirectMailArea model
+     * @param \ClickSend\Model\PostDirectMailArea[] $areas PostDirectMailArea model
      *
      * @return $this
      */

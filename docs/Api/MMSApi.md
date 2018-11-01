@@ -32,7 +32,7 @@ $apiInstance = new ClickSend\Api\MMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$mms_messages = new \ClickSend\ClickSend.Model\MmsMessageCollection(); // \ClickSend\ClickSend.Model\MmsMessageCollection | MmsMessageCollection model
+$mms_messages = new \ClickSend\Model\MmsMessageCollection(); // \ClickSend\Model\MmsMessageCollection | MmsMessageCollection model
 
 try {
     $result = $apiInstance->mmsPricePost($mms_messages);
@@ -47,7 +47,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mms_messages** | [**\ClickSend\ClickSend.Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
+ **mms_messages** | [**\ClickSend\Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
 
 ### Return type
 
@@ -88,7 +88,7 @@ $apiInstance = new ClickSend\Api\MMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$mms_messages = new \ClickSend\ClickSend.Model\MmsMessageCollection(); // \ClickSend\ClickSend.Model\MmsMessageCollection | MmsMessageCollection model
+$mms_messages = new \ClickSend\Model\MmsMessageCollection(); // \ClickSend\Model\MmsMessageCollection | MmsMessageCollection model
 
 try {
     $result = $apiInstance->mmsSendPost($mms_messages);
@@ -103,7 +103,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mms_messages** | [**\ClickSend\ClickSend.Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
+ **mms_messages** | [**\ClickSend\Model\MmsMessageCollection**](../Model/MmsMessageCollection.md)| MmsMessageCollection model |
 
 ### Return type
 

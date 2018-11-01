@@ -266,7 +266,7 @@ $apiInstance = new ClickSend\Api\ContactListApi(
     $config
 );
 $list_id = 56; // int | Your contact list id you want to access.
-$file = new \ClickSend\ClickSend.Model\ContactListImport(); // \ClickSend\ClickSend.Model\ContactListImport | ContactListImport model
+$file = new \ClickSend\Model\ContactListImport(); // \ClickSend\Model\ContactListImport | ContactListImport model
 
 try {
     $result = $apiInstance->listsImportByListIdPost($list_id, $file);
@@ -282,7 +282,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_id** | **int**| Your contact list id you want to access. |
- **file** | [**\ClickSend\ClickSend.Model\ContactListImport**](../Model/ContactListImport.md)| ContactListImport model |
+ **file** | [**\ClickSend\Model\ContactListImport**](../Model/ContactListImport.md)| ContactListImport model |
 
 ### Return type
 

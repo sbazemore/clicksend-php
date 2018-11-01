@@ -93,7 +93,7 @@ $apiInstance = new ClickSend\Api\SmsCampaignApi(
     $config
 );
 $sms_campaign_id = 56; // int | ID of SMS campaign to update
-$campaign = new \ClickSend\ClickSend.Model\SmsCampaign(); // \ClickSend\ClickSend.Model\SmsCampaign | SmsCampaign model
+$campaign = new \ClickSend\Model\SmsCampaign(); // \ClickSend\Model\SmsCampaign | SmsCampaign model
 
 try {
     $result = $apiInstance->smsCampaignsBySmsCampaignIdPut($sms_campaign_id, $campaign);
@@ -109,7 +109,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sms_campaign_id** | **int**| ID of SMS campaign to update |
- **campaign** | [**\ClickSend\ClickSend.Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
+ **campaign** | [**\ClickSend\Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
 
 ### Return type
 
@@ -264,7 +264,7 @@ $apiInstance = new ClickSend\Api\SmsCampaignApi(
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \ClickSend\ClickSend.Model\SmsCampaign(); // \ClickSend\ClickSend.Model\SmsCampaign | SmsCampaign model
+$campaign = new \ClickSend\Model\SmsCampaign(); // \ClickSend\Model\SmsCampaign | SmsCampaign model
 
 try {
     $result = $apiInstance->smsCampaignsPricePost($campaign);
@@ -279,7 +279,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\ClickSend\ClickSend.Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
+ **campaign** | [**\ClickSend\Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
 
 ### Return type
 
@@ -320,7 +320,7 @@ $apiInstance = new ClickSend\Api\SmsCampaignApi(
     new GuzzleHttp\Client(),
     $config
 );
-$campaign = new \ClickSend\ClickSend.Model\SmsCampaign(); // \ClickSend\ClickSend.Model\SmsCampaign | SmsCampaign model
+$campaign = new \ClickSend\Model\SmsCampaign(); // \ClickSend\Model\SmsCampaign | SmsCampaign model
 
 try {
     $result = $apiInstance->smsCampaignsSendPost($campaign);
@@ -335,7 +335,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **campaign** | [**\ClickSend\ClickSend.Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
+ **campaign** | [**\ClickSend\Model\SmsCampaign**](../Model/SmsCampaign.md)| SmsCampaign model |
 
 ### Return type
 
