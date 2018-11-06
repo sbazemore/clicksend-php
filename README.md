@@ -9,7 +9,7 @@ PHP 5.5 and later
 ## Installation & Usage
 ### Composer
 
-To install the bindings via [Composer](http://getcomposer.org/), run the follow command in your project:
+To install the bindings via [Composer](http://getcomposer.org/), run the following command in terminal, inside your project directory:
 
 ```
     composer require clicksend/clicksend-php
