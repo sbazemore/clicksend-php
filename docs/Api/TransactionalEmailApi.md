@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **emailHistoryExportGet**
-> \SplFileObject emailHistoryExportGet($filename, $date_from, $date_to)
+> string emailHistoryExportGet($filename, $date_from, $date_to)
 
 Export all Transactional Email history
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SplFileObject**](../Model/\SplFileObject.md)
+**string**
 
 ### Authorization
 

@@ -1388,7 +1388,7 @@ class EmailMarketingApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SplFileObject
+     * @return string
      */
     public function emailCampaignHistoryExportGet($email_campaign_id, $date_from = null, $date_to = null)
     {
@@ -1407,11 +1407,11 @@ class EmailMarketingApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
     public function emailCampaignHistoryExportGetWithHttpInfo($email_campaign_id, $date_from = null, $date_to = null)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->emailCampaignHistoryExportGetRequest($email_campaign_id, $date_from, $date_to);
 
         try {
@@ -1463,7 +1463,7 @@ class EmailMarketingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SplFileObject',
+                        'string',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1565,7 +1565,7 @@ class EmailMarketingApi
      */
     public function emailCampaignHistoryExportGetAsyncWithHttpInfo($email_campaign_id, $date_from = null, $date_to = null)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->emailCampaignHistoryExportGetRequest($email_campaign_id, $date_from, $date_to);
 
         return $this->client

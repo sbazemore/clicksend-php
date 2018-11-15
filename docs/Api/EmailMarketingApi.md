@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **emailCampaignHistoryExportGet**
-> \SplFileObject emailCampaignHistoryExportGet($email_campaign_id, $date_from, $date_to)
+> string emailCampaignHistoryExportGet($email_campaign_id, $date_from, $date_to)
 
 Export specific email campaign history
 
@@ -293,7 +293,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SplFileObject**](../Model/\SplFileObject.md)
+**string**
 
 ### Authorization
 

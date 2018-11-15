@@ -96,7 +96,7 @@ class PostPostcardApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SplFileObject
+     * @return string
      */
     public function postPostcardsHistoryExportGet($filename)
     {
@@ -113,11 +113,11 @@ class PostPostcardApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
     public function postPostcardsHistoryExportGetWithHttpInfo($filename)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->postPostcardsHistoryExportGetRequest($filename);
 
         try {
@@ -169,7 +169,7 @@ class PostPostcardApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SplFileObject',
+                        'string',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -267,7 +267,7 @@ class PostPostcardApi
      */
     public function postPostcardsHistoryExportGetAsyncWithHttpInfo($filename)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->postPostcardsHistoryExportGetRequest($filename);
 
         return $this->client

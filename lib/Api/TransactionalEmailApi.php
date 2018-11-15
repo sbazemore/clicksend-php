@@ -98,7 +98,7 @@ class TransactionalEmailApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SplFileObject
+     * @return string
      */
     public function emailHistoryExportGet($filename, $date_from = null, $date_to = null)
     {
@@ -117,11 +117,11 @@ class TransactionalEmailApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
     public function emailHistoryExportGetWithHttpInfo($filename, $date_from = null, $date_to = null)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->emailHistoryExportGetRequest($filename, $date_from, $date_to);
 
         try {
@@ -173,7 +173,7 @@ class TransactionalEmailApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SplFileObject',
+                        'string',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -275,7 +275,7 @@ class TransactionalEmailApi
      */
     public function emailHistoryExportGetAsyncWithHttpInfo($filename, $date_from = null, $date_to = null)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->emailHistoryExportGetRequest($filename, $date_from, $date_to);
 
         return $this->client

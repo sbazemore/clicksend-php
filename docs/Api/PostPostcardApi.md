@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **postPostcardsHistoryExportGet**
-> \SplFileObject postPostcardsHistoryExportGet($filename)
+> string postPostcardsHistoryExportGet($filename)
 
 Export postcard history to a CSV file
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SplFileObject**](../Model/\SplFileObject.md)
+**string**
 
 ### Authorization
 

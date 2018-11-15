@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **postLettersExportGet**
-> \SplFileObject postLettersExportGet($filename)
+> string postLettersExportGet($filename)
 
 export post letter history
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SplFileObject**](../Model/\SplFileObject.md)
+**string**
 
 ### Authorization
 

@@ -721,7 +721,7 @@ class SMSApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SplFileObject
+     * @return string
      */
     public function smsHistoryExportGet($filename)
     {
@@ -738,11 +738,11 @@ class SMSApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
     public function smsHistoryExportGetWithHttpInfo($filename)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->smsHistoryExportGetRequest($filename);
 
         try {
@@ -794,7 +794,7 @@ class SMSApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SplFileObject',
+                        'string',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -892,7 +892,7 @@ class SMSApi
      */
     public function smsHistoryExportGetAsyncWithHttpInfo($filename)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->smsHistoryExportGetRequest($filename);
 
         return $this->client

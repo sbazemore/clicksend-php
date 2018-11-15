@@ -96,7 +96,7 @@ class PostLetterApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SplFileObject
+     * @return string
      */
     public function postLettersExportGet($filename)
     {
@@ -113,11 +113,11 @@ class PostLetterApi
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
     public function postLettersExportGetWithHttpInfo($filename)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->postLettersExportGetRequest($filename);
 
         try {
@@ -169,7 +169,7 @@ class PostLetterApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SplFileObject',
+                        'string',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -267,7 +267,7 @@ class PostLetterApi
      */
     public function postLettersExportGetAsyncWithHttpInfo($filename)
     {
-        $returnType = '\SplFileObject';
+        $returnType = 'string';
         $request = $this->postLettersExportGetRequest($filename);
 
         return $this->client
