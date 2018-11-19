@@ -14,10 +14,10 @@ Method | HTTP request | Description
 [**emailCampaignPricePost**](EmailMarketingApi.md#emailCampaignPricePost) | **POST** /email-campaigns/price | Calculate email campaign price
 [**emailCampaignPut**](EmailMarketingApi.md#emailCampaignPut) | **PUT** /email-campaigns/{email_campaign_id} | Edit email campaign
 [**emailCampaignsGet**](EmailMarketingApi.md#emailCampaignsGet) | **GET** /email-campaigns | Get all email campaigns
-[**sendVerificationTokenGet**](EmailMarketingApi.md#sendVerificationTokenGet) | **GET** /email/address-verify/{email_address_id}/send | Send verification token
+[**sendVerificationTokenGet**](EmailMarketingApi.md#sendVerificationTokenGet) | **PUT** /email/address-verify/{email_address_id}/send | Send verification token
 [**specificAllowedEmailAddressDelete**](EmailMarketingApi.md#specificAllowedEmailAddressDelete) | **DELETE** /email/addresses/{email_address_id} | Delete specific email address
 [**specificAllowedEmailAddressGet**](EmailMarketingApi.md#specificAllowedEmailAddressGet) | **GET** /email/addresses/{email_address_id} | Get specific email address
-[**verifyAllowedEmailAddressGet**](EmailMarketingApi.md#verifyAllowedEmailAddressGet) | **GET** /email/address-verify/{email_address_id}/verify/{activation_token} | Verify email address using verification token
+[**verifyAllowedEmailAddressGet**](EmailMarketingApi.md#verifyAllowedEmailAddressGet) | **PUT** /email/address-verify/{email_address_id}/verify/{activation_token} | Verify email address using verification token
 
 
 # **allowedEmailAddressGet**
@@ -483,7 +483,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **emailCampaignPut**
-> string emailCampaignPut($email_campaign_id)
+> string emailCampaignPut($email_campaign_id, $email_campaign)
 
 Edit email campaign
 
@@ -507,9 +507,10 @@ $apiInstance = new ClickSend\Api\EmailMarketingApi(
     $config
 );
 $email_campaign_id = 56; // int | Allowed email campaign id
+$email_campaign = new \ClickSend\Model\EmailCampaign(); // \ClickSend\Model\EmailCampaign | Email model
 
 try {
-    $result = $apiInstance->emailCampaignPut($email_campaign_id);
+    $result = $apiInstance->emailCampaignPut($email_campaign_id, $email_campaign);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling EmailMarketingApi->emailCampaignPut: ', $e->getMessage(), PHP_EOL;
@@ -522,6 +523,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **email_campaign_id** | **int**| Allowed email campaign id |
+ **email_campaign** | [**\ClickSend\Model\EmailCampaign**](../Model/EmailCampaign.md)| Email model |
 
 ### Return type
 

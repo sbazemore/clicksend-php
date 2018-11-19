@@ -59,7 +59,8 @@ class EmailSMSAddress implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'email_address' => 'string',
-        'from' => 'string'
+        'from' => 'string',
+        'subaccount_id' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class EmailSMSAddress implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'email_address' => null,
-        'from' => null
+        'from' => null,
+        'subaccount_id' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class EmailSMSAddress implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'email_address' => 'email_address',
-        'from' => 'from'
+        'from' => 'from',
+        'subaccount_id' => 'subaccount_id'
     ];
 
     /**
@@ -110,7 +113,8 @@ class EmailSMSAddress implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'email_address' => 'setEmailAddress',
-        'from' => 'setFrom'
+        'from' => 'setFrom',
+        'subaccount_id' => 'setSubaccountId'
     ];
 
     /**
@@ -120,7 +124,8 @@ class EmailSMSAddress implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'email_address' => 'getEmailAddress',
-        'from' => 'getFrom'
+        'from' => 'getFrom',
+        'subaccount_id' => 'getSubaccountId'
     ];
 
     /**
@@ -185,6 +190,7 @@ class EmailSMSAddress implements ModelInterface, ArrayAccess
     {
         $this->container['email_address'] = isset($data['email_address']) ? $data['email_address'] : null;
         $this->container['from'] = isset($data['from']) ? $data['from'] : null;
+        $this->container['subaccount_id'] = isset($data['subaccount_id']) ? $data['subaccount_id'] : null;
 
         // Initialize discriminator property with the model name.
         $discriminator = array_search('classType', self::$attributeMap, true);
@@ -265,6 +271,30 @@ class EmailSMSAddress implements ModelInterface, ArrayAccess
     public function setFrom($from)
     {
         $this->container['from'] = $from;
+
+        return $this;
+    }
+
+    /**
+     * Gets subaccount_id
+     *
+     * @return string
+     */
+    public function getSubaccountId()
+    {
+        return $this->container['subaccount_id'];
+    }
+
+    /**
+     * Sets subaccount_id
+     *
+     * @param string $subaccount_id Your subaccount id
+     *
+     * @return $this
+     */
+    public function setSubaccountId($subaccount_id)
+    {
+        $this->container['subaccount_id'] = $subaccount_id;
 
         return $this;
     }

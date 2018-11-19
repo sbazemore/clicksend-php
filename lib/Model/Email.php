@@ -62,6 +62,7 @@ class Email implements ModelInterface, ArrayAccess
         'cc' => '\ClickSend\Model\EmailRecipient[]',
         'bcc' => '\ClickSend\Model\EmailRecipient[]',
         'from' => '\ClickSend\Model\EmailFrom[]',
+        'subject' => 'string',
         'body' => 'string',
         'attachments' => '\ClickSend\Model\Attachment[]',
         'schedule' => 'float'
@@ -77,6 +78,7 @@ class Email implements ModelInterface, ArrayAccess
         'cc' => null,
         'bcc' => null,
         'from' => null,
+        'subject' => null,
         'body' => null,
         'attachments' => null,
         'schedule' => null
@@ -113,6 +115,7 @@ class Email implements ModelInterface, ArrayAccess
         'cc' => 'cc',
         'bcc' => 'bcc',
         'from' => 'from',
+        'subject' => 'subject',
         'body' => 'body',
         'attachments' => 'attachments',
         'schedule' => 'schedule'
@@ -128,6 +131,7 @@ class Email implements ModelInterface, ArrayAccess
         'cc' => 'setCc',
         'bcc' => 'setBcc',
         'from' => 'setFrom',
+        'subject' => 'setSubject',
         'body' => 'setBody',
         'attachments' => 'setAttachments',
         'schedule' => 'setSchedule'
@@ -143,6 +147,7 @@ class Email implements ModelInterface, ArrayAccess
         'cc' => 'getCc',
         'bcc' => 'getBcc',
         'from' => 'getFrom',
+        'subject' => 'getSubject',
         'body' => 'getBody',
         'attachments' => 'getAttachments',
         'schedule' => 'getSchedule'
@@ -212,6 +217,7 @@ class Email implements ModelInterface, ArrayAccess
         $this->container['cc'] = isset($data['cc']) ? $data['cc'] : null;
         $this->container['bcc'] = isset($data['bcc']) ? $data['bcc'] : null;
         $this->container['from'] = isset($data['from']) ? $data['from'] : null;
+        $this->container['subject'] = isset($data['subject']) ? $data['subject'] : null;
         $this->container['body'] = isset($data['body']) ? $data['body'] : null;
         $this->container['attachments'] = isset($data['attachments']) ? $data['attachments'] : null;
         $this->container['schedule'] = isset($data['schedule']) ? $data['schedule'] : null;
@@ -346,6 +352,30 @@ class Email implements ModelInterface, ArrayAccess
     public function setFrom($from)
     {
         $this->container['from'] = $from;
+
+        return $this;
+    }
+
+    /**
+     * Gets subject
+     *
+     * @return string
+     */
+    public function getSubject()
+    {
+        return $this->container['subject'];
+    }
+
+    /**
+     * Sets subject
+     *
+     * @param string $subject Subject of the email.
+     *
+     * @return $this
+     */
+    public function setSubject($subject)
+    {
+        $this->container['subject'] = $subject;
 
         return $this;
     }

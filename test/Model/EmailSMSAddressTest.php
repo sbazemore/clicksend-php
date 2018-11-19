@@ -89,4 +89,11 @@ class EmailSMSAddressTest extends \PHPUnit_Framework_TestCase
     public function testPropertyFrom()
     {
     }
+
+    /**
+     * Test attribute "subaccount_id"
+     */
+    public function testPropertySubaccountId()
+    {
+    }
 }

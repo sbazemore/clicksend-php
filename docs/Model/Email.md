@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **cc** | [**\ClickSend\Model\EmailRecipient[]**](EmailRecipient.md) | Array of Cc Recipient items. | [optional] 
 **bcc** | [**\ClickSend\Model\EmailRecipient[]**](EmailRecipient.md) | Array of Bcc Recipient items. | [optional] 
 **from** | [**\ClickSend\Model\EmailFrom[]**](EmailFrom.md) | From Email object. | 
+**subject** | **string** | Subject of the email. | [optional] 
 **body** | **string** | Body of the email. | 
 **attachments** | [**\ClickSend\Model\Attachment[]**](Attachment.md) | Array of Attachment items. | [optional] 
 **schedule** | **float** | Schedule. | [optional] 

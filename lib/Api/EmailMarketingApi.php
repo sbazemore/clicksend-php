@@ -2723,14 +2723,15 @@ class EmailMarketingApi
      * Edit email campaign
      *
      * @param  int $email_campaign_id Allowed email campaign id (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function emailCampaignPut($email_campaign_id)
+    public function emailCampaignPut($email_campaign_id, $email_campaign)
     {
-        list($response) = $this->emailCampaignPutWithHttpInfo($email_campaign_id);
+        list($response) = $this->emailCampaignPutWithHttpInfo($email_campaign_id, $email_campaign);
         return $response;
     }
 
@@ -2740,15 +2741,16 @@ class EmailMarketingApi
      * Edit email campaign
      *
      * @param  int $email_campaign_id Allowed email campaign id (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function emailCampaignPutWithHttpInfo($email_campaign_id)
+    public function emailCampaignPutWithHttpInfo($email_campaign_id, $email_campaign)
     {
         $returnType = 'string';
-        $request = $this->emailCampaignPutRequest($email_campaign_id);
+        $request = $this->emailCampaignPutRequest($email_campaign_id, $email_campaign);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2871,13 +2873,14 @@ class EmailMarketingApi
      * Edit email campaign
      *
      * @param  int $email_campaign_id Allowed email campaign id (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function emailCampaignPutAsync($email_campaign_id)
+    public function emailCampaignPutAsync($email_campaign_id, $email_campaign)
     {
-        return $this->emailCampaignPutAsyncWithHttpInfo($email_campaign_id)
+        return $this->emailCampaignPutAsyncWithHttpInfo($email_campaign_id, $email_campaign)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -2891,14 +2894,15 @@ class EmailMarketingApi
      * Edit email campaign
      *
      * @param  int $email_campaign_id Allowed email campaign id (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function emailCampaignPutAsyncWithHttpInfo($email_campaign_id)
+    public function emailCampaignPutAsyncWithHttpInfo($email_campaign_id, $email_campaign)
     {
         $returnType = 'string';
-        $request = $this->emailCampaignPutRequest($email_campaign_id);
+        $request = $this->emailCampaignPutRequest($email_campaign_id, $email_campaign);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2941,16 +2945,23 @@ class EmailMarketingApi
      * Create request for operation 'emailCampaignPut'
      *
      * @param  int $email_campaign_id Allowed email campaign id (required)
+     * @param  \ClickSend\Model\EmailCampaign $email_campaign Email model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function emailCampaignPutRequest($email_campaign_id)
+    protected function emailCampaignPutRequest($email_campaign_id, $email_campaign)
     {
         // verify the required parameter 'email_campaign_id' is set
         if ($email_campaign_id === null || (is_array($email_campaign_id) && count($email_campaign_id) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $email_campaign_id when calling emailCampaignPut'
+            );
+        }
+        // verify the required parameter 'email_campaign' is set
+        if ($email_campaign === null || (is_array($email_campaign) && count($email_campaign) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $email_campaign when calling emailCampaignPut'
             );
         }
 
@@ -2973,6 +2984,9 @@ class EmailMarketingApi
 
         // body params
         $_tempBody = null;
+        if (isset($email_campaign)) {
+            $_tempBody = $email_campaign;
+        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -3683,7 +3697,7 @@ class EmailMarketingApi
 
         $query = \GuzzleHttp\Psr7\build_query($queryParams);
         return new Request(
-            'GET',
+            'PUT',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
             $headers,
             $httpBody
@@ -4668,7 +4682,7 @@ class EmailMarketingApi
 
         $query = \GuzzleHttp\Psr7\build_query($queryParams);
         return new Request(
-            'GET',
+            'PUT',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
             $headers,
             $httpBody
