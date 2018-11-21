@@ -92,16 +92,16 @@ class UploadApi
      *
      * Upload File
      *
-     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
+     * @param  \ClickSend\Model\UploadFile $upload_file upload_file (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function uploadsPost($content, $convert)
+    public function uploadsPost($convert, $upload_file = null)
     {
-        list($response) = $this->uploadsPostWithHttpInfo($content, $convert);
+        list($response) = $this->uploadsPostWithHttpInfo($convert, $upload_file);
         return $response;
     }
 
@@ -110,17 +110,17 @@ class UploadApi
      *
      * Upload File
      *
-     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
+     * @param  \ClickSend\Model\UploadFile $upload_file (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function uploadsPostWithHttpInfo($content, $convert)
+    public function uploadsPostWithHttpInfo($convert, $upload_file = null)
     {
         $returnType = 'string';
-        $request = $this->uploadsPostRequest($content, $convert);
+        $request = $this->uploadsPostRequest($convert, $upload_file);
 
         try {
             $options = $this->createHttpClientOption();
@@ -242,15 +242,15 @@ class UploadApi
      *
      * Upload File
      *
-     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
+     * @param  \ClickSend\Model\UploadFile $upload_file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function uploadsPostAsync($content, $convert)
+    public function uploadsPostAsync($convert, $upload_file = null)
     {
-        return $this->uploadsPostAsyncWithHttpInfo($content, $convert)
+        return $this->uploadsPostAsyncWithHttpInfo($convert, $upload_file)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -263,16 +263,16 @@ class UploadApi
      *
      * Upload File
      *
-     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
+     * @param  \ClickSend\Model\UploadFile $upload_file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function uploadsPostAsyncWithHttpInfo($content, $convert)
+    public function uploadsPostAsyncWithHttpInfo($convert, $upload_file = null)
     {
         $returnType = 'string';
-        $request = $this->uploadsPostRequest($content, $convert);
+        $request = $this->uploadsPostRequest($convert, $upload_file);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -314,20 +314,14 @@ class UploadApi
     /**
      * Create request for operation 'uploadsPost'
      *
-     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
+     * @param  \ClickSend\Model\UploadFile $upload_file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function uploadsPostRequest($content, $convert)
+    protected function uploadsPostRequest($convert, $upload_file = null)
     {
-        // verify the required parameter 'content' is set
-        if ($content === null || (is_array($content) && count($content) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $content when calling uploadsPost'
-            );
-        }
         // verify the required parameter 'convert' is set
         if ($convert === null || (is_array($convert) && count($convert) === 0)) {
             throw new \InvalidArgumentException(
@@ -348,12 +342,11 @@ class UploadApi
         }
 
 
-        // form params
-        if ($content !== null) {
-            $formParams['content'] = ObjectSerializer::toFormValue($content);
-        }
         // body params
         $_tempBody = null;
+        if (isset($upload_file)) {
+            $_tempBody = $upload_file;
+        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -362,7 +355,7 @@ class UploadApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/x-www-form-urlencoded']
+                ['application/json']
             );
         }
 

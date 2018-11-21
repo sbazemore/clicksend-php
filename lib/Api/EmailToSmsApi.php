@@ -1382,15 +1382,15 @@ class EmailToSmsApi
      *
      * Create email to sms stripped string rule
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\StrippedString $stripped_string StrippedString model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function smsEmailSmsStrippedStringPost($strip_string)
+    public function smsEmailSmsStrippedStringPost($stripped_string)
     {
-        list($response) = $this->smsEmailSmsStrippedStringPostWithHttpInfo($strip_string);
+        list($response) = $this->smsEmailSmsStrippedStringPostWithHttpInfo($stripped_string);
         return $response;
     }
 
@@ -1399,16 +1399,16 @@ class EmailToSmsApi
      *
      * Create email to sms stripped string rule
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\StrippedString $stripped_string StrippedString model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function smsEmailSmsStrippedStringPostWithHttpInfo($strip_string)
+    public function smsEmailSmsStrippedStringPostWithHttpInfo($stripped_string)
     {
         $returnType = 'string';
-        $request = $this->smsEmailSmsStrippedStringPostRequest($strip_string);
+        $request = $this->smsEmailSmsStrippedStringPostRequest($stripped_string);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1530,14 +1530,14 @@ class EmailToSmsApi
      *
      * Create email to sms stripped string rule
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\StrippedString $stripped_string StrippedString model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function smsEmailSmsStrippedStringPostAsync($strip_string)
+    public function smsEmailSmsStrippedStringPostAsync($stripped_string)
     {
-        return $this->smsEmailSmsStrippedStringPostAsyncWithHttpInfo($strip_string)
+        return $this->smsEmailSmsStrippedStringPostAsyncWithHttpInfo($stripped_string)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1550,15 +1550,15 @@ class EmailToSmsApi
      *
      * Create email to sms stripped string rule
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\StrippedString $stripped_string StrippedString model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function smsEmailSmsStrippedStringPostAsyncWithHttpInfo($strip_string)
+    public function smsEmailSmsStrippedStringPostAsyncWithHttpInfo($stripped_string)
     {
         $returnType = 'string';
-        $request = $this->smsEmailSmsStrippedStringPostRequest($strip_string);
+        $request = $this->smsEmailSmsStrippedStringPostRequest($stripped_string);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1600,17 +1600,17 @@ class EmailToSmsApi
     /**
      * Create request for operation 'smsEmailSmsStrippedStringPost'
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\StrippedString $stripped_string StrippedString model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function smsEmailSmsStrippedStringPostRequest($strip_string)
+    protected function smsEmailSmsStrippedStringPostRequest($stripped_string)
     {
-        // verify the required parameter 'strip_string' is set
-        if ($strip_string === null || (is_array($strip_string) && count($strip_string) === 0)) {
+        // verify the required parameter 'stripped_string' is set
+        if ($stripped_string === null || (is_array($stripped_string) && count($stripped_string) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $strip_string when calling smsEmailSmsStrippedStringPost'
+                'Missing the required parameter $stripped_string when calling smsEmailSmsStrippedStringPost'
             );
         }
 
@@ -1623,12 +1623,11 @@ class EmailToSmsApi
 
 
 
-        // form params
-        if ($strip_string !== null) {
-            $formParams['strip-string'] = ObjectSerializer::toFormValue($strip_string);
-        }
         // body params
         $_tempBody = null;
+        if (isset($stripped_string)) {
+            $_tempBody = $stripped_string;
+        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -1637,7 +1636,7 @@ class EmailToSmsApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/x-www-form-urlencoded']
+                ['application/json']
             );
         }
 
@@ -1700,16 +1699,16 @@ class EmailToSmsApi
      *
      * Update email to sms stripped string rule
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      * @param  int $rule_id Your rule id (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function smsEmailSmsStrippedStringPut($strip_string, $rule_id)
+    public function smsEmailSmsStrippedStringPut($url, $rule_id)
     {
-        list($response) = $this->smsEmailSmsStrippedStringPutWithHttpInfo($strip_string, $rule_id);
+        list($response) = $this->smsEmailSmsStrippedStringPutWithHttpInfo($url, $rule_id);
         return $response;
     }
 
@@ -1718,17 +1717,17 @@ class EmailToSmsApi
      *
      * Update email to sms stripped string rule
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      * @param  int $rule_id Your rule id (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function smsEmailSmsStrippedStringPutWithHttpInfo($strip_string, $rule_id)
+    public function smsEmailSmsStrippedStringPutWithHttpInfo($url, $rule_id)
     {
         $returnType = 'string';
-        $request = $this->smsEmailSmsStrippedStringPutRequest($strip_string, $rule_id);
+        $request = $this->smsEmailSmsStrippedStringPutRequest($url, $rule_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1850,15 +1849,15 @@ class EmailToSmsApi
      *
      * Update email to sms stripped string rule
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      * @param  int $rule_id Your rule id (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function smsEmailSmsStrippedStringPutAsync($strip_string, $rule_id)
+    public function smsEmailSmsStrippedStringPutAsync($url, $rule_id)
     {
-        return $this->smsEmailSmsStrippedStringPutAsyncWithHttpInfo($strip_string, $rule_id)
+        return $this->smsEmailSmsStrippedStringPutAsyncWithHttpInfo($url, $rule_id)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1871,16 +1870,16 @@ class EmailToSmsApi
      *
      * Update email to sms stripped string rule
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      * @param  int $rule_id Your rule id (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function smsEmailSmsStrippedStringPutAsyncWithHttpInfo($strip_string, $rule_id)
+    public function smsEmailSmsStrippedStringPutAsyncWithHttpInfo($url, $rule_id)
     {
         $returnType = 'string';
-        $request = $this->smsEmailSmsStrippedStringPutRequest($strip_string, $rule_id);
+        $request = $this->smsEmailSmsStrippedStringPutRequest($url, $rule_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1922,18 +1921,18 @@ class EmailToSmsApi
     /**
      * Create request for operation 'smsEmailSmsStrippedStringPut'
      *
-     * @param  string $strip_string String to be stripped. (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      * @param  int $rule_id Your rule id (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function smsEmailSmsStrippedStringPutRequest($strip_string, $rule_id)
+    protected function smsEmailSmsStrippedStringPutRequest($url, $rule_id)
     {
-        // verify the required parameter 'strip_string' is set
-        if ($strip_string === null || (is_array($strip_string) && count($strip_string) === 0)) {
+        // verify the required parameter 'url' is set
+        if ($url === null || (is_array($url) && count($url) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $strip_string when calling smsEmailSmsStrippedStringPut'
+                'Missing the required parameter $url when calling smsEmailSmsStrippedStringPut'
             );
         }
         // verify the required parameter 'rule_id' is set
@@ -1960,12 +1959,11 @@ class EmailToSmsApi
             );
         }
 
-        // form params
-        if ($strip_string !== null) {
-            $formParams['strip-string'] = ObjectSerializer::toFormValue($strip_string);
-        }
         // body params
         $_tempBody = null;
+        if (isset($url)) {
+            $_tempBody = $url;
+        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -1974,7 +1972,7 @@ class EmailToSmsApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/x-www-form-urlencoded']
+                ['application/json']
             );
         }
 

@@ -331,7 +331,7 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$url = "url_example"; // string | Your url.
+$url = new \ClickSend\Model\Url(); // \ClickSend\Model\Url | Url model
 
 try {
     $result = $apiInstance->smsInboundPost($url);
@@ -346,7 +346,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **url** | **string**| Your url. |
+ **url** | [**\ClickSend\Model\Url**](../Model/Url.md)| Url model |
 
 ### Return type
 
@@ -358,7 +358,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -613,7 +613,7 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$url = "url_example"; // string | Your url.
+$url = new \ClickSend\Model\Url(); // \ClickSend\Model\Url | Url model
 
 try {
     $result = $apiInstance->smsReceiptsPost($url);
@@ -628,7 +628,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **url** | **string**| Your url. |
+ **url** | [**\ClickSend\Model\Url**](../Model/Url.md)| Url model |
 
 ### Return type
 
@@ -640,7 +640,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

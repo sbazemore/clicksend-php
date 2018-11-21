@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **uploadsPost**
-> string uploadsPost($content, $convert)
+> string uploadsPost($convert, $upload_file)
 
 Upload File
 
@@ -31,11 +31,11 @@ $apiInstance = new ClickSend\Api\UploadApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content = "content_example"; // string | Your base64 encoded file.
 $convert = "convert_example"; // string | 
+$upload_file = new \ClickSend\Model\UploadFile(); // \ClickSend\Model\UploadFile | 
 
 try {
-    $result = $apiInstance->uploadsPost($content, $convert);
+    $result = $apiInstance->uploadsPost($convert, $upload_file);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UploadApi->uploadsPost: ', $e->getMessage(), PHP_EOL;
@@ -47,8 +47,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **content** | **string**| Your base64 encoded file. |
  **convert** | **string**|  |
+ **upload_file** | [**\ClickSend\Model\UploadFile**](../Model/UploadFile.md)|  | [optional]
 
 ### Return type
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

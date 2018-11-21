@@ -421,13 +421,13 @@ class EmailMarketingApi
      *
      * Create allowed Email Address
      *
-     * @param  string $email_address Email to be allowed. (required)
+     * @param  \ClickSend\Model\EmailAddress $email_address email_address (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function allowedEmailAddressPost($email_address)
+    public function allowedEmailAddressPost($email_address = null)
     {
         list($response) = $this->allowedEmailAddressPostWithHttpInfo($email_address);
         return $response;
@@ -438,13 +438,13 @@ class EmailMarketingApi
      *
      * Create allowed Email Address
      *
-     * @param  string $email_address Email to be allowed. (required)
+     * @param  \ClickSend\Model\EmailAddress $email_address (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function allowedEmailAddressPostWithHttpInfo($email_address)
+    public function allowedEmailAddressPostWithHttpInfo($email_address = null)
     {
         $returnType = 'string';
         $request = $this->allowedEmailAddressPostRequest($email_address);
@@ -569,12 +569,12 @@ class EmailMarketingApi
      *
      * Create allowed Email Address
      *
-     * @param  string $email_address Email to be allowed. (required)
+     * @param  \ClickSend\Model\EmailAddress $email_address (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function allowedEmailAddressPostAsync($email_address)
+    public function allowedEmailAddressPostAsync($email_address = null)
     {
         return $this->allowedEmailAddressPostAsyncWithHttpInfo($email_address)
             ->then(
@@ -589,12 +589,12 @@ class EmailMarketingApi
      *
      * Create allowed Email Address
      *
-     * @param  string $email_address Email to be allowed. (required)
+     * @param  \ClickSend\Model\EmailAddress $email_address (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function allowedEmailAddressPostAsyncWithHttpInfo($email_address)
+    public function allowedEmailAddressPostAsyncWithHttpInfo($email_address = null)
     {
         $returnType = 'string';
         $request = $this->allowedEmailAddressPostRequest($email_address);
@@ -639,19 +639,13 @@ class EmailMarketingApi
     /**
      * Create request for operation 'allowedEmailAddressPost'
      *
-     * @param  string $email_address Email to be allowed. (required)
+     * @param  \ClickSend\Model\EmailAddress $email_address (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function allowedEmailAddressPostRequest($email_address)
+    protected function allowedEmailAddressPostRequest($email_address = null)
     {
-        // verify the required parameter 'email_address' is set
-        if ($email_address === null || (is_array($email_address) && count($email_address) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $email_address when calling allowedEmailAddressPost'
-            );
-        }
 
         $resourcePath = '/email/addresses';
         $formParams = [];
@@ -662,12 +656,11 @@ class EmailMarketingApi
 
 
 
-        // form params
-        if ($email_address !== null) {
-            $formParams['email_address'] = ObjectSerializer::toFormValue($email_address);
-        }
         // body params
         $_tempBody = null;
+        if (isset($email_address)) {
+            $_tempBody = $email_address;
+        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -676,7 +669,7 @@ class EmailMarketingApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/x-www-form-urlencoded']
+                ['application/json']
             );
         }
 

@@ -102,7 +102,7 @@ $apiInstance = new ClickSend\Api\EmailMarketingApi(
     new GuzzleHttp\Client(),
     $config
 );
-$email_address = "email_address_example"; // string | Email to be allowed.
+$email_address = new \ClickSend\Model\EmailAddress(); // \ClickSend\Model\EmailAddress | 
 
 try {
     $result = $apiInstance->allowedEmailAddressPost($email_address);
@@ -117,7 +117,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email_address** | **string**| Email to be allowed. |
+ **email_address** | [**\ClickSend\Model\EmailAddress**](../Model/EmailAddress.md)|  | [optional]
 
 ### Return type
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

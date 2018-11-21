@@ -240,7 +240,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **smsEmailSmsStrippedStringPost**
-> string smsEmailSmsStrippedStringPost($strip_string)
+> string smsEmailSmsStrippedStringPost($stripped_string)
 
 Create email to sms stripped string rule
 
@@ -263,10 +263,10 @@ $apiInstance = new ClickSend\Api\EmailToSmsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$strip_string = "strip_string_example"; // string | String to be stripped.
+$stripped_string = new \ClickSend\Model\StrippedString(); // \ClickSend\Model\StrippedString | StrippedString model
 
 try {
-    $result = $apiInstance->smsEmailSmsStrippedStringPost($strip_string);
+    $result = $apiInstance->smsEmailSmsStrippedStringPost($stripped_string);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling EmailToSmsApi->smsEmailSmsStrippedStringPost: ', $e->getMessage(), PHP_EOL;
@@ -278,7 +278,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **strip_string** | **string**| String to be stripped. |
+ **stripped_string** | [**\ClickSend\Model\StrippedString**](../Model/StrippedString.md)| StrippedString model |
 
 ### Return type
 
@@ -290,13 +290,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **smsEmailSmsStrippedStringPut**
-> string smsEmailSmsStrippedStringPut($strip_string, $rule_id)
+> string smsEmailSmsStrippedStringPut($url, $rule_id)
 
 Update email to sms stripped string rule
 
@@ -319,11 +319,11 @@ $apiInstance = new ClickSend\Api\EmailToSmsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$strip_string = "strip_string_example"; // string | String to be stripped.
+$url = new \ClickSend\Model\Url(); // \ClickSend\Model\Url | Url model
 $rule_id = 56; // int | Your rule id
 
 try {
-    $result = $apiInstance->smsEmailSmsStrippedStringPut($strip_string, $rule_id);
+    $result = $apiInstance->smsEmailSmsStrippedStringPut($url, $rule_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling EmailToSmsApi->smsEmailSmsStrippedStringPut: ', $e->getMessage(), PHP_EOL;
@@ -335,7 +335,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **strip_string** | **string**| String to be stripped. |
+ **url** | [**\ClickSend\Model\Url**](../Model/Url.md)| Url model |
  **rule_id** | **int**| Your rule id |
 
 ### Return type
@@ -348,7 +348,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

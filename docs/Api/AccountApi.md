@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **forgotPasswordPut**
-> string forgotPasswordPut($username)
+> string forgotPasswordPut($forgot_password)
 
 Forgot password
 
@@ -257,10 +257,10 @@ $apiInstance = new ClickSend\Api\AccountApi(
     new GuzzleHttp\Client(),
     $config
 );
-$username = "username_example"; // string | Username belonging to account.
+$forgot_password = new \ClickSend\Model\ForgotPassword(); // \ClickSend\Model\ForgotPassword | 
 
 try {
-    $result = $apiInstance->forgotPasswordPut($username);
+    $result = $apiInstance->forgotPasswordPut($forgot_password);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AccountApi->forgotPasswordPut: ', $e->getMessage(), PHP_EOL;
@@ -272,7 +272,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **string**| Username belonging to account. |
+ **forgot_password** | [**\ClickSend\Model\ForgotPassword**](../Model/ForgotPassword.md)|  | [optional]
 
 ### Return type
 
@@ -284,7 +284,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -346,7 +346,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **forgotUsernamePut**
-> string forgotUsernamePut($email, $phone_number)
+> string forgotUsernamePut($forgot_username)
 
 Forgot username
 
@@ -362,11 +362,10 @@ $apiInstance = new ClickSend\Api\AccountApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$email = "email_example"; // string | Email belonging to account.
-$phone_number = "phone_number_example"; // string | Phone number belonging to account.
+$forgot_username = new \ClickSend\Model\ForgotUsername(); // \ClickSend\Model\ForgotUsername | 
 
 try {
-    $result = $apiInstance->forgotUsernamePut($email, $phone_number);
+    $result = $apiInstance->forgotUsernamePut($forgot_username);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AccountApi->forgotUsernamePut: ', $e->getMessage(), PHP_EOL;
@@ -378,8 +377,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | **string**| Email belonging to account. | [optional]
- **phone_number** | **string**| Phone number belonging to account. | [optional]
+ **forgot_username** | [**\ClickSend\Model\ForgotUsername**](../Model/ForgotUsername.md)|  | [optional]
 
 ### Return type
 
@@ -391,7 +389,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
