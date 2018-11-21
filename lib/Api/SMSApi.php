@@ -1711,7 +1711,7 @@ class SMSApi
      *
      * Create inbound sms
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1728,7 +1728,7 @@ class SMSApi
      *
      * Create inbound sms
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1859,7 +1859,7 @@ class SMSApi
      *
      * Create inbound sms
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1879,7 +1879,7 @@ class SMSApi
      *
      * Create inbound sms
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1929,7 +1929,7 @@ class SMSApi
     /**
      * Create request for operation 'smsInboundPost'
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1952,11 +1952,12 @@ class SMSApi
 
 
 
+        // form params
+        if ($url !== null) {
+            $formParams['url'] = ObjectSerializer::toFormValue($url);
+        }
         // body params
         $_tempBody = null;
-        if (isset($url)) {
-            $_tempBody = $url;
-        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -1965,7 +1966,7 @@ class SMSApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json']
+                ['application/x-www-form-urlencoded']
             );
         }
 
@@ -3307,7 +3308,7 @@ class SMSApi
      *
      * Add a delivery receipt
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3324,7 +3325,7 @@ class SMSApi
      *
      * Add a delivery receipt
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3455,7 +3456,7 @@ class SMSApi
      *
      * Add a delivery receipt
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3475,7 +3476,7 @@ class SMSApi
      *
      * Add a delivery receipt
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3525,7 +3526,7 @@ class SMSApi
     /**
      * Create request for operation 'smsReceiptsPost'
      *
-     * @param  string $url Your url (required)
+     * @param  string $url Your url. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3548,11 +3549,12 @@ class SMSApi
 
 
 
+        // form params
+        if ($url !== null) {
+            $formParams['url'] = ObjectSerializer::toFormValue($url);
+        }
         // body params
         $_tempBody = null;
-        if (isset($url)) {
-            $_tempBody = $url;
-        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -3561,7 +3563,7 @@ class SMSApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json']
+                ['application/x-www-form-urlencoded']
             );
         }
 

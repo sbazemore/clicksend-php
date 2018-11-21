@@ -31,7 +31,7 @@ $apiInstance = new ClickSend\Api\UploadApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content = "content_example"; // string | Base64-encoded file contents
+$content = "content_example"; // string | Your base64 encoded file.
 $convert = "convert_example"; // string | 
 
 try {
@@ -47,7 +47,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **content** | **string**| Base64-encoded file contents |
+ **content** | **string**| Your base64 encoded file. |
  **convert** | **string**|  |
 
 ### Return type
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

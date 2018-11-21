@@ -662,11 +662,12 @@ class EmailMarketingApi
 
 
 
+        // form params
+        if ($email_address !== null) {
+            $formParams['email_address'] = ObjectSerializer::toFormValue($email_address);
+        }
         // body params
         $_tempBody = null;
-        if (isset($email_address)) {
-            $_tempBody = $email_address;
-        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -675,7 +676,7 @@ class EmailMarketingApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json']
+                ['application/x-www-form-urlencoded']
             );
         }
 

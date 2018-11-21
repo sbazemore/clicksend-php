@@ -92,7 +92,7 @@ class UploadApi
      *
      * Upload File
      *
-     * @param  string $content Base64-encoded file contents (required)
+     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
@@ -110,7 +110,7 @@ class UploadApi
      *
      * Upload File
      *
-     * @param  string $content Base64-encoded file contents (required)
+     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
@@ -242,7 +242,7 @@ class UploadApi
      *
      * Upload File
      *
-     * @param  string $content Base64-encoded file contents (required)
+     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
      *
      * @throws \InvalidArgumentException
@@ -263,7 +263,7 @@ class UploadApi
      *
      * Upload File
      *
-     * @param  string $content Base64-encoded file contents (required)
+     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
      *
      * @throws \InvalidArgumentException
@@ -314,7 +314,7 @@ class UploadApi
     /**
      * Create request for operation 'uploadsPost'
      *
-     * @param  string $content Base64-encoded file contents (required)
+     * @param  string $content Your base64 encoded file. (required)
      * @param  string $convert  (required)
      *
      * @throws \InvalidArgumentException
@@ -348,11 +348,12 @@ class UploadApi
         }
 
 
+        // form params
+        if ($content !== null) {
+            $formParams['content'] = ObjectSerializer::toFormValue($content);
+        }
         // body params
         $_tempBody = null;
-        if (isset($content)) {
-            $_tempBody = $content;
-        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -361,7 +362,7 @@ class UploadApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json']
+                ['application/x-www-form-urlencoded']
             );
         }
 

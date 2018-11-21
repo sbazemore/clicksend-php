@@ -77,9 +77,9 @@ class EmailFromTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "email"
+     * Test attribute "email_address_id"
      */
-    public function testPropertyEmail()
+    public function testPropertyEmailAddressId()
     {
     }
 

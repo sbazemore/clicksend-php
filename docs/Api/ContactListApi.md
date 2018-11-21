@@ -356,7 +356,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listsRemoveDuplicatesByListIdPut**
-> string listsRemoveDuplicatesByListIdPut($list_id)
+> string listsRemoveDuplicatesByListIdPut($list_id, $fields)
 
 Remove duplicate contacts
 
@@ -380,9 +380,10 @@ $apiInstance = new ClickSend\Api\ContactListApi(
     $config
 );
 $list_id = 56; // int | Your list id
+$fields = new \ClickSend\Model\Fields(); // \ClickSend\Model\Fields | Fields model
 
 try {
-    $result = $apiInstance->listsRemoveDuplicatesByListIdPut($list_id);
+    $result = $apiInstance->listsRemoveDuplicatesByListIdPut($list_id, $fields);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ContactListApi->listsRemoveDuplicatesByListIdPut: ', $e->getMessage(), PHP_EOL;
@@ -395,6 +396,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_id** | **int**| Your list id |
+ **fields** | [**\ClickSend\Model\Fields**](../Model/Fields.md)| Fields model |
 
 ### Return type
 

@@ -58,7 +58,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'email' => 'string',
+        'email_address_id' => 'string',
         'name' => 'string'
     ];
 
@@ -68,7 +68,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'email' => null,
+        'email_address_id' => null,
         'name' => null
     ];
 
@@ -99,7 +99,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'email' => 'email',
+        'email_address_id' => 'email_address_id',
         'name' => 'name'
     ];
 
@@ -109,7 +109,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'email' => 'setEmail',
+        'email_address_id' => 'setEmailAddressId',
         'name' => 'setName'
     ];
 
@@ -119,7 +119,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'email' => 'getEmail',
+        'email_address_id' => 'getEmailAddressId',
         'name' => 'getName'
     ];
 
@@ -183,7 +183,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['email'] = isset($data['email']) ? $data['email'] : null;
+        $this->container['email_address_id'] = isset($data['email_address_id']) ? $data['email_address_id'] : null;
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
 
         // Initialize discriminator property with the model name.
@@ -200,8 +200,8 @@ class EmailFrom implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        if ($this->container['email'] === null) {
-            $invalidProperties[] = "'email' can't be null";
+        if ($this->container['email_address_id'] === null) {
+            $invalidProperties[] = "'email_address_id' can't be null";
         }
         return $invalidProperties;
     }
@@ -219,25 +219,25 @@ class EmailFrom implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets email
+     * Gets email_address_id
      *
      * @return string
      */
-    public function getEmail()
+    public function getEmailAddressId()
     {
-        return $this->container['email'];
+        return $this->container['email_address_id'];
     }
 
     /**
-     * Sets email
+     * Sets email_address_id
      *
-     * @param string $email Email of the recipient.
+     * @param string $email_address_id Email address id of the recipient.
      *
      * @return $this
      */
-    public function setEmail($email)
+    public function setEmailAddressId($email_address_id)
     {
-        $this->container['email'] = $email;
+        $this->container['email_address_id'] = $email_address_id;
 
         return $this;
     }

@@ -1351,7 +1351,7 @@ class AccountApi
      *
      * Forgot password
      *
-     * @param  string $username Username belonging to account (required)
+     * @param  string $username Username belonging to account. (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1368,7 +1368,7 @@ class AccountApi
      *
      * Forgot password
      *
-     * @param  string $username Username belonging to account (required)
+     * @param  string $username Username belonging to account. (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1499,7 +1499,7 @@ class AccountApi
      *
      * Forgot password
      *
-     * @param  string $username Username belonging to account (required)
+     * @param  string $username Username belonging to account. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1519,7 +1519,7 @@ class AccountApi
      *
      * Forgot password
      *
-     * @param  string $username Username belonging to account (required)
+     * @param  string $username Username belonging to account. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1569,7 +1569,7 @@ class AccountApi
     /**
      * Create request for operation 'forgotPasswordPut'
      *
-     * @param  string $username Username belonging to account (required)
+     * @param  string $username Username belonging to account. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1592,11 +1592,12 @@ class AccountApi
 
 
 
+        // form params
+        if ($username !== null) {
+            $formParams['username'] = ObjectSerializer::toFormValue($username);
+        }
         // body params
         $_tempBody = null;
-        if (isset($username)) {
-            $_tempBody = $username;
-        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -1605,7 +1606,7 @@ class AccountApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json']
+                ['application/x-www-form-urlencoded']
             );
         }
 
@@ -1985,15 +1986,16 @@ class AccountApi
      *
      * Forgot username
      *
-     * @param  string $email Email belonging to account (required)
+     * @param  string $email Email belonging to account. (optional)
+     * @param  string $phone_number Phone number belonging to account. (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function forgotUsernamePut($email)
+    public function forgotUsernamePut($email = null, $phone_number = null)
     {
-        list($response) = $this->forgotUsernamePutWithHttpInfo($email);
+        list($response) = $this->forgotUsernamePutWithHttpInfo($email, $phone_number);
         return $response;
     }
 
@@ -2002,16 +2004,17 @@ class AccountApi
      *
      * Forgot username
      *
-     * @param  string $email Email belonging to account (required)
+     * @param  string $email Email belonging to account. (optional)
+     * @param  string $phone_number Phone number belonging to account. (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function forgotUsernamePutWithHttpInfo($email)
+    public function forgotUsernamePutWithHttpInfo($email = null, $phone_number = null)
     {
         $returnType = 'string';
-        $request = $this->forgotUsernamePutRequest($email);
+        $request = $this->forgotUsernamePutRequest($email, $phone_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2133,14 +2136,15 @@ class AccountApi
      *
      * Forgot username
      *
-     * @param  string $email Email belonging to account (required)
+     * @param  string $email Email belonging to account. (optional)
+     * @param  string $phone_number Phone number belonging to account. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function forgotUsernamePutAsync($email)
+    public function forgotUsernamePutAsync($email = null, $phone_number = null)
     {
-        return $this->forgotUsernamePutAsyncWithHttpInfo($email)
+        return $this->forgotUsernamePutAsyncWithHttpInfo($email, $phone_number)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -2153,15 +2157,16 @@ class AccountApi
      *
      * Forgot username
      *
-     * @param  string $email Email belonging to account (required)
+     * @param  string $email Email belonging to account. (optional)
+     * @param  string $phone_number Phone number belonging to account. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function forgotUsernamePutAsyncWithHttpInfo($email)
+    public function forgotUsernamePutAsyncWithHttpInfo($email = null, $phone_number = null)
     {
         $returnType = 'string';
-        $request = $this->forgotUsernamePutRequest($email);
+        $request = $this->forgotUsernamePutRequest($email, $phone_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2203,19 +2208,14 @@ class AccountApi
     /**
      * Create request for operation 'forgotUsernamePut'
      *
-     * @param  string $email Email belonging to account (required)
+     * @param  string $email Email belonging to account. (optional)
+     * @param  string $phone_number Phone number belonging to account. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function forgotUsernamePutRequest($email)
+    protected function forgotUsernamePutRequest($email = null, $phone_number = null)
     {
-        // verify the required parameter 'email' is set
-        if ($email === null || (is_array($email) && count($email) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $email when calling forgotUsernamePut'
-            );
-        }
 
         $resourcePath = '/forgot-username';
         $formParams = [];
@@ -2226,11 +2226,16 @@ class AccountApi
 
 
 
+        // form params
+        if ($email !== null) {
+            $formParams['email'] = ObjectSerializer::toFormValue($email);
+        }
+        // form params
+        if ($phone_number !== null) {
+            $formParams['phone_number'] = ObjectSerializer::toFormValue($phone_number);
+        }
         // body params
         $_tempBody = null;
-        if (isset($email)) {
-            $_tempBody = $email;
-        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
@@ -2239,7 +2244,7 @@ class AccountApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json']
+                ['application/x-www-form-urlencoded']
             );
         }
 

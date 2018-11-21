@@ -2055,14 +2055,15 @@ class ContactListApi
      * Remove duplicate contacts
      *
      * @param  int $list_id Your list id (required)
+     * @param  \ClickSend\Model\Fields $fields Fields model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function listsRemoveDuplicatesByListIdPut($list_id)
+    public function listsRemoveDuplicatesByListIdPut($list_id, $fields)
     {
-        list($response) = $this->listsRemoveDuplicatesByListIdPutWithHttpInfo($list_id);
+        list($response) = $this->listsRemoveDuplicatesByListIdPutWithHttpInfo($list_id, $fields);
         return $response;
     }
 
@@ -2072,15 +2073,16 @@ class ContactListApi
      * Remove duplicate contacts
      *
      * @param  int $list_id Your list id (required)
+     * @param  \ClickSend\Model\Fields $fields Fields model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function listsRemoveDuplicatesByListIdPutWithHttpInfo($list_id)
+    public function listsRemoveDuplicatesByListIdPutWithHttpInfo($list_id, $fields)
     {
         $returnType = 'string';
-        $request = $this->listsRemoveDuplicatesByListIdPutRequest($list_id);
+        $request = $this->listsRemoveDuplicatesByListIdPutRequest($list_id, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2203,13 +2205,14 @@ class ContactListApi
      * Remove duplicate contacts
      *
      * @param  int $list_id Your list id (required)
+     * @param  \ClickSend\Model\Fields $fields Fields model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function listsRemoveDuplicatesByListIdPutAsync($list_id)
+    public function listsRemoveDuplicatesByListIdPutAsync($list_id, $fields)
     {
-        return $this->listsRemoveDuplicatesByListIdPutAsyncWithHttpInfo($list_id)
+        return $this->listsRemoveDuplicatesByListIdPutAsyncWithHttpInfo($list_id, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -2223,14 +2226,15 @@ class ContactListApi
      * Remove duplicate contacts
      *
      * @param  int $list_id Your list id (required)
+     * @param  \ClickSend\Model\Fields $fields Fields model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function listsRemoveDuplicatesByListIdPutAsyncWithHttpInfo($list_id)
+    public function listsRemoveDuplicatesByListIdPutAsyncWithHttpInfo($list_id, $fields)
     {
         $returnType = 'string';
-        $request = $this->listsRemoveDuplicatesByListIdPutRequest($list_id);
+        $request = $this->listsRemoveDuplicatesByListIdPutRequest($list_id, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2273,16 +2277,23 @@ class ContactListApi
      * Create request for operation 'listsRemoveDuplicatesByListIdPut'
      *
      * @param  int $list_id Your list id (required)
+     * @param  \ClickSend\Model\Fields $fields Fields model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function listsRemoveDuplicatesByListIdPutRequest($list_id)
+    protected function listsRemoveDuplicatesByListIdPutRequest($list_id, $fields)
     {
         // verify the required parameter 'list_id' is set
         if ($list_id === null || (is_array($list_id) && count($list_id) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $list_id when calling listsRemoveDuplicatesByListIdPut'
+            );
+        }
+        // verify the required parameter 'fields' is set
+        if ($fields === null || (is_array($fields) && count($fields) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $fields when calling listsRemoveDuplicatesByListIdPut'
             );
         }
 
@@ -2305,6 +2316,9 @@ class ContactListApi
 
         // body params
         $_tempBody = null;
+        if (isset($fields)) {
+            $_tempBody = $fields;
+        }
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
