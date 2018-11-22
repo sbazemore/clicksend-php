@@ -97,7 +97,7 @@ class StrippedString implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'strip_string' => 'strip-string'
+        'strip_string' => 'strip_string'
     ];
 
     /**

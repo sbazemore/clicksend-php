@@ -1,6 +1,6 @@
 <?php
 /**
- * EmailFrom
+ * ModelList
  *
  * PHP version 5
  *
@@ -33,24 +33,24 @@ use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
 
 /**
- * EmailFrom Class Doc Comment
+ * ModelList Class Doc Comment
  *
  * @category Class
- * @description From Email object.
+ * @description Your list.
  * @package  ClickSend
  * @author   ClickSend Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class EmailFrom implements ModelInterface, ArrayAccess
+class ModelList implements ModelInterface, ArrayAccess
 {
-    const DISCRIMINATOR = null;
+    const DISCRIMINATOR = 'classType';
 
     /**
       * The original name of the model.
       *
       * @var string
       */
-    protected static $swaggerModelName = 'Email_from';
+    protected static $swaggerModelName = 'List';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'email_address_id' => 'string',
-        'name' => 'string'
+        'list_name' => 'string'
     ];
 
     /**
@@ -68,8 +67,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'email_address_id' => null,
-        'name' => null
+        'list_name' => null
     ];
 
     /**
@@ -99,8 +97,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'email_address_id' => 'email_address_id',
-        'name' => 'name'
+        'list_name' => 'list_name'
     ];
 
     /**
@@ -109,8 +106,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'email_address_id' => 'setEmailAddressId',
-        'name' => 'setName'
+        'list_name' => 'setListName'
     ];
 
     /**
@@ -119,8 +115,7 @@ class EmailFrom implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'email_address_id' => 'getEmailAddressId',
-        'name' => 'getName'
+        'list_name' => 'getListName'
     ];
 
     /**
@@ -183,8 +178,11 @@ class EmailFrom implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['email_address_id'] = isset($data['email_address_id']) ? $data['email_address_id'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['list_name'] = isset($data['list_name']) ? $data['list_name'] : null;
+
+        // Initialize discriminator property with the model name.
+        $discriminator = array_search('classType', self::$attributeMap, true);
+        $this->container[$discriminator] = static::$swaggerModelName;
     }
 
     /**
@@ -196,8 +194,8 @@ class EmailFrom implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        if ($this->container['email_address_id'] === null) {
-            $invalidProperties[] = "'email_address_id' can't be null";
+        if ($this->container['list_name'] === null) {
+            $invalidProperties[] = "'list_name' can't be null";
         }
         return $invalidProperties;
     }
@@ -215,49 +213,25 @@ class EmailFrom implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets email_address_id
+     * Gets list_name
      *
      * @return string
      */
-    public function getEmailAddressId()
+    public function getListName()
     {
-        return $this->container['email_address_id'];
+        return $this->container['list_name'];
     }
 
     /**
-     * Sets email_address_id
+     * Sets list_name
      *
-     * @param string $email_address_id Email address id of the recipient.
+     * @param string $list_name Your list name.
      *
      * @return $this
      */
-    public function setEmailAddressId($email_address_id)
+    public function setListName($list_name)
     {
-        $this->container['email_address_id'] = $email_address_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets name
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->container['name'];
-    }
-
-    /**
-     * Sets name
-     *
-     * @param string $name Name of the recipient.
-     *
-     * @return $this
-     */
-    public function setName($name)
-    {
-        $this->container['name'] = $name;
+        $this->container['list_name'] = $list_name;
 
         return $this;
     }

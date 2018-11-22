@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **smsEmailSmsStrippedStringPut**
-> string smsEmailSmsStrippedStringPut($url, $rule_id)
+> string smsEmailSmsStrippedStringPut($stripped_string, $rule_id)
 
 Update email to sms stripped string rule
 
@@ -319,11 +319,11 @@ $apiInstance = new ClickSend\Api\EmailToSmsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$url = new \ClickSend\Model\Url(); // \ClickSend\Model\Url | Url model
+$stripped_string = new \ClickSend\Model\StrippedString(); // \ClickSend\Model\StrippedString | StrippedString model
 $rule_id = 56; // int | Your rule id
 
 try {
-    $result = $apiInstance->smsEmailSmsStrippedStringPut($url, $rule_id);
+    $result = $apiInstance->smsEmailSmsStrippedStringPut($stripped_string, $rule_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling EmailToSmsApi->smsEmailSmsStrippedStringPut: ', $e->getMessage(), PHP_EOL;
@@ -335,7 +335,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **url** | [**\ClickSend\Model\Url**](../Model/Url.md)| Url model |
+ **stripped_string** | [**\ClickSend\Model\StrippedString**](../Model/StrippedString.md)| StrippedString model |
  **rule_id** | **int**| Your rule id |
 
 ### Return type

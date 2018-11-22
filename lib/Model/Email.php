@@ -61,7 +61,7 @@ class Email implements ModelInterface, ArrayAccess
         'to' => '\ClickSend\Model\EmailRecipient[]',
         'cc' => '\ClickSend\Model\EmailRecipient[]',
         'bcc' => '\ClickSend\Model\EmailRecipient[]',
-        'from' => '\ClickSend\Model\EmailFrom[]',
+        'from' => '\ClickSend\Model\EmailFrom',
         'subject' => 'string',
         'body' => 'string',
         'attachments' => '\ClickSend\Model\Attachment[]',
@@ -335,7 +335,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Gets from
      *
-     * @return \ClickSend\Model\EmailFrom[]
+     * @return \ClickSend\Model\EmailFrom
      */
     public function getFrom()
     {
@@ -345,7 +345,7 @@ class Email implements ModelInterface, ArrayAccess
     /**
      * Sets from
      *
-     * @param \ClickSend\Model\EmailFrom[] $from From Email object.
+     * @param \ClickSend\Model\EmailFrom $from from
      *
      * @return $this
      */

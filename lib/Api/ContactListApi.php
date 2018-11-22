@@ -737,15 +737,15 @@ class ContactListApi
      * Update specific contact list
      *
      * @param  int $list_id Your list id (required)
-     * @param  string $list_name Your new list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function listsByListIdPut($list_id, $list_name)
+    public function listsByListIdPut($list_id, $list)
     {
-        list($response) = $this->listsByListIdPutWithHttpInfo($list_id, $list_name);
+        list($response) = $this->listsByListIdPutWithHttpInfo($list_id, $list);
         return $response;
     }
 
@@ -755,16 +755,16 @@ class ContactListApi
      * Update specific contact list
      *
      * @param  int $list_id Your list id (required)
-     * @param  string $list_name Your new list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function listsByListIdPutWithHttpInfo($list_id, $list_name)
+    public function listsByListIdPutWithHttpInfo($list_id, $list)
     {
         $returnType = 'string';
-        $request = $this->listsByListIdPutRequest($list_id, $list_name);
+        $request = $this->listsByListIdPutRequest($list_id, $list);
 
         try {
             $options = $this->createHttpClientOption();
@@ -887,14 +887,14 @@ class ContactListApi
      * Update specific contact list
      *
      * @param  int $list_id Your list id (required)
-     * @param  string $list_name Your new list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function listsByListIdPutAsync($list_id, $list_name)
+    public function listsByListIdPutAsync($list_id, $list)
     {
-        return $this->listsByListIdPutAsyncWithHttpInfo($list_id, $list_name)
+        return $this->listsByListIdPutAsyncWithHttpInfo($list_id, $list)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -908,15 +908,15 @@ class ContactListApi
      * Update specific contact list
      *
      * @param  int $list_id Your list id (required)
-     * @param  string $list_name Your new list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function listsByListIdPutAsyncWithHttpInfo($list_id, $list_name)
+    public function listsByListIdPutAsyncWithHttpInfo($list_id, $list)
     {
         $returnType = 'string';
-        $request = $this->listsByListIdPutRequest($list_id, $list_name);
+        $request = $this->listsByListIdPutRequest($list_id, $list);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -959,12 +959,12 @@ class ContactListApi
      * Create request for operation 'listsByListIdPut'
      *
      * @param  int $list_id Your list id (required)
-     * @param  string $list_name Your new list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function listsByListIdPutRequest($list_id, $list_name)
+    protected function listsByListIdPutRequest($list_id, $list)
     {
         // verify the required parameter 'list_id' is set
         if ($list_id === null || (is_array($list_id) && count($list_id) === 0)) {
@@ -972,10 +972,10 @@ class ContactListApi
                 'Missing the required parameter $list_id when calling listsByListIdPut'
             );
         }
-        // verify the required parameter 'list_name' is set
-        if ($list_name === null || (is_array($list_name) && count($list_name) === 0)) {
+        // verify the required parameter 'list' is set
+        if ($list === null || (is_array($list) && count($list) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $list_name when calling listsByListIdPut'
+                'Missing the required parameter $list when calling listsByListIdPut'
             );
         }
 
@@ -998,8 +998,8 @@ class ContactListApi
 
         // body params
         $_tempBody = null;
-        if (isset($list_name)) {
-            $_tempBody = $list_name;
+        if (isset($list)) {
+            $_tempBody = $list;
         }
 
         if ($multipart) {
@@ -1737,15 +1737,15 @@ class ContactListApi
      *
      * Create new contact list
      *
-     * @param  string $list_name Your contact list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function listsPost($list_name)
+    public function listsPost($list)
     {
-        list($response) = $this->listsPostWithHttpInfo($list_name);
+        list($response) = $this->listsPostWithHttpInfo($list);
         return $response;
     }
 
@@ -1754,16 +1754,16 @@ class ContactListApi
      *
      * Create new contact list
      *
-     * @param  string $list_name Your contact list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function listsPostWithHttpInfo($list_name)
+    public function listsPostWithHttpInfo($list)
     {
         $returnType = 'string';
-        $request = $this->listsPostRequest($list_name);
+        $request = $this->listsPostRequest($list);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1885,14 +1885,14 @@ class ContactListApi
      *
      * Create new contact list
      *
-     * @param  string $list_name Your contact list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function listsPostAsync($list_name)
+    public function listsPostAsync($list)
     {
-        return $this->listsPostAsyncWithHttpInfo($list_name)
+        return $this->listsPostAsyncWithHttpInfo($list)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1905,15 +1905,15 @@ class ContactListApi
      *
      * Create new contact list
      *
-     * @param  string $list_name Your contact list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function listsPostAsyncWithHttpInfo($list_name)
+    public function listsPostAsyncWithHttpInfo($list)
     {
         $returnType = 'string';
-        $request = $this->listsPostRequest($list_name);
+        $request = $this->listsPostRequest($list);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1955,17 +1955,17 @@ class ContactListApi
     /**
      * Create request for operation 'listsPost'
      *
-     * @param  string $list_name Your contact list name (required)
+     * @param  \ClickSend\Model\ModelList $list List model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function listsPostRequest($list_name)
+    protected function listsPostRequest($list)
     {
-        // verify the required parameter 'list_name' is set
-        if ($list_name === null || (is_array($list_name) && count($list_name) === 0)) {
+        // verify the required parameter 'list' is set
+        if ($list === null || (is_array($list) && count($list) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $list_name when calling listsPost'
+                'Missing the required parameter $list when calling listsPost'
             );
         }
 
@@ -1980,8 +1980,8 @@ class ContactListApi
 
         // body params
         $_tempBody = null;
-        if (isset($list_name)) {
-            $_tempBody = $list_name;
+        if (isset($list)) {
+            $_tempBody = $list;
         }
 
         if ($multipart) {

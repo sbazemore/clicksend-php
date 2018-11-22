@@ -324,7 +324,7 @@ class PostLetterApi
             );
         }
 
-        $resourcePath = '/post/letters/export';
+        $resourcePath = '/post/letters/history/export';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

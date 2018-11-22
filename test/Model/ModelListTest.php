@@ -1,6 +1,6 @@
 <?php
 /**
- * EmailFromTest
+ * ModelListTest
  *
  * PHP version 5
  *
@@ -30,15 +30,15 @@
 namespace ClickSend;
 
 /**
- * EmailFromTest Class Doc Comment
+ * ModelListTest Class Doc Comment
  *
  * @category    Class
- * @description From Email object.
+ * @description Your list.
  * @package     ClickSend
  * @author      ClickSend Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class EmailFromTest extends \PHPUnit_Framework_TestCase
+class ModelListTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -70,23 +70,16 @@ class EmailFromTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "EmailFrom"
+     * Test "ModelList"
      */
-    public function testEmailFrom()
+    public function testModelList()
     {
     }
 
     /**
-     * Test attribute "email_address_id"
+     * Test attribute "list_name"
      */
-    public function testPropertyEmailAddressId()
-    {
-    }
-
-    /**
-     * Test attribute "name"
-     */
-    public function testPropertyName()
+    public function testPropertyListName()
     {
     }
 }

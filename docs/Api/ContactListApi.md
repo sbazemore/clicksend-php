@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listsByListIdPut**
-> string listsByListIdPut($list_id, $list_name)
+> string listsByListIdPut($list_id, $list)
 
 Update specific contact list
 
@@ -150,10 +150,10 @@ $apiInstance = new ClickSend\Api\ContactListApi(
     $config
 );
 $list_id = 56; // int | Your list id
-$list_name = "list_name_example"; // string | Your new list name
+$list = new \ClickSend\Model\ModelList(); // \ClickSend\Model\ModelList | List model
 
 try {
-    $result = $apiInstance->listsByListIdPut($list_id, $list_name);
+    $result = $apiInstance->listsByListIdPut($list_id, $list);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ContactListApi->listsByListIdPut: ', $e->getMessage(), PHP_EOL;
@@ -166,7 +166,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_id** | **int**| Your list id |
- **list_name** | **string**| Your new list name |
+ **list** | [**\ClickSend\Model\ModelList**](../Model/ModelList.md)| List model |
 
 ### Return type
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listsPost**
-> string listsPost($list_name)
+> string listsPost($list)
 
 Create new contact list
 
@@ -323,10 +323,10 @@ $apiInstance = new ClickSend\Api\ContactListApi(
     new GuzzleHttp\Client(),
     $config
 );
-$list_name = "list_name_example"; // string | Your contact list name
+$list = new \ClickSend\Model\ModelList(); // \ClickSend\Model\ModelList | List model
 
 try {
-    $result = $apiInstance->listsPost($list_name);
+    $result = $apiInstance->listsPost($list);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ContactListApi->listsPost: ', $e->getMessage(), PHP_EOL;
@@ -338,7 +338,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **list_name** | **string**| Your contact list name |
+ **list** | [**\ClickSend\Model\ModelList**](../Model/ModelList.md)| List model |
 
 ### Return type
 
