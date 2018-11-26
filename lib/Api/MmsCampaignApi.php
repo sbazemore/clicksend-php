@@ -324,7 +324,7 @@ class MmsCampaignApi
             );
         }
 
-        $resourcePath = '/mms-campaign/{mms_campaign_id}';
+        $resourcePath = '/mms-campaigns/{mms_campaign_id}';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];

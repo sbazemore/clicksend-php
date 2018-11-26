@@ -324,7 +324,7 @@ class SmsCampaignApi
             );
         }
 
-        $resourcePath = '/sms-campaign/{sms_campaign_id}';
+        $resourcePath = '/sms-campaigns/{sms_campaign_id}';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
