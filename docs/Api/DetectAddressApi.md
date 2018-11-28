@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **detectAddressPost**
-> string detectAddressPost($content)
+> string detectAddressPost($upload_file)
 
 Detects address in uploaded file.
 
@@ -31,10 +31,10 @@ $apiInstance = new ClickSend\Api\DetectAddressApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content = "content_example"; // string | Base64-encoded file contents
+$upload_file = new \ClickSend\Model\UploadFile(); // \ClickSend\Model\UploadFile | Your file to be uploaded
 
 try {
-    $result = $apiInstance->detectAddressPost($content);
+    $result = $apiInstance->detectAddressPost($upload_file);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DetectAddressApi->detectAddressPost: ', $e->getMessage(), PHP_EOL;
@@ -46,7 +46,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **content** | **string**| Base64-encoded file contents |
+ **upload_file** | [**\ClickSend\Model\UploadFile**](../Model/UploadFile.md)| Your file to be uploaded |
 
 ### Return type
 

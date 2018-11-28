@@ -36,20 +36,21 @@ use \ClickSend\ObjectSerializer;
  * UploadFile Class Doc Comment
  *
  * @category Class
+ * @description Your file to be uploaded.
  * @package  ClickSend
  * @author   ClickSend Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 class UploadFile implements ModelInterface, ArrayAccess
 {
-    const DISCRIMINATOR = null;
+    const DISCRIMINATOR = 'classType';
 
     /**
       * The original name of the model.
       *
       * @var string
       */
-    protected static $swaggerModelName = 'uploadFile';
+    protected static $swaggerModelName = 'UploadFile';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -178,6 +179,10 @@ class UploadFile implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['content'] = isset($data['content']) ? $data['content'] : null;
+
+        // Initialize discriminator property with the model name.
+        $discriminator = array_search('classType', self::$attributeMap, true);
+        $this->container[$discriminator] = static::$swaggerModelName;
     }
 
     /**
@@ -220,7 +225,7 @@ class UploadFile implements ModelInterface, ArrayAccess
     /**
      * Sets content
      *
-     * @param string $content Your base64 encoded file.
+     * @param string $content Your base64 encoded file string.
      *
      * @return $this
      */

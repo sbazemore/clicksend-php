@@ -92,16 +92,16 @@ class UploadApi
      *
      * Upload File
      *
+     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
      * @param  string $convert  (required)
-     * @param  \ClickSend\Model\UploadFile $upload_file upload_file (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function uploadsPost($convert, $upload_file = null)
+    public function uploadsPost($upload_file, $convert)
     {
-        list($response) = $this->uploadsPostWithHttpInfo($convert, $upload_file);
+        list($response) = $this->uploadsPostWithHttpInfo($upload_file, $convert);
         return $response;
     }
 
@@ -110,17 +110,17 @@ class UploadApi
      *
      * Upload File
      *
+     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
      * @param  string $convert  (required)
-     * @param  \ClickSend\Model\UploadFile $upload_file (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function uploadsPostWithHttpInfo($convert, $upload_file = null)
+    public function uploadsPostWithHttpInfo($upload_file, $convert)
     {
         $returnType = 'string';
-        $request = $this->uploadsPostRequest($convert, $upload_file);
+        $request = $this->uploadsPostRequest($upload_file, $convert);
 
         try {
             $options = $this->createHttpClientOption();
@@ -242,15 +242,15 @@ class UploadApi
      *
      * Upload File
      *
+     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
      * @param  string $convert  (required)
-     * @param  \ClickSend\Model\UploadFile $upload_file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function uploadsPostAsync($convert, $upload_file = null)
+    public function uploadsPostAsync($upload_file, $convert)
     {
-        return $this->uploadsPostAsyncWithHttpInfo($convert, $upload_file)
+        return $this->uploadsPostAsyncWithHttpInfo($upload_file, $convert)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -263,16 +263,16 @@ class UploadApi
      *
      * Upload File
      *
+     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
      * @param  string $convert  (required)
-     * @param  \ClickSend\Model\UploadFile $upload_file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function uploadsPostAsyncWithHttpInfo($convert, $upload_file = null)
+    public function uploadsPostAsyncWithHttpInfo($upload_file, $convert)
     {
         $returnType = 'string';
-        $request = $this->uploadsPostRequest($convert, $upload_file);
+        $request = $this->uploadsPostRequest($upload_file, $convert);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -314,14 +314,20 @@ class UploadApi
     /**
      * Create request for operation 'uploadsPost'
      *
+     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
      * @param  string $convert  (required)
-     * @param  \ClickSend\Model\UploadFile $upload_file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function uploadsPostRequest($convert, $upload_file = null)
+    protected function uploadsPostRequest($upload_file, $convert)
     {
+        // verify the required parameter 'upload_file' is set
+        if ($upload_file === null || (is_array($upload_file) && count($upload_file) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $upload_file when calling uploadsPost'
+            );
+        }
         // verify the required parameter 'convert' is set
         if ($convert === null || (is_array($convert) && count($convert) === 0)) {
             throw new \InvalidArgumentException(

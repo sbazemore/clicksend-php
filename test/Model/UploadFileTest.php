@@ -33,7 +33,7 @@ namespace ClickSend;
  * UploadFileTest Class Doc Comment
  *
  * @category    Class
- * @description UploadFile
+ * @description Your file to be uploaded.
  * @package     ClickSend
  * @author      ClickSend Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
