@@ -63,6 +63,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'int',
         'duplex' => 'int',
         'colour' => 'int',
+        'priority_post' => 'int',
         'source' => 'string'
     ];
 
@@ -77,6 +78,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'int32',
         'duplex' => 'int32',
         'colour' => 'int32',
+        'priority_post' => 'int32',
         'source' => null
     ];
 
@@ -112,6 +114,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'template_used',
         'duplex' => 'duplex',
         'colour' => 'colour',
+        'priority_post' => 'priority_post',
         'source' => 'source'
     ];
 
@@ -126,6 +129,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'setTemplateUsed',
         'duplex' => 'setDuplex',
         'colour' => 'setColour',
+        'priority_post' => 'setPriorityPost',
         'source' => 'setSource'
     ];
 
@@ -140,6 +144,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'getTemplateUsed',
         'duplex' => 'getDuplex',
         'colour' => 'getColour',
+        'priority_post' => 'getPriorityPost',
         'source' => 'getSource'
     ];
 
@@ -208,6 +213,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         $this->container['template_used'] = isset($data['template_used']) ? $data['template_used'] : 0;
         $this->container['duplex'] = isset($data['duplex']) ? $data['duplex'] : 0;
         $this->container['colour'] = isset($data['colour']) ? $data['colour'] : 0;
+        $this->container['priority_post'] = isset($data['priority_post']) ? $data['priority_post'] : 0;
         $this->container['source'] = isset($data['source']) ? $data['source'] : 'sdk';
 
         // Initialize discriminator property with the model name.
@@ -361,6 +367,30 @@ class PostLetter implements ModelInterface, ArrayAccess
     public function setColour($colour)
     {
         $this->container['colour'] = $colour;
+
+        return $this;
+    }
+
+    /**
+     * Gets priority_post
+     *
+     * @return int
+     */
+    public function getPriorityPost()
+    {
+        return $this->container['priority_post'];
+    }
+
+    /**
+     * Sets priority_post
+     *
+     * @param int $priority_post Whether letter is priority
+     *
+     * @return $this
+     */
+    public function setPriorityPost($priority_post)
+    {
+        $this->container['priority_post'] = $priority_post;
 
         return $this;
     }

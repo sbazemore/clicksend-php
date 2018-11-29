@@ -112,6 +112,13 @@ class PostLetterTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "priority_post"
+     */
+    public function testPropertyPriorityPost()
+    {
+    }
+
+    /**
      * Test attribute "source"
      */
     public function testPropertySource()
