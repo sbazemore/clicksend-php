@@ -248,9 +248,6 @@ class PostRecipient implements ModelInterface, ArrayAccess
         if ($this->container['address_line_1'] === null) {
             $invalidProperties[] = "'address_line_1' can't be null";
         }
-        if ($this->container['address_line_2'] === null) {
-            $invalidProperties[] = "'address_line_2' can't be null";
-        }
         if ($this->container['address_city'] === null) {
             $invalidProperties[] = "'address_city' can't be null";
         }
