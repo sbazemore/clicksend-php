@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listsContactsByListIdPost**
-> string listsContactsByListIdPost($contact, $list_id, $page, $limit)
+> string listsContactsByListIdPost($contact, $list_id)
 
 Create new contact
 
@@ -275,11 +275,9 @@ $apiInstance = new ClickSend\Api\ContactApi(
 );
 $contact = new \ClickSend\Model\Contact(); // \ClickSend\Model\Contact | Contact model
 $list_id = 56; // int | List id
-$page = 1; // int | Page number
-$limit = 10; // int | Number of records per page
 
 try {
-    $result = $apiInstance->listsContactsByListIdPost($contact, $list_id, $page, $limit);
+    $result = $apiInstance->listsContactsByListIdPost($contact, $list_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ContactApi->listsContactsByListIdPost: ', $e->getMessage(), PHP_EOL;
@@ -293,8 +291,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contact** | [**\ClickSend\Model\Contact**](../Model/Contact.md)| Contact model |
  **list_id** | **int**| List id |
- **page** | **int**| Page number | [optional] [default to 1]
- **limit** | **int**| Number of records per page | [optional] [default to 10]
 
 ### Return type
 

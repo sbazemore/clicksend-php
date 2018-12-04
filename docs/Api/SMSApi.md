@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **smsInboundGet**
-> string smsInboundGet($page, $limit)
+> string smsInboundGet($q, $page, $limit)
 
 Get all inbound sms
 
@@ -273,11 +273,12 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
+$q = "q_example"; // string | Your keyword or query.
 $page = 1; // int | Page number
 $limit = 10; // int | Number of records per page
 
 try {
-    $result = $apiInstance->smsInboundGet($page, $limit);
+    $result = $apiInstance->smsInboundGet($q, $page, $limit);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SMSApi->smsInboundGet: ', $e->getMessage(), PHP_EOL;
@@ -289,6 +290,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **q** | **string**| Your keyword or query. |
  **page** | **int**| Page number | [optional] [default to 1]
  **limit** | **int**| Number of records per page | [optional] [default to 10]
 
@@ -532,7 +534,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **smsReceiptsGet**
-> string smsReceiptsGet($page, $limit)
+> string smsReceiptsGet($q, $page, $limit)
 
 Get all delivery receipts
 
@@ -555,11 +557,12 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
+$q = "q_example"; // string | Your keyword or query.
 $page = 1; // int | Page number
 $limit = 10; // int | Number of records per page
 
 try {
-    $result = $apiInstance->smsReceiptsGet($page, $limit);
+    $result = $apiInstance->smsReceiptsGet($q, $page, $limit);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SMSApi->smsReceiptsGet: ', $e->getMessage(), PHP_EOL;
@@ -571,6 +574,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **q** | **string**| Your keyword or query. |
  **page** | **int**| Page number | [optional] [default to 1]
  **limit** | **int**| Number of records per page | [optional] [default to 10]
 
