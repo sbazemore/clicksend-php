@@ -58,7 +58,7 @@ class DateBefore implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'date_before' => 'string'
+        'date_before' => 'float'
     ];
 
     /**
@@ -212,7 +212,7 @@ class DateBefore implements ModelInterface, ArrayAccess
     /**
      * Gets date_before
      *
-     * @return string
+     * @return float
      */
     public function getDateBefore()
     {
@@ -222,7 +222,7 @@ class DateBefore implements ModelInterface, ArrayAccess
     /**
      * Sets date_before
      *
-     * @param string $date_before An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read.
+     * @param float $date_before An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read.
      *
      * @return $this
      */
