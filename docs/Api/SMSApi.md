@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**smsHistoryGet**](SMSApi.md#smsHistoryGet) | **GET** /sms/history | Get all sms history
 [**smsInboundGet**](SMSApi.md#smsInboundGet) | **GET** /sms/inbound | Get all inbound sms
 [**smsInboundPost**](SMSApi.md#smsInboundPost) | **POST** /sms/inbound | Create inbound sms
+[**smsInboundReadByMessageIdPut**](SMSApi.md#smsInboundReadByMessageIdPut) | **PUT** /sms/inbound-read/{message_id} | Mark inbound SMS as read
 [**smsInboundReadPut**](SMSApi.md#smsInboundReadPut) | **PUT** /sms/inbound-read | Mark inbound SMS as read
 [**smsPricePost**](SMSApi.md#smsPricePost) | **POST** /sms/price | Calculate sms price
 [**smsReceiptsByMessageIdGet**](SMSApi.md#smsReceiptsByMessageIdGet) | **GET** /sms/receipts/{message_id} | Get a Specific Delivery Receipt
@@ -365,6 +366,62 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
+# **smsInboundReadByMessageIdPut**
+> string smsInboundReadByMessageIdPut($message_id)
+
+Mark inbound SMS as read
+
+Mark specific inbound SMS as read
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure HTTP basic authorization: BasicAuth
+$config = ClickSend\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
+$apiInstance = new ClickSend\Api\SMSApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$message_id = "message_id_example"; // string | Message ID
+
+try {
+    $result = $apiInstance->smsInboundReadByMessageIdPut($message_id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling SMSApi->smsInboundReadByMessageIdPut: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **message_id** | **string**| Message ID |
+
+### Return type
+
+**string**
+
+### Authorization
+
+[BasicAuth](../../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
 # **smsInboundReadPut**
 > string smsInboundReadPut($date_before)
 
@@ -389,7 +446,7 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$date_before = "date_before_example"; // string | An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read.
+$date_before = 8.14; // float | An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read.
 
 try {
     $result = $apiInstance->smsInboundReadPut($date_before);
@@ -404,7 +461,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **date_before** | **string**| An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. | [optional]
+ **date_before** | **float**| An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. | [optional]
 
 ### Return type
 
@@ -534,7 +591,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **smsReceiptsGet**
-> string smsReceiptsGet($q, $page, $limit)
+> string smsReceiptsGet($page, $limit)
 
 Get all delivery receipts
 
@@ -557,12 +614,11 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$q = "q_example"; // string | Your keyword or query.
 $page = 1; // int | Page number
 $limit = 10; // int | Number of records per page
 
 try {
-    $result = $apiInstance->smsReceiptsGet($q, $page, $limit);
+    $result = $apiInstance->smsReceiptsGet($page, $limit);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SMSApi->smsReceiptsGet: ', $e->getMessage(), PHP_EOL;
@@ -574,7 +630,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **q** | **string**| Your keyword or query. | [optional]
  **page** | **int**| Page number | [optional] [default to 1]
  **limit** | **int**| Number of records per page | [optional] [default to 10]
 
@@ -673,7 +728,7 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$date_before = "date_before_example"; // string | Mark all as read before this timestamp
+$date_before = 8.14; // float | Mark all as read before this timestamp
 
 try {
     $result = $apiInstance->smsReceiptsReadPut($date_before);
@@ -688,7 +743,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **date_before** | **string**| Mark all as read before this timestamp | [optional]
+ **date_before** | **float**| Mark all as read before this timestamp | [optional]
 
 ### Return type
 

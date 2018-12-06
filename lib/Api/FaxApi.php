@@ -1096,7 +1096,6 @@ class FaxApi
      *
      * Get List of Fax Receipts
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
@@ -1104,9 +1103,9 @@ class FaxApi
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function faxReceiptsGet($q = null, $page = '1', $limit = '10')
+    public function faxReceiptsGet($page = '1', $limit = '10')
     {
-        list($response) = $this->faxReceiptsGetWithHttpInfo($q, $page, $limit);
+        list($response) = $this->faxReceiptsGetWithHttpInfo($page, $limit);
         return $response;
     }
 
@@ -1115,7 +1114,6 @@ class FaxApi
      *
      * Get List of Fax Receipts
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
@@ -1123,10 +1121,10 @@ class FaxApi
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function faxReceiptsGetWithHttpInfo($q = null, $page = '1', $limit = '10')
+    public function faxReceiptsGetWithHttpInfo($page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->faxReceiptsGetRequest($q, $page, $limit);
+        $request = $this->faxReceiptsGetRequest($page, $limit);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1248,16 +1246,15 @@ class FaxApi
      *
      * Get List of Fax Receipts
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function faxReceiptsGetAsync($q = null, $page = '1', $limit = '10')
+    public function faxReceiptsGetAsync($page = '1', $limit = '10')
     {
-        return $this->faxReceiptsGetAsyncWithHttpInfo($q, $page, $limit)
+        return $this->faxReceiptsGetAsyncWithHttpInfo($page, $limit)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1270,17 +1267,16 @@ class FaxApi
      *
      * Get List of Fax Receipts
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function faxReceiptsGetAsyncWithHttpInfo($q = null, $page = '1', $limit = '10')
+    public function faxReceiptsGetAsyncWithHttpInfo($page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->faxReceiptsGetRequest($q, $page, $limit);
+        $request = $this->faxReceiptsGetRequest($page, $limit);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1322,14 +1318,13 @@ class FaxApi
     /**
      * Create request for operation 'faxReceiptsGet'
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function faxReceiptsGetRequest($q = null, $page = '1', $limit = '10')
+    protected function faxReceiptsGetRequest($page = '1', $limit = '10')
     {
         if ($page !== null && $page < 1) {
             throw new \InvalidArgumentException('invalid value for "$page" when calling FaxApi.faxReceiptsGet, must be bigger than or equal to 1.');
@@ -1347,10 +1342,6 @@ class FaxApi
         $httpBody = '';
         $multipart = false;
 
-        // query params
-        if ($q !== null) {
-            $queryParams['q'] = ObjectSerializer::toQueryValue($q);
-        }
         // query params
         if ($page !== null) {
             $queryParams['page'] = ObjectSerializer::toQueryValue($page);

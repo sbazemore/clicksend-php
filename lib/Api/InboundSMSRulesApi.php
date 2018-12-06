@@ -1389,6 +1389,7 @@ class InboundSMSRulesApi
      *
      * Get all inbound sms automations
      *
+     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
@@ -1396,9 +1397,9 @@ class InboundSMSRulesApi
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function smsInboundAutomationsGet($page = '1', $limit = '10')
+    public function smsInboundAutomationsGet($q = null, $page = '1', $limit = '10')
     {
-        list($response) = $this->smsInboundAutomationsGetWithHttpInfo($page, $limit);
+        list($response) = $this->smsInboundAutomationsGetWithHttpInfo($q, $page, $limit);
         return $response;
     }
 
@@ -1407,6 +1408,7 @@ class InboundSMSRulesApi
      *
      * Get all inbound sms automations
      *
+     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
@@ -1414,10 +1416,10 @@ class InboundSMSRulesApi
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function smsInboundAutomationsGetWithHttpInfo($page = '1', $limit = '10')
+    public function smsInboundAutomationsGetWithHttpInfo($q = null, $page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->smsInboundAutomationsGetRequest($page, $limit);
+        $request = $this->smsInboundAutomationsGetRequest($q, $page, $limit);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1539,15 +1541,16 @@ class InboundSMSRulesApi
      *
      * Get all inbound sms automations
      *
+     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function smsInboundAutomationsGetAsync($page = '1', $limit = '10')
+    public function smsInboundAutomationsGetAsync($q = null, $page = '1', $limit = '10')
     {
-        return $this->smsInboundAutomationsGetAsyncWithHttpInfo($page, $limit)
+        return $this->smsInboundAutomationsGetAsyncWithHttpInfo($q, $page, $limit)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1560,16 +1563,17 @@ class InboundSMSRulesApi
      *
      * Get all inbound sms automations
      *
+     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function smsInboundAutomationsGetAsyncWithHttpInfo($page = '1', $limit = '10')
+    public function smsInboundAutomationsGetAsyncWithHttpInfo($q = null, $page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->smsInboundAutomationsGetRequest($page, $limit);
+        $request = $this->smsInboundAutomationsGetRequest($q, $page, $limit);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1611,13 +1615,14 @@ class InboundSMSRulesApi
     /**
      * Create request for operation 'smsInboundAutomationsGet'
      *
+     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function smsInboundAutomationsGetRequest($page = '1', $limit = '10')
+    protected function smsInboundAutomationsGetRequest($q = null, $page = '1', $limit = '10')
     {
         if ($page !== null && $page < 1) {
             throw new \InvalidArgumentException('invalid value for "$page" when calling InboundSMSRulesApi.smsInboundAutomationsGet, must be bigger than or equal to 1.');
@@ -1635,6 +1640,10 @@ class InboundSMSRulesApi
         $httpBody = '';
         $multipart = false;
 
+        // query params
+        if ($q !== null) {
+            $queryParams['q'] = ObjectSerializer::toQueryValue($q);
+        }
         // query params
         if ($page !== null) {
             $queryParams['page'] = ObjectSerializer::toQueryValue($page);

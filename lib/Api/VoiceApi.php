@@ -2002,7 +2002,6 @@ class VoiceApi
      *
      * Get all voice receipts
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
@@ -2010,9 +2009,9 @@ class VoiceApi
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function voiceReceiptsGet($q = null, $page = '1', $limit = '10')
+    public function voiceReceiptsGet($page = '1', $limit = '10')
     {
-        list($response) = $this->voiceReceiptsGetWithHttpInfo($q, $page, $limit);
+        list($response) = $this->voiceReceiptsGetWithHttpInfo($page, $limit);
         return $response;
     }
 
@@ -2021,7 +2020,6 @@ class VoiceApi
      *
      * Get all voice receipts
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
@@ -2029,10 +2027,10 @@ class VoiceApi
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function voiceReceiptsGetWithHttpInfo($q = null, $page = '1', $limit = '10')
+    public function voiceReceiptsGetWithHttpInfo($page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->voiceReceiptsGetRequest($q, $page, $limit);
+        $request = $this->voiceReceiptsGetRequest($page, $limit);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2154,16 +2152,15 @@ class VoiceApi
      *
      * Get all voice receipts
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function voiceReceiptsGetAsync($q = null, $page = '1', $limit = '10')
+    public function voiceReceiptsGetAsync($page = '1', $limit = '10')
     {
-        return $this->voiceReceiptsGetAsyncWithHttpInfo($q, $page, $limit)
+        return $this->voiceReceiptsGetAsyncWithHttpInfo($page, $limit)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -2176,17 +2173,16 @@ class VoiceApi
      *
      * Get all voice receipts
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function voiceReceiptsGetAsyncWithHttpInfo($q = null, $page = '1', $limit = '10')
+    public function voiceReceiptsGetAsyncWithHttpInfo($page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->voiceReceiptsGetRequest($q, $page, $limit);
+        $request = $this->voiceReceiptsGetRequest($page, $limit);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2228,14 +2224,13 @@ class VoiceApi
     /**
      * Create request for operation 'voiceReceiptsGet'
      *
-     * @param  string $q Your keyword or query. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function voiceReceiptsGetRequest($q = null, $page = '1', $limit = '10')
+    protected function voiceReceiptsGetRequest($page = '1', $limit = '10')
     {
         if ($page !== null && $page < 1) {
             throw new \InvalidArgumentException('invalid value for "$page" when calling VoiceApi.voiceReceiptsGet, must be bigger than or equal to 1.');
@@ -2253,10 +2248,6 @@ class VoiceApi
         $httpBody = '';
         $multipart = false;
 
-        // query params
-        if ($q !== null) {
-            $queryParams['q'] = ObjectSerializer::toQueryValue($q);
-        }
         // query params
         if ($page !== null) {
             $queryParams['page'] = ObjectSerializer::toQueryValue($page);

@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **smsInboundAutomationsGet**
-> string smsInboundAutomationsGet($page, $limit)
+> string smsInboundAutomationsGet($q, $page, $limit)
 
 Get all inbound sms automations
 
@@ -261,11 +261,12 @@ $apiInstance = new ClickSend\Api\InboundSMSRulesApi(
     new GuzzleHttp\Client(),
     $config
 );
+$q = "q_example"; // string | Your keyword or query.
 $page = 1; // int | Page number
 $limit = 10; // int | Number of records per page
 
 try {
-    $result = $apiInstance->smsInboundAutomationsGet($page, $limit);
+    $result = $apiInstance->smsInboundAutomationsGet($q, $page, $limit);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling InboundSMSRulesApi->smsInboundAutomationsGet: ', $e->getMessage(), PHP_EOL;
@@ -277,6 +278,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **q** | **string**| Your keyword or query. | [optional]
  **page** | **int**| Page number | [optional] [default to 1]
  **limit** | **int**| Number of records per page | [optional] [default to 10]
 

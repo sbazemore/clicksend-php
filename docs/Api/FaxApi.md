@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **faxReceiptsGet**
-> string faxReceiptsGet($q, $page, $limit)
+> string faxReceiptsGet($page, $limit)
 
 Get List of Fax Receipts
 
@@ -213,12 +213,11 @@ $apiInstance = new ClickSend\Api\FaxApi(
     new GuzzleHttp\Client(),
     $config
 );
-$q = "q_example"; // string | Your keyword or query.
 $page = 1; // int | Page number
 $limit = 10; // int | Number of records per page
 
 try {
-    $result = $apiInstance->faxReceiptsGet($q, $page, $limit);
+    $result = $apiInstance->faxReceiptsGet($page, $limit);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FaxApi->faxReceiptsGet: ', $e->getMessage(), PHP_EOL;
@@ -230,7 +229,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **q** | **string**| Your keyword or query. | [optional]
  **page** | **int**| Page number | [optional] [default to 1]
  **limit** | **int**| Number of records per page | [optional] [default to 10]
 

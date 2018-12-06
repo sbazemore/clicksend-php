@@ -132,6 +132,16 @@ class SMSApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test case for smsInboundReadByMessageIdPut
+     *
+     * Mark inbound SMS as read.
+     *
+     */
+    public function testSmsInboundReadByMessageIdPut()
+    {
+    }
+
+    /**
      * Test case for smsInboundReadPut
      *
      * Mark inbound SMS as read.
