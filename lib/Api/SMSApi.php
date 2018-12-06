@@ -1035,6 +1035,7 @@ class SMSApi
      *
      * Get all sms history
      *
+     * @param  string $q Custom query Example: from:{number},status_code:201. (optional)
      * @param  int $date_from Start date (optional)
      * @param  int $date_to End date (optional)
      * @param  int $page Page number (optional, default to 1)
@@ -1044,9 +1045,9 @@ class SMSApi
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function smsHistoryGet($date_from = null, $date_to = null, $page = '1', $limit = '10')
+    public function smsHistoryGet($q = null, $date_from = null, $date_to = null, $page = '1', $limit = '10')
     {
-        list($response) = $this->smsHistoryGetWithHttpInfo($date_from, $date_to, $page, $limit);
+        list($response) = $this->smsHistoryGetWithHttpInfo($q, $date_from, $date_to, $page, $limit);
         return $response;
     }
 
@@ -1055,6 +1056,7 @@ class SMSApi
      *
      * Get all sms history
      *
+     * @param  string $q Custom query Example: from:{number},status_code:201. (optional)
      * @param  int $date_from Start date (optional)
      * @param  int $date_to End date (optional)
      * @param  int $page Page number (optional, default to 1)
@@ -1064,10 +1066,10 @@ class SMSApi
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function smsHistoryGetWithHttpInfo($date_from = null, $date_to = null, $page = '1', $limit = '10')
+    public function smsHistoryGetWithHttpInfo($q = null, $date_from = null, $date_to = null, $page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->smsHistoryGetRequest($date_from, $date_to, $page, $limit);
+        $request = $this->smsHistoryGetRequest($q, $date_from, $date_to, $page, $limit);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1189,6 +1191,7 @@ class SMSApi
      *
      * Get all sms history
      *
+     * @param  string $q Custom query Example: from:{number},status_code:201. (optional)
      * @param  int $date_from Start date (optional)
      * @param  int $date_to End date (optional)
      * @param  int $page Page number (optional, default to 1)
@@ -1197,9 +1200,9 @@ class SMSApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function smsHistoryGetAsync($date_from = null, $date_to = null, $page = '1', $limit = '10')
+    public function smsHistoryGetAsync($q = null, $date_from = null, $date_to = null, $page = '1', $limit = '10')
     {
-        return $this->smsHistoryGetAsyncWithHttpInfo($date_from, $date_to, $page, $limit)
+        return $this->smsHistoryGetAsyncWithHttpInfo($q, $date_from, $date_to, $page, $limit)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1212,6 +1215,7 @@ class SMSApi
      *
      * Get all sms history
      *
+     * @param  string $q Custom query Example: from:{number},status_code:201. (optional)
      * @param  int $date_from Start date (optional)
      * @param  int $date_to End date (optional)
      * @param  int $page Page number (optional, default to 1)
@@ -1220,10 +1224,10 @@ class SMSApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function smsHistoryGetAsyncWithHttpInfo($date_from = null, $date_to = null, $page = '1', $limit = '10')
+    public function smsHistoryGetAsyncWithHttpInfo($q = null, $date_from = null, $date_to = null, $page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->smsHistoryGetRequest($date_from, $date_to, $page, $limit);
+        $request = $this->smsHistoryGetRequest($q, $date_from, $date_to, $page, $limit);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1265,6 +1269,7 @@ class SMSApi
     /**
      * Create request for operation 'smsHistoryGet'
      *
+     * @param  string $q Custom query Example: from:{number},status_code:201. (optional)
      * @param  int $date_from Start date (optional)
      * @param  int $date_to End date (optional)
      * @param  int $page Page number (optional, default to 1)
@@ -1273,7 +1278,7 @@ class SMSApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function smsHistoryGetRequest($date_from = null, $date_to = null, $page = '1', $limit = '10')
+    protected function smsHistoryGetRequest($q = null, $date_from = null, $date_to = null, $page = '1', $limit = '10')
     {
         if ($page !== null && $page < 1) {
             throw new \InvalidArgumentException('invalid value for "$page" when calling SMSApi.smsHistoryGet, must be bigger than or equal to 1.');
@@ -1291,6 +1296,10 @@ class SMSApi
         $httpBody = '';
         $multipart = false;
 
+        // query params
+        if ($q !== null) {
+            $queryParams['q'] = ObjectSerializer::toQueryValue($q);
+        }
         // query params
         if ($date_from !== null) {
             $queryParams['date_from'] = ObjectSerializer::toQueryValue($date_from);

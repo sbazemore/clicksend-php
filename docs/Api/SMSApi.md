@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **smsHistoryGet**
-> string smsHistoryGet($date_from, $date_to, $page, $limit)
+> string smsHistoryGet($q, $date_from, $date_to, $page, $limit)
 
 Get all sms history
 
@@ -212,13 +212,14 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
+$q = "q_example"; // string | Custom query Example: from:{number},status_code:201.
 $date_from = 56; // int | Start date
 $date_to = 56; // int | End date
 $page = 1; // int | Page number
 $limit = 10; // int | Number of records per page
 
 try {
-    $result = $apiInstance->smsHistoryGet($date_from, $date_to, $page, $limit);
+    $result = $apiInstance->smsHistoryGet($q, $date_from, $date_to, $page, $limit);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SMSApi->smsHistoryGet: ', $e->getMessage(), PHP_EOL;
@@ -230,6 +231,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **q** | **string**| Custom query Example: from:{number},status_code:201. | [optional]
  **date_from** | **int**| Start date | [optional]
  **date_to** | **int**| End date | [optional]
  **page** | **int**| Page number | [optional] [default to 1]
