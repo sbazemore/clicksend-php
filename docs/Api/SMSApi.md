@@ -446,7 +446,7 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$date_before = 8.14; // float | An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read.
+$date_before = new \ClickSend\Model\DateBefore(); // \ClickSend\Model\DateBefore | DateBefore model
 
 try {
     $result = $apiInstance->smsInboundReadPut($date_before);
@@ -461,7 +461,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **date_before** | **float**| An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. | [optional]
+ **date_before** | [**\ClickSend\Model\DateBefore**](../Model/DateBefore.md)| DateBefore model | [optional]
 
 ### Return type
 
@@ -728,7 +728,7 @@ $apiInstance = new ClickSend\Api\SMSApi(
     new GuzzleHttp\Client(),
     $config
 );
-$date_before = 8.14; // float | Mark all as read before this timestamp
+$date_before = new \ClickSend\Model\DateBefore(); // \ClickSend\Model\DateBefore | DateBefore model
 
 try {
     $result = $apiInstance->smsReceiptsReadPut($date_before);
@@ -743,7 +743,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **date_before** | **float**| Mark all as read before this timestamp | [optional]
+ **date_before** | [**\ClickSend\Model\DateBefore**](../Model/DateBefore.md)| DateBefore model | [optional]
 
 ### Return type
 

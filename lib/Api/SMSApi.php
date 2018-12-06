@@ -2359,7 +2359,7 @@ class SMSApi
      *
      * Mark inbound SMS as read
      *
-     * @param  float $date_before An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2376,7 +2376,7 @@ class SMSApi
      *
      * Mark inbound SMS as read
      *
-     * @param  float $date_before An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2507,7 +2507,7 @@ class SMSApi
      *
      * Mark inbound SMS as read
      *
-     * @param  float $date_before An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2527,7 +2527,7 @@ class SMSApi
      *
      * Mark inbound SMS as read
      *
-     * @param  float $date_before An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2577,7 +2577,7 @@ class SMSApi
     /**
      * Create request for operation 'smsInboundReadPut'
      *
-     * @param  float $date_before An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read. (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3955,7 +3955,7 @@ class SMSApi
      *
      * Mark delivery receipts as read
      *
-     * @param  float $date_before Mark all as read before this timestamp (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3972,7 +3972,7 @@ class SMSApi
      *
      * Mark delivery receipts as read
      *
-     * @param  float $date_before Mark all as read before this timestamp (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4103,7 +4103,7 @@ class SMSApi
      *
      * Mark delivery receipts as read
      *
-     * @param  float $date_before Mark all as read before this timestamp (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4123,7 +4123,7 @@ class SMSApi
      *
      * Mark delivery receipts as read
      *
-     * @param  float $date_before Mark all as read before this timestamp (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4173,7 +4173,7 @@ class SMSApi
     /**
      * Create request for operation 'smsReceiptsReadPut'
      *
-     * @param  float $date_before Mark all as read before this timestamp (optional)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
