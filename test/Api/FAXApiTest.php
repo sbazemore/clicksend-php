@@ -1,6 +1,6 @@
 <?php
 /**
- * MMSApiTest
+ * FAXApiTest
  * PHP version 5
  *
  * @category Class
@@ -33,14 +33,14 @@ use \ClickSend\ApiException;
 use \ClickSend\ObjectSerializer;
 
 /**
- * MMSApiTest Class Doc Comment
+ * FAXApiTest Class Doc Comment
  *
  * @category Class
  * @package  ClickSend
  * @author   ClickSend Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MMSApiTest extends \PHPUnit_Framework_TestCase
+class FAXApiTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -72,42 +72,32 @@ class MMSApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for mmsPricePost
-     *
-     * Get Price for MMS sent.
-     *
-     */
-    public function testMmsPricePost()
-    {
-    }
-
-    /**
-     * Test case for mmsReceiptsGet
+     * Test case for faxReceiptsGet
      *
      * Get all delivery receipts.
      *
      */
-    public function testMmsReceiptsGet()
+    public function testFaxReceiptsGet()
     {
     }
 
     /**
-     * Test case for mmsReceiptsReadPut
+     * Test case for faxReceiptsPost
+     *
+     * Add a delivery receipt.
+     *
+     */
+    public function testFaxReceiptsPost()
+    {
+    }
+
+    /**
+     * Test case for faxReceiptsReadPut
      *
      * Mark delivery receipts as read.
      *
      */
-    public function testMmsReceiptsReadPut()
-    {
-    }
-
-    /**
-     * Test case for mmsSendPost
-     *
-     * Send MMS.
-     *
-     */
-    public function testMmsSendPost()
+    public function testFaxReceiptsReadPut()
     {
     }
 }

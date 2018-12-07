@@ -134,10 +134,30 @@ class VoiceApiTest extends \PHPUnit_Framework_TestCase
     /**
      * Test case for voiceReceiptsGet
      *
-     * Get all voice receipts.
+     * Get all delivery receipts.
      *
      */
     public function testVoiceReceiptsGet()
+    {
+    }
+
+    /**
+     * Test case for voiceReceiptsPost
+     *
+     * Add a delivery receipt.
+     *
+     */
+    public function testVoiceReceiptsPost()
+    {
+    }
+
+    /**
+     * Test case for voiceReceiptsReadPut
+     *
+     * Mark delivery receipts as read.
+     *
+     */
+    public function testVoiceReceiptsReadPut()
     {
     }
 

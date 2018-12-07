@@ -10,7 +10,9 @@ Method | HTTP request | Description
 [**voiceHistoryGet**](VoiceApi.md#voiceHistoryGet) | **GET** /voice/history | Get all voice history
 [**voiceLangGet**](VoiceApi.md#voiceLangGet) | **GET** /voice/lang | Get all voice languages
 [**voicePricePost**](VoiceApi.md#voicePricePost) | **POST** /voice/price | Calculate voice price
-[**voiceReceiptsGet**](VoiceApi.md#voiceReceiptsGet) | **GET** /voice/receipts | Get all voice receipts
+[**voiceReceiptsGet**](VoiceApi.md#voiceReceiptsGet) | **GET** /voice/receipts | Get all delivery receipts
+[**voiceReceiptsPost**](VoiceApi.md#voiceReceiptsPost) | **POST** /voice/receipts | Add a delivery receipt
+[**voiceReceiptsReadPut**](VoiceApi.md#voiceReceiptsReadPut) | **PUT** /voice/receipts-read | Mark delivery receipts as read
 [**voiceSendPost**](VoiceApi.md#voiceSendPost) | **POST** /voice/send | Send voice message(s)
 
 
@@ -351,9 +353,9 @@ Name | Type | Description  | Notes
 # **voiceReceiptsGet**
 > string voiceReceiptsGet($page, $limit)
 
-Get all voice receipts
+Get all delivery receipts
 
-Get all voice receipts
+Get all delivery receipts
 
 ### Example
 ```php
@@ -390,6 +392,118 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Page number | [optional] [default to 1]
  **limit** | **int**| Number of records per page | [optional] [default to 10]
+
+### Return type
+
+**string**
+
+### Authorization
+
+[BasicAuth](../../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **voiceReceiptsPost**
+> string voiceReceiptsPost($url)
+
+Add a delivery receipt
+
+Add a delivery receipt
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure HTTP basic authorization: BasicAuth
+$config = ClickSend\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
+$apiInstance = new ClickSend\Api\VoiceApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$url = new \ClickSend\Model\Url(); // \ClickSend\Model\Url | Url model
+
+try {
+    $result = $apiInstance->voiceReceiptsPost($url);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VoiceApi->voiceReceiptsPost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **url** | [**\ClickSend\Model\Url**](../Model/Url.md)| Url model |
+
+### Return type
+
+**string**
+
+### Authorization
+
+[BasicAuth](../../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **voiceReceiptsReadPut**
+> string voiceReceiptsReadPut($date_before)
+
+Mark delivery receipts as read
+
+Mark delivery receipts as read
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure HTTP basic authorization: BasicAuth
+$config = ClickSend\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
+$apiInstance = new ClickSend\Api\VoiceApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$date_before = new \ClickSend\Model\DateBefore(); // \ClickSend\Model\DateBefore | DateBefore model
+
+try {
+    $result = $apiInstance->voiceReceiptsReadPut($date_before);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VoiceApi->voiceReceiptsReadPut: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **date_before** | [**\ClickSend\Model\DateBefore**](../Model/DateBefore.md)| DateBefore model | [optional]
 
 ### Return type
 

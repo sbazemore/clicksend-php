@@ -1,6 +1,6 @@
 <?php
 /**
- * FaxApi
+ * FAXApi
  * PHP version 5
  *
  * @category Class
@@ -40,14 +40,14 @@ use ClickSend\HeaderSelector;
 use ClickSend\ObjectSerializer;
 
 /**
- * FaxApi Class Doc Comment
+ * FAXApi Class Doc Comment
  *
  * @category Class
  * @package  ClickSend
  * @author   ClickSend Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FaxApi
+class FAXApi
 {
     /**
      * @var ClientInterface
@@ -88,14 +88,10 @@ class FaxApi
     }
 
     /**
-     * Operation faxHistoryGet
+     * Operation faxReceiptsGet
      *
-     * Get a list of Fax History.
+     * Get all delivery receipts
      *
-     * @param  int $date_from Customize result by setting from date (timestsamp) Example: 1457572619. (optional)
-     * @param  int $date_to Customize result by setting to date (timestamp) Example: 1457573000. (optional)
-     * @param  string $q Custom query Example: status:Sent,status_code:201. (optional)
-     * @param  string $order Order result by Example: date_added:desc,list_id:desc. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
@@ -103,21 +99,17 @@ class FaxApi
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function faxHistoryGet($date_from = null, $date_to = null, $q = null, $order = null, $page = '1', $limit = '10')
+    public function faxReceiptsGet($page = '1', $limit = '10')
     {
-        list($response) = $this->faxHistoryGetWithHttpInfo($date_from, $date_to, $q, $order, $page, $limit);
+        list($response) = $this->faxReceiptsGetWithHttpInfo($page, $limit);
         return $response;
     }
 
     /**
-     * Operation faxHistoryGetWithHttpInfo
+     * Operation faxReceiptsGetWithHttpInfo
      *
-     * Get a list of Fax History.
+     * Get all delivery receipts
      *
-     * @param  int $date_from Customize result by setting from date (timestsamp) Example: 1457572619. (optional)
-     * @param  int $date_to Customize result by setting to date (timestamp) Example: 1457573000. (optional)
-     * @param  string $q Custom query Example: status:Sent,status_code:201. (optional)
-     * @param  string $order Order result by Example: date_added:desc,list_id:desc. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
@@ -125,10 +117,10 @@ class FaxApi
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function faxHistoryGetWithHttpInfo($date_from = null, $date_to = null, $q = null, $order = null, $page = '1', $limit = '10')
+    public function faxReceiptsGetWithHttpInfo($page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->faxHistoryGetRequest($date_from, $date_to, $q, $order, $page, $limit);
+        $request = $this->faxReceiptsGetRequest($page, $limit);
 
         try {
             $options = $this->createHttpClientOption();
@@ -246,23 +238,19 @@ class FaxApi
     }
 
     /**
-     * Operation faxHistoryGetAsync
+     * Operation faxReceiptsGetAsync
      *
-     * Get a list of Fax History.
+     * Get all delivery receipts
      *
-     * @param  int $date_from Customize result by setting from date (timestsamp) Example: 1457572619. (optional)
-     * @param  int $date_to Customize result by setting to date (timestamp) Example: 1457573000. (optional)
-     * @param  string $q Custom query Example: status:Sent,status_code:201. (optional)
-     * @param  string $order Order result by Example: date_added:desc,list_id:desc. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function faxHistoryGetAsync($date_from = null, $date_to = null, $q = null, $order = null, $page = '1', $limit = '10')
+    public function faxReceiptsGetAsync($page = '1', $limit = '10')
     {
-        return $this->faxHistoryGetAsyncWithHttpInfo($date_from, $date_to, $q, $order, $page, $limit)
+        return $this->faxReceiptsGetAsyncWithHttpInfo($page, $limit)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -271,24 +259,20 @@ class FaxApi
     }
 
     /**
-     * Operation faxHistoryGetAsyncWithHttpInfo
+     * Operation faxReceiptsGetAsyncWithHttpInfo
      *
-     * Get a list of Fax History.
+     * Get all delivery receipts
      *
-     * @param  int $date_from Customize result by setting from date (timestsamp) Example: 1457572619. (optional)
-     * @param  int $date_to Customize result by setting to date (timestamp) Example: 1457573000. (optional)
-     * @param  string $q Custom query Example: status:Sent,status_code:201. (optional)
-     * @param  string $order Order result by Example: date_added:desc,list_id:desc. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function faxHistoryGetAsyncWithHttpInfo($date_from = null, $date_to = null, $q = null, $order = null, $page = '1', $limit = '10')
+    public function faxReceiptsGetAsyncWithHttpInfo($page = '1', $limit = '10')
     {
         $returnType = 'string';
-        $request = $this->faxHistoryGetRequest($date_from, $date_to, $q, $order, $page, $limit);
+        $request = $this->faxReceiptsGetRequest($page, $limit);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -328,52 +312,32 @@ class FaxApi
     }
 
     /**
-     * Create request for operation 'faxHistoryGet'
+     * Create request for operation 'faxReceiptsGet'
      *
-     * @param  int $date_from Customize result by setting from date (timestsamp) Example: 1457572619. (optional)
-     * @param  int $date_to Customize result by setting to date (timestamp) Example: 1457573000. (optional)
-     * @param  string $q Custom query Example: status:Sent,status_code:201. (optional)
-     * @param  string $order Order result by Example: date_added:desc,list_id:desc. (optional)
      * @param  int $page Page number (optional, default to 1)
      * @param  int $limit Number of records per page (optional, default to 10)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function faxHistoryGetRequest($date_from = null, $date_to = null, $q = null, $order = null, $page = '1', $limit = '10')
+    protected function faxReceiptsGetRequest($page = '1', $limit = '10')
     {
         if ($page !== null && $page < 1) {
-            throw new \InvalidArgumentException('invalid value for "$page" when calling FaxApi.faxHistoryGet, must be bigger than or equal to 1.');
+            throw new \InvalidArgumentException('invalid value for "$page" when calling FAXApi.faxReceiptsGet, must be bigger than or equal to 1.');
         }
 
         if ($limit !== null && $limit < 1) {
-            throw new \InvalidArgumentException('invalid value for "$limit" when calling FaxApi.faxHistoryGet, must be bigger than or equal to 1.');
+            throw new \InvalidArgumentException('invalid value for "$limit" when calling FAXApi.faxReceiptsGet, must be bigger than or equal to 1.');
         }
 
 
-        $resourcePath = '/fax/history';
+        $resourcePath = '/fax/receipts';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
         $httpBody = '';
         $multipart = false;
 
-        // query params
-        if ($date_from !== null) {
-            $queryParams['date_from'] = ObjectSerializer::toQueryValue($date_from);
-        }
-        // query params
-        if ($date_to !== null) {
-            $queryParams['date_to'] = ObjectSerializer::toQueryValue($date_to);
-        }
-        // query params
-        if ($q !== null) {
-            $queryParams['q'] = ObjectSerializer::toQueryValue($q);
-        }
-        // query params
-        if ($order !== null) {
-            $queryParams['order'] = ObjectSerializer::toQueryValue($order);
-        }
         // query params
         if ($page !== null) {
             $queryParams['page'] = ObjectSerializer::toQueryValue($page);
@@ -453,37 +417,37 @@ class FaxApi
     }
 
     /**
-     * Operation faxPricePost
+     * Operation faxReceiptsPost
      *
-     * Calculate Total Price for Fax Messages sent
+     * Add a delivery receipt
      *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function faxPricePost($fax_message)
+    public function faxReceiptsPost($url)
     {
-        list($response) = $this->faxPricePostWithHttpInfo($fax_message);
+        list($response) = $this->faxReceiptsPostWithHttpInfo($url);
         return $response;
     }
 
     /**
-     * Operation faxPricePostWithHttpInfo
+     * Operation faxReceiptsPostWithHttpInfo
      *
-     * Calculate Total Price for Fax Messages sent
+     * Add a delivery receipt
      *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function faxPricePostWithHttpInfo($fax_message)
+    public function faxReceiptsPostWithHttpInfo($url)
     {
         $returnType = 'string';
-        $request = $this->faxPricePostRequest($fax_message);
+        $request = $this->faxReceiptsPostRequest($url);
 
         try {
             $options = $this->createHttpClientOption();
@@ -601,18 +565,18 @@ class FaxApi
     }
 
     /**
-     * Operation faxPricePostAsync
+     * Operation faxReceiptsPostAsync
      *
-     * Calculate Total Price for Fax Messages sent
+     * Add a delivery receipt
      *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function faxPricePostAsync($fax_message)
+    public function faxReceiptsPostAsync($url)
     {
-        return $this->faxPricePostAsyncWithHttpInfo($fax_message)
+        return $this->faxReceiptsPostAsyncWithHttpInfo($url)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -621,19 +585,19 @@ class FaxApi
     }
 
     /**
-     * Operation faxPricePostAsyncWithHttpInfo
+     * Operation faxReceiptsPostAsyncWithHttpInfo
      *
-     * Calculate Total Price for Fax Messages sent
+     * Add a delivery receipt
      *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function faxPricePostAsyncWithHttpInfo($fax_message)
+    public function faxReceiptsPostAsyncWithHttpInfo($url)
     {
         $returnType = 'string';
-        $request = $this->faxPricePostRequest($fax_message);
+        $request = $this->faxReceiptsPostRequest($url);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -673,23 +637,23 @@ class FaxApi
     }
 
     /**
-     * Create request for operation 'faxPricePost'
+     * Create request for operation 'faxReceiptsPost'
      *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\Url $url Url model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function faxPricePostRequest($fax_message)
+    protected function faxReceiptsPostRequest($url)
     {
-        // verify the required parameter 'fax_message' is set
-        if ($fax_message === null || (is_array($fax_message) && count($fax_message) === 0)) {
+        // verify the required parameter 'url' is set
+        if ($url === null || (is_array($url) && count($url) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $fax_message when calling faxPricePost'
+                'Missing the required parameter $url when calling faxReceiptsPost'
             );
         }
 
-        $resourcePath = '/fax/price';
+        $resourcePath = '/fax/receipts';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -700,8 +664,8 @@ class FaxApi
 
         // body params
         $_tempBody = null;
-        if (isset($fax_message)) {
-            $_tempBody = $fax_message;
+        if (isset($url)) {
+            $_tempBody = $url;
         }
 
         if ($multipart) {
@@ -770,37 +734,37 @@ class FaxApi
     }
 
     /**
-     * Operation faxReceiptsByMessageIdGet
+     * Operation faxReceiptsReadPut
      *
-     * Get a single fax receipt based on message id.
+     * Mark delivery receipts as read
      *
-     * @param  string $message_id ID of the message receipt to retrieve (required)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function faxReceiptsByMessageIdGet($message_id)
+    public function faxReceiptsReadPut($date_before = null)
     {
-        list($response) = $this->faxReceiptsByMessageIdGetWithHttpInfo($message_id);
+        list($response) = $this->faxReceiptsReadPutWithHttpInfo($date_before);
         return $response;
     }
 
     /**
-     * Operation faxReceiptsByMessageIdGetWithHttpInfo
+     * Operation faxReceiptsReadPutWithHttpInfo
      *
-     * Get a single fax receipt based on message id.
+     * Mark delivery receipts as read
      *
-     * @param  string $message_id ID of the message receipt to retrieve (required)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function faxReceiptsByMessageIdGetWithHttpInfo($message_id)
+    public function faxReceiptsReadPutWithHttpInfo($date_before = null)
     {
         $returnType = 'string';
-        $request = $this->faxReceiptsByMessageIdGetRequest($message_id);
+        $request = $this->faxReceiptsReadPutRequest($date_before);
 
         try {
             $options = $this->createHttpClientOption();
@@ -918,18 +882,18 @@ class FaxApi
     }
 
     /**
-     * Operation faxReceiptsByMessageIdGetAsync
+     * Operation faxReceiptsReadPutAsync
      *
-     * Get a single fax receipt based on message id.
+     * Mark delivery receipts as read
      *
-     * @param  string $message_id ID of the message receipt to retrieve (required)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function faxReceiptsByMessageIdGetAsync($message_id)
+    public function faxReceiptsReadPutAsync($date_before = null)
     {
-        return $this->faxReceiptsByMessageIdGetAsyncWithHttpInfo($message_id)
+        return $this->faxReceiptsReadPutAsyncWithHttpInfo($date_before)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -938,19 +902,19 @@ class FaxApi
     }
 
     /**
-     * Operation faxReceiptsByMessageIdGetAsyncWithHttpInfo
+     * Operation faxReceiptsReadPutAsyncWithHttpInfo
      *
-     * Get a single fax receipt based on message id.
+     * Mark delivery receipts as read
      *
-     * @param  string $message_id ID of the message receipt to retrieve (required)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function faxReceiptsByMessageIdGetAsyncWithHttpInfo($message_id)
+    public function faxReceiptsReadPutAsyncWithHttpInfo($date_before = null)
     {
         $returnType = 'string';
-        $request = $this->faxReceiptsByMessageIdGetRequest($message_id);
+        $request = $this->faxReceiptsReadPutRequest($date_before);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -990,345 +954,17 @@ class FaxApi
     }
 
     /**
-     * Create request for operation 'faxReceiptsByMessageIdGet'
+     * Create request for operation 'faxReceiptsReadPut'
      *
-     * @param  string $message_id ID of the message receipt to retrieve (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Psr7\Request
-     */
-    protected function faxReceiptsByMessageIdGetRequest($message_id)
-    {
-        // verify the required parameter 'message_id' is set
-        if ($message_id === null || (is_array($message_id) && count($message_id) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $message_id when calling faxReceiptsByMessageIdGet'
-            );
-        }
-
-        $resourcePath = '/fax/receipts/{message_id}';
-        $formParams = [];
-        $queryParams = [];
-        $headerParams = [];
-        $httpBody = '';
-        $multipart = false;
-
-
-        // path params
-        if ($message_id !== null) {
-            $resourcePath = str_replace(
-                '{' . 'message_id' . '}',
-                ObjectSerializer::toPathValue($message_id),
-                $resourcePath
-            );
-        }
-
-        // body params
-        $_tempBody = null;
-
-        if ($multipart) {
-            $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
-            );
-        } else {
-            $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
-                ['application/json']
-            );
-        }
-
-        // for model (json/xml)
-        if (isset($_tempBody)) {
-            // $_tempBody is the method argument, if present
-            $httpBody = $_tempBody;
-            // \stdClass has no __toString(), so we should encode it manually
-            if ($httpBody instanceof \stdClass && $headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($httpBody);
-            }
-        } elseif (count($formParams) > 0) {
-            if ($multipart) {
-                $multipartContents = [];
-                foreach ($formParams as $formParamName => $formParamValue) {
-                    $multipartContents[] = [
-                        'name' => $formParamName,
-                        'contents' => $formParamValue
-                    ];
-                }
-                // for HTTP post (form)
-                $httpBody = new MultipartStream($multipartContents);
-
-            } elseif ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($formParams);
-
-            } else {
-                // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
-            }
-        }
-
-        // this endpoint requires HTTP basic authentication
-        if ($this->config->getUsername() !== null || $this->config->getPassword() !== null) {
-            $headers['Authorization'] = 'Basic ' . base64_encode($this->config->getUsername() . ":" . $this->config->getPassword());
-        }
-
-        $defaultHeaders = [];
-        if ($this->config->getUserAgent()) {
-            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
-        }
-
-        $headers = array_merge(
-            $defaultHeaders,
-            $headerParams,
-            $headers
-        );
-
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
-        return new Request(
-            'GET',
-            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
-            $headers,
-            $httpBody
-        );
-    }
-
-    /**
-     * Operation faxSendPost
-     *
-     * Send a fax using supplied supported file-types.
-     *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
-     *
-     * @throws \ClickSend\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return string
-     */
-    public function faxSendPost($fax_message)
-    {
-        list($response) = $this->faxSendPostWithHttpInfo($fax_message);
-        return $response;
-    }
-
-    /**
-     * Operation faxSendPostWithHttpInfo
-     *
-     * Send a fax using supplied supported file-types.
-     *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
-     *
-     * @throws \ClickSend\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return array of string, HTTP status code, HTTP response headers (array of strings)
-     */
-    public function faxSendPostWithHttpInfo($fax_message)
-    {
-        $returnType = 'string';
-        $request = $this->faxSendPostRequest($fax_message);
-
-        try {
-            $options = $this->createHttpClientOption();
-            try {
-                $response = $this->client->send($request, $options);
-            } catch (RequestException $e) {
-                throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
-                    $e->getCode(),
-                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
-                    $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null
-                );
-            }
-
-            $statusCode = $response->getStatusCode();
-
-            if ($statusCode < 200 || $statusCode > 299) {
-                throw new ApiException(
-                    sprintf(
-                        '[%d] Error connecting to the API (%s)',
-                        $statusCode,
-                        $request->getUri()
-                    ),
-                    $statusCode,
-                    $response->getHeaders(),
-                    $response->getBody()
-                );
-            }
-
-            $responseBody = $response->getBody();
-            if ($returnType === '\SplFileObject') {
-                $content = $responseBody; //stream goes to serializer
-            } else {
-                $content = $responseBody->getContents();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-
-            return [
-                ObjectSerializer::deserialize($content, $returnType, []),
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
-
-        } catch (ApiException $e) {
-            switch ($e->getCode()) {
-                case 200:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'string',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 400:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'string',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 401:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'string',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 403:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'string',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 404:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'string',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 405:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'string',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 429:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'string',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                default:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        'string',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-            }
-            throw $e;
-        }
-    }
-
-    /**
-     * Operation faxSendPostAsync
-     *
-     * Send a fax using supplied supported file-types.
-     *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function faxSendPostAsync($fax_message)
-    {
-        return $this->faxSendPostAsyncWithHttpInfo($fax_message)
-            ->then(
-                function ($response) {
-                    return $response[0];
-                }
-            );
-    }
-
-    /**
-     * Operation faxSendPostAsyncWithHttpInfo
-     *
-     * Send a fax using supplied supported file-types.
-     *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function faxSendPostAsyncWithHttpInfo($fax_message)
-    {
-        $returnType = 'string';
-        $request = $this->faxSendPostRequest($fax_message);
-
-        return $this->client
-            ->sendAsync($request, $this->createHttpClientOption())
-            ->then(
-                function ($response) use ($returnType) {
-                    $responseBody = $response->getBody();
-                    if ($returnType === '\SplFileObject') {
-                        $content = $responseBody; //stream goes to serializer
-                    } else {
-                        $content = $responseBody->getContents();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, $returnType, []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                },
-                function ($exception) {
-                    $response = $exception->getResponse();
-                    $statusCode = $response->getStatusCode();
-                    throw new ApiException(
-                        sprintf(
-                            '[%d] Error connecting to the API (%s)',
-                            $statusCode,
-                            $exception->getRequest()->getUri()
-                        ),
-                        $statusCode,
-                        $response->getHeaders(),
-                        $response->getBody()
-                    );
-                }
-            );
-    }
-
-    /**
-     * Create request for operation 'faxSendPost'
-     *
-     * @param  \ClickSend\Model\FaxMessageCollection $fax_message FaxMessageCollection model (required)
+     * @param  \ClickSend\Model\DateBefore $date_before DateBefore model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function faxSendPostRequest($fax_message)
+    protected function faxReceiptsReadPutRequest($date_before = null)
     {
-        // verify the required parameter 'fax_message' is set
-        if ($fax_message === null || (is_array($fax_message) && count($fax_message) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $fax_message when calling faxSendPost'
-            );
-        }
 
-        $resourcePath = '/fax/send';
+        $resourcePath = '/fax/receipts-read';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1339,8 +975,8 @@ class FaxApi
 
         // body params
         $_tempBody = null;
-        if (isset($fax_message)) {
-            $_tempBody = $fax_message;
+        if (isset($date_before)) {
+            $_tempBody = $date_before;
         }
 
         if ($multipart) {
@@ -1401,7 +1037,7 @@ class FaxApi
 
         $query = \GuzzleHttp\Psr7\build_query($queryParams);
         return new Request(
-            'POST',
+            'PUT',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
             $headers,
             $httpBody

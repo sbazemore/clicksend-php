@@ -92,6 +92,16 @@ class AccountApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test case for accountUseageBySubaccountGet
+     *
+     * Get account useage by subaccount.
+     *
+     */
+    public function testAccountUseageBySubaccountGet()
+    {
+    }
+
+    /**
      * Test case for accountVerifySendPut
      *
      * Send account activation token.

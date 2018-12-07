@@ -102,16 +102,6 @@ class FaxApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for faxReceiptsGet
-     *
-     * Get List of Fax Receipts.
-     *
-     */
-    public function testFaxReceiptsGet()
-    {
-    }
-
-    /**
      * Test case for faxSendPost
      *
      * Send a fax using supplied supported file-types..
