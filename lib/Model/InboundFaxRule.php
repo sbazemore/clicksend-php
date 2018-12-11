@@ -1,6 +1,6 @@
 <?php
 /**
- * InboundFAXRule
+ * InboundFaxRule
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
 
 /**
- * InboundFAXRule Class Doc Comment
+ * InboundFaxRule Class Doc Comment
  *
  * @category Class
  * @description Model for Inbound FAX Rules
@@ -41,7 +41,7 @@ use \ClickSend\ObjectSerializer;
  * @author   ClickSend Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class InboundFAXRule implements ModelInterface, ArrayAccess
+class InboundFaxRule implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = 'classType';
 
@@ -50,7 +50,7 @@ class InboundFAXRule implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'InboundFAXRule';
+    protected static $swaggerModelName = 'InboundFaxRule';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

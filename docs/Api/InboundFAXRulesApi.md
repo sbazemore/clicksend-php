@@ -147,7 +147,7 @@ $apiInstance = new ClickSend\Api\InboundFAXRulesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$inbound_fax_rule = new \ClickSend\Model\InboundFAXRule(); // \ClickSend\Model\InboundFAXRule | Inbound fax rule model
+$inbound_fax_rule = new \ClickSend\Model\InboundFaxRule(); // \ClickSend\Model\InboundFaxRule | Inbound fax rule model
 
 try {
     $result = $apiInstance->faxInboundAutomationPost($inbound_fax_rule);
@@ -162,7 +162,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inbound_fax_rule** | [**\ClickSend\Model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
+ **inbound_fax_rule** | [**\ClickSend\Model\InboundFaxRule**](../Model/InboundFaxRule.md)| Inbound fax rule model |
 
 ### Return type
 
@@ -204,7 +204,7 @@ $apiInstance = new ClickSend\Api\InboundFAXRulesApi(
     $config
 );
 $inbound_rule_id = 56; // int | Inbound rule id
-$inbound_fax_rule = new \ClickSend\Model\InboundFAXRule(); // \ClickSend\Model\InboundFAXRule | Inbound fax rule model
+$inbound_fax_rule = new \ClickSend\Model\InboundFaxRule(); // \ClickSend\Model\InboundFaxRule | Inbound fax rule model
 
 try {
     $result = $apiInstance->faxInboundAutomationPut($inbound_rule_id, $inbound_fax_rule);
@@ -220,7 +220,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inbound_rule_id** | **int**| Inbound rule id |
- **inbound_fax_rule** | [**\ClickSend\Model\InboundFAXRule**](../Model/InboundFAXRule.md)| Inbound fax rule model |
+ **inbound_fax_rule** | [**\ClickSend\Model\InboundFaxRule**](../Model/InboundFaxRule.md)| Inbound fax rule model |
 
 ### Return type
 

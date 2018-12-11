@@ -72,6 +72,36 @@ class FAXApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test case for faxHistoryGet
+     *
+     * Get a list of Fax History..
+     *
+     */
+    public function testFaxHistoryGet()
+    {
+    }
+
+    /**
+     * Test case for faxPricePost
+     *
+     * Calculate Total Price for Fax Messages sent.
+     *
+     */
+    public function testFaxPricePost()
+    {
+    }
+
+    /**
+     * Test case for faxReceiptsByMessageIdGet
+     *
+     * Get a single fax receipt based on message id..
+     *
+     */
+    public function testFaxReceiptsByMessageIdGet()
+    {
+    }
+
+    /**
      * Test case for faxReceiptsGet
      *
      * Get all delivery receipts.
@@ -98,6 +128,16 @@ class FAXApiTest extends \PHPUnit_Framework_TestCase
      *
      */
     public function testFaxReceiptsReadPut()
+    {
+    }
+
+    /**
+     * Test case for faxSendPost
+     *
+     * Send a fax using supplied supported file-types..
+     *
+     */
+    public function testFaxSendPost()
     {
     }
 }

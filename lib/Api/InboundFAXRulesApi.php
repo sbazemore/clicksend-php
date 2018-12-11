@@ -736,7 +736,7 @@ class InboundFAXRulesApi
      *
      * Create new inbound fax automation
      *
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -753,7 +753,7 @@ class InboundFAXRulesApi
      *
      * Create new inbound fax automation
      *
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -884,7 +884,7 @@ class InboundFAXRulesApi
      *
      * Create new inbound fax automation
      *
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -904,7 +904,7 @@ class InboundFAXRulesApi
      *
      * Create new inbound fax automation
      *
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -954,7 +954,7 @@ class InboundFAXRulesApi
     /**
      * Create request for operation 'faxInboundAutomationPost'
      *
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1054,7 +1054,7 @@ class InboundFAXRulesApi
      * Update inbound fax automation
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1072,7 +1072,7 @@ class InboundFAXRulesApi
      * Update inbound fax automation
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1204,7 +1204,7 @@ class InboundFAXRulesApi
      * Update inbound fax automation
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1225,7 +1225,7 @@ class InboundFAXRulesApi
      * Update inbound fax automation
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1276,7 +1276,7 @@ class InboundFAXRulesApi
      * Create request for operation 'faxInboundAutomationPut'
      *
      * @param  int $inbound_rule_id Inbound rule id (required)
-     * @param  \ClickSend\Model\InboundFAXRule $inbound_fax_rule Inbound fax rule model (required)
+     * @param  \ClickSend\Model\InboundFaxRule $inbound_fax_rule Inbound fax rule model (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
