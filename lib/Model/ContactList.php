@@ -1,6 +1,6 @@
 <?php
 /**
- * ModelList
+ * ContactList
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
 
 /**
- * ModelList Class Doc Comment
+ * ContactList Class Doc Comment
  *
  * @category Class
- * @description Your list.
+ * @description Your contact list.
  * @package  ClickSend
  * @author   ClickSend Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ModelList implements ModelInterface, ArrayAccess
+class ContactList implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = 'classType';
 
@@ -50,7 +50,7 @@ class ModelList implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'List';
+    protected static $swaggerModelName = 'ContactList';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

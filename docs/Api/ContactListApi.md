@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listsByListIdPut**
-> string listsByListIdPut($list_id, $list)
+> string listsByListIdPut($list_id, $contact_list)
 
 Update specific contact list
 
@@ -150,10 +150,10 @@ $apiInstance = new ClickSend\Api\ContactListApi(
     $config
 );
 $list_id = 56; // int | Your list id
-$list = new \ClickSend\Model\ModelList(); // \ClickSend\Model\ModelList | List model
+$contact_list = new \ClickSend\Model\ContactList(); // \ClickSend\Model\ContactList | Contact list model
 
 try {
-    $result = $apiInstance->listsByListIdPut($list_id, $list);
+    $result = $apiInstance->listsByListIdPut($list_id, $contact_list);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ContactListApi->listsByListIdPut: ', $e->getMessage(), PHP_EOL;
@@ -166,7 +166,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **list_id** | **int**| Your list id |
- **list** | [**\ClickSend\Model\ModelList**](../Model/ModelList.md)| List model |
+ **contact_list** | [**\ClickSend\Model\ContactList**](../Model/ContactList.md)| Contact list model |
 
 ### Return type
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listsPost**
-> string listsPost($list)
+> string listsPost($contact_list)
 
 Create new contact list
 
@@ -323,10 +323,10 @@ $apiInstance = new ClickSend\Api\ContactListApi(
     new GuzzleHttp\Client(),
     $config
 );
-$list = new \ClickSend\Model\ModelList(); // \ClickSend\Model\ModelList | List model
+$contact_list = new \ClickSend\Model\ContactList(); // \ClickSend\Model\ContactList | Contact list model
 
 try {
-    $result = $apiInstance->listsPost($list);
+    $result = $apiInstance->listsPost($contact_list);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ContactListApi->listsPost: ', $e->getMessage(), PHP_EOL;
@@ -338,7 +338,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **list** | [**\ClickSend\Model\ModelList**](../Model/ModelList.md)| List model |
+ **contact_list** | [**\ClickSend\Model\ContactList**](../Model/ContactList.md)| Contact list model |
 
 ### Return type
 

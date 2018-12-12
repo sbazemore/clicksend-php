@@ -1,4 +1,4 @@
-# ModelList
+# ContactList
 
 ## Properties
 Name | Type | Description | Notes

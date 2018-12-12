@@ -1,6 +1,6 @@
 <?php
 /**
- * ModelListTest
+ * ContactListTest
  *
  * PHP version 5
  *
@@ -30,15 +30,15 @@
 namespace ClickSend;
 
 /**
- * ModelListTest Class Doc Comment
+ * ContactListTest Class Doc Comment
  *
  * @category    Class
- * @description Your list.
+ * @description Your contact list.
  * @package     ClickSend
  * @author      ClickSend Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ModelListTest extends \PHPUnit_Framework_TestCase
+class ContactListTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -70,9 +70,9 @@ class ModelListTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ModelList"
+     * Test "ContactList"
      */
-    public function testModelList()
+    public function testContactList()
     {
     }
 
