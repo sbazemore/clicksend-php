@@ -13,6 +13,7 @@ Method | HTTP request | Description
 [**smsInboundReadByMessageIdPut**](SMSApi.md#smsInboundReadByMessageIdPut) | **PUT** /sms/inbound-read/{message_id} | Mark inbound SMS as read
 [**smsInboundReadPut**](SMSApi.md#smsInboundReadPut) | **PUT** /sms/inbound-read | Mark inbound SMS as read
 [**smsPricePost**](SMSApi.md#smsPricePost) | **POST** /sms/price | Calculate sms price
+[**smsReceiptReadByMessageIdPut**](SMSApi.md#smsReceiptReadByMessageIdPut) | **PUT** /sms/receipts-read/{message_id} | Mark specific delivery receipt as read
 [**smsReceiptsByMessageIdGet**](SMSApi.md#smsReceiptsByMessageIdGet) | **GET** /sms/receipts/{message_id} | Get a Specific Delivery Receipt
 [**smsReceiptsGet**](SMSApi.md#smsReceiptsGet) | **GET** /sms/receipts | Get all delivery receipts
 [**smsReceiptsPost**](SMSApi.md#smsReceiptsPost) | **POST** /sms/receipts | Add a delivery receipt
@@ -520,6 +521,62 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sms_messages** | [**\ClickSend\Model\SmsMessageCollection**](../Model/SmsMessageCollection.md)| SmsMessageCollection model |
+
+### Return type
+
+**string**
+
+### Authorization
+
+[BasicAuth](../../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **smsReceiptReadByMessageIdPut**
+> string smsReceiptReadByMessageIdPut($message_id)
+
+Mark specific delivery receipt as read
+
+Mark specific delivery receipt as read
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure HTTP basic authorization: BasicAuth
+$config = ClickSend\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
+$apiInstance = new ClickSend\Api\SMSApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$message_id = "message_id_example"; // string | The message ID you want to mark as read
+
+try {
+    $result = $apiInstance->smsReceiptReadByMessageIdPut($message_id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling SMSApi->smsReceiptReadByMessageIdPut: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **message_id** | **string**| The message ID you want to mark as read |
 
 ### Return type
 
