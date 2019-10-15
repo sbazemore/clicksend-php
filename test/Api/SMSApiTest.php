@@ -162,16 +162,6 @@ class SMSApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for smsReceiptReadByMessageIdPut
-     *
-     * Mark specific delivery receipt as read.
-     *
-     */
-    public function testSmsReceiptReadByMessageIdPut()
-    {
-    }
-
-    /**
      * Test case for smsReceiptsByMessageIdGet
      *
      * Get a Specific Delivery Receipt.
