@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**listsContactsByListIdAndContactIdPut**](ContactApi.md#listsContactsByListIdAndContactIdPut) | **PUT** /lists/{list_id}/contacts/{contact_id} | Update specific contact
 [**listsContactsByListIdGet**](ContactApi.md#listsContactsByListIdGet) | **GET** /lists/{list_id}/contacts | Get all contacts in a list
 [**listsContactsByListIdPost**](ContactApi.md#listsContactsByListIdPost) | **POST** /lists/{list_id}/contacts | Create new contact
+[**listsCopyContactPut**](ContactApi.md#listsCopyContactPut) | **PUT** /lists/{from_list_id}/contacts/{contact_id}/copy/{to_list_id} | Copy contact to another list
 [**listsRemoveOptedOutContactsByListIdAndOptOutListIdPut**](ContactApi.md#listsRemoveOptedOutContactsByListIdAndOptOutListIdPut) | **PUT** /lists/{list_id}/remove-opted-out-contacts/{opt_out_list_id} | Remove all opted out contacts
 [**listsTransferContactPut**](ContactApi.md#listsTransferContactPut) | **PUT** /lists/{from_list_id}/contacts/{contact_id}/transfer/{to_list_id} | Transfer contact to another list
 
@@ -291,6 +292,66 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contact** | [**\ClickSend\Model\Contact**](../Model/Contact.md)| Contact model |
  **list_id** | **int**| List id |
+
+### Return type
+
+**string**
+
+### Authorization
+
+[BasicAuth](../../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **listsCopyContactPut**
+> string listsCopyContactPut($from_list_id, $contact_id, $to_list_id)
+
+Copy contact to another list
+
+Copy contact to another list
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure HTTP basic authorization: BasicAuth
+$config = ClickSend\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
+$apiInstance = new ClickSend\Api\ContactApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$from_list_id = 56; // int | List ID for list that contains contact.
+$contact_id = 56; // int | Contact ID
+$to_list_id = 56; // int | List ID for list you want to copy the contact to.
+
+try {
+    $result = $apiInstance->listsCopyContactPut($from_list_id, $contact_id, $to_list_id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ContactApi->listsCopyContactPut: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **from_list_id** | **int**| List ID for list that contains contact. |
+ **contact_id** | **int**| Contact ID |
+ **to_list_id** | **int**| List ID for list you want to copy the contact to. |
 
 ### Return type
 
