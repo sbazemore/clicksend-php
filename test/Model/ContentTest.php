@@ -1,6 +1,6 @@
 <?php
 /**
- * UploadFileTest
+ * ContentTest
  *
  * PHP version 5
  *
@@ -30,7 +30,7 @@
 namespace ClickSend;
 
 /**
- * UploadFileTest Class Doc Comment
+ * ContentTest Class Doc Comment
  *
  * @category    Class
  * @description Your file to be uploaded.
@@ -38,7 +38,7 @@ namespace ClickSend;
  * @author      ClickSend Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class UploadFileTest extends \PHPUnit_Framework_TestCase
+class ContentTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -70,9 +70,9 @@ class UploadFileTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "UploadFile"
+     * Test "Content"
      */
-    public function testUploadFile()
+    public function testContent()
     {
     }
 

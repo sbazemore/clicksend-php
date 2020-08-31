@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **uploadsPost**
-> string uploadsPost($upload_file, $convert)
+> string uploadsPost($content, $convert)
 
 Upload File
 
@@ -31,11 +31,11 @@ $apiInstance = new ClickSend\Api\UploadApi(
     new GuzzleHttp\Client(),
     $config
 );
-$upload_file = new \ClickSend\Model\UploadFile(); // \ClickSend\Model\UploadFile | Your file to be uploaded
+$content = new \ClickSend\Model\Content(); // \ClickSend\Model\Content | Your file to be uploaded
 $convert = "convert_example"; // string | 
 
 try {
-    $result = $apiInstance->uploadsPost($upload_file, $convert);
+    $result = $apiInstance->uploadsPost($content, $convert);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UploadApi->uploadsPost: ', $e->getMessage(), PHP_EOL;
@@ -47,7 +47,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upload_file** | [**\ClickSend\Model\UploadFile**](../Model/UploadFile.md)| Your file to be uploaded |
+ **content** | [**\ClickSend\Model\Content**](../Model/Content.md)| Your file to be uploaded |
  **convert** | **string**|  |
 
 ### Return type

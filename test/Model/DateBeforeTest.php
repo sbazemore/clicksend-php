@@ -33,7 +33,7 @@ namespace ClickSend;
  * DateBeforeTest Class Doc Comment
  *
  * @category    Class
- * @description All dates before specified timestam.
+ * @description All dates before specified timestamp.
  * @package     ClickSend
  * @author      ClickSend Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen

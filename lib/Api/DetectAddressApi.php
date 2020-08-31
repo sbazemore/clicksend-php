@@ -92,15 +92,15 @@ class DetectAddressApi
      *
      * Detects address in uploaded file.
      *
-     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
+     * @param  \ClickSend\Model\Content $content Your file to be uploaded (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
-    public function detectAddressPost($upload_file)
+    public function detectAddressPost($content)
     {
-        list($response) = $this->detectAddressPostWithHttpInfo($upload_file);
+        list($response) = $this->detectAddressPostWithHttpInfo($content);
         return $response;
     }
 
@@ -109,16 +109,16 @@ class DetectAddressApi
      *
      * Detects address in uploaded file.
      *
-     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
+     * @param  \ClickSend\Model\Content $content Your file to be uploaded (required)
      *
      * @throws \ClickSend\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function detectAddressPostWithHttpInfo($upload_file)
+    public function detectAddressPostWithHttpInfo($content)
     {
         $returnType = 'string';
-        $request = $this->detectAddressPostRequest($upload_file);
+        $request = $this->detectAddressPostRequest($content);
 
         try {
             $options = $this->createHttpClientOption();
@@ -240,14 +240,14 @@ class DetectAddressApi
      *
      * Detects address in uploaded file.
      *
-     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
+     * @param  \ClickSend\Model\Content $content Your file to be uploaded (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function detectAddressPostAsync($upload_file)
+    public function detectAddressPostAsync($content)
     {
-        return $this->detectAddressPostAsyncWithHttpInfo($upload_file)
+        return $this->detectAddressPostAsyncWithHttpInfo($content)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -260,15 +260,15 @@ class DetectAddressApi
      *
      * Detects address in uploaded file.
      *
-     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
+     * @param  \ClickSend\Model\Content $content Your file to be uploaded (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function detectAddressPostAsyncWithHttpInfo($upload_file)
+    public function detectAddressPostAsyncWithHttpInfo($content)
     {
         $returnType = 'string';
-        $request = $this->detectAddressPostRequest($upload_file);
+        $request = $this->detectAddressPostRequest($content);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -310,17 +310,17 @@ class DetectAddressApi
     /**
      * Create request for operation 'detectAddressPost'
      *
-     * @param  \ClickSend\Model\UploadFile $upload_file Your file to be uploaded (required)
+     * @param  \ClickSend\Model\Content $content Your file to be uploaded (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function detectAddressPostRequest($upload_file)
+    protected function detectAddressPostRequest($content)
     {
-        // verify the required parameter 'upload_file' is set
-        if ($upload_file === null || (is_array($upload_file) && count($upload_file) === 0)) {
+        // verify the required parameter 'content' is set
+        if ($content === null || (is_array($content) && count($content) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $upload_file when calling detectAddressPost'
+                'Missing the required parameter $content when calling detectAddressPost'
             );
         }
 
@@ -335,8 +335,8 @@ class DetectAddressApi
 
         // body params
         $_tempBody = null;
-        if (isset($upload_file)) {
-            $_tempBody = $upload_file;
+        if (isset($content)) {
+            $_tempBody = $content;
         }
 
         if ($multipart) {
