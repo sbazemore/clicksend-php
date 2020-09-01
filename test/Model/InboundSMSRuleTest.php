@@ -124,4 +124,11 @@ class InboundSMSRuleTest extends \PHPUnit_Framework_TestCase
     public function testPropertyEnabled()
     {
     }
+
+    /**
+     * Test attribute "webhook_type"
+     */
+    public function testPropertyWebhookType()
+    {
+    }
 }

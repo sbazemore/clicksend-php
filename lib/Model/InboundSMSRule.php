@@ -64,7 +64,8 @@ class InboundSMSRule implements ModelInterface, ArrayAccess
         'message_search_term' => 'string',
         'action' => 'string',
         'action_address' => 'string',
-        'enabled' => 'float'
+        'enabled' => 'float',
+        'webhook_type' => 'string'
     ];
 
     /**
@@ -79,7 +80,8 @@ class InboundSMSRule implements ModelInterface, ArrayAccess
         'message_search_term' => null,
         'action' => null,
         'action_address' => null,
-        'enabled' => null
+        'enabled' => null,
+        'webhook_type' => null
     ];
 
     /**
@@ -115,7 +117,8 @@ class InboundSMSRule implements ModelInterface, ArrayAccess
         'message_search_term' => 'message_search_term',
         'action' => 'action',
         'action_address' => 'action_address',
-        'enabled' => 'enabled'
+        'enabled' => 'enabled',
+        'webhook_type' => 'webhook_type'
     ];
 
     /**
@@ -130,7 +133,8 @@ class InboundSMSRule implements ModelInterface, ArrayAccess
         'message_search_term' => 'setMessageSearchTerm',
         'action' => 'setAction',
         'action_address' => 'setActionAddress',
-        'enabled' => 'setEnabled'
+        'enabled' => 'setEnabled',
+        'webhook_type' => 'setWebhookType'
     ];
 
     /**
@@ -145,7 +149,8 @@ class InboundSMSRule implements ModelInterface, ArrayAccess
         'message_search_term' => 'getMessageSearchTerm',
         'action' => 'getAction',
         'action_address' => 'getActionAddress',
-        'enabled' => 'getEnabled'
+        'enabled' => 'getEnabled',
+        'webhook_type' => 'getWebhookType'
     ];
 
     /**
@@ -215,6 +220,7 @@ class InboundSMSRule implements ModelInterface, ArrayAccess
         $this->container['action'] = isset($data['action']) ? $data['action'] : null;
         $this->container['action_address'] = isset($data['action_address']) ? $data['action_address'] : null;
         $this->container['enabled'] = isset($data['enabled']) ? $data['enabled'] : null;
+        $this->container['webhook_type'] = isset($data['webhook_type']) ? $data['webhook_type'] : null;
 
         // Initialize discriminator property with the model name.
         $discriminator = array_search('classType', self::$attributeMap, true);
@@ -430,6 +436,30 @@ class InboundSMSRule implements ModelInterface, ArrayAccess
     public function setEnabled($enabled)
     {
         $this->container['enabled'] = $enabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets webhook_type
+     *
+     * @return string
+     */
+    public function getWebhookType()
+    {
+        return $this->container['webhook_type'];
+    }
+
+    /**
+     * Sets webhook_type
+     *
+     * @param string $webhook_type post, get, or json. post by default
+     *
+     * @return $this
+     */
+    public function setWebhookType($webhook_type)
+    {
+        $this->container['webhook_type'] = $webhook_type;
 
         return $this;
     }
