@@ -1,6 +1,6 @@
 <?php
 /**
- * Content
+ * UploadFile
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \ClickSend\ObjectSerializer;
 
 /**
- * Content Class Doc Comment
+ * UploadFile Class Doc Comment
  *
  * @category Class
  * @description Your file to be uploaded.
@@ -41,7 +41,7 @@ use \ClickSend\ObjectSerializer;
  * @author   ClickSend Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Content implements ModelInterface, ArrayAccess
+class UploadFile implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = 'classType';
 
@@ -50,7 +50,7 @@ class Content implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'Content';
+    protected static $swaggerModelName = 'UploadFile';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
