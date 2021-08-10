@@ -72,6 +72,26 @@ class MMSApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test case for mmsHistoryExportGet
+     *
+     * Export all mms history.
+     *
+     */
+    public function testMmsHistoryExportGet()
+    {
+    }
+
+    /**
+     * Test case for mmsHistoryGet
+     *
+     * Get all mms history.
+     *
+     */
+    public function testMmsHistoryGet()
+    {
+    }
+
+    /**
      * Test case for mmsPricePost
      *
      * Get Price for MMS sent.
