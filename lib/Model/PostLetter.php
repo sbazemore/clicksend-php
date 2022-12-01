@@ -65,7 +65,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'duplex' => 'int',
         'colour' => 'int',
         'source' => 'string',
-        'custom_envelope' => 'int'
+        'return_envelope' => 'int'
     ];
 
     /**
@@ -81,7 +81,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'duplex' => 'int32',
         'colour' => 'int32',
         'source' => null,
-        'custom_envelope' => 'int32'
+        'return_envelope' => 'int32'
     ];
 
     /**
@@ -118,7 +118,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'duplex' => 'duplex',
         'colour' => 'colour',
         'source' => 'source',
-        'custom_envelope' => 'custom_envelope'
+        'return_envelope' => 'return_envelope'
     ];
 
     /**
@@ -134,7 +134,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'duplex' => 'setDuplex',
         'colour' => 'setColour',
         'source' => 'setSource',
-        'custom_envelope' => 'setCustomEnvelope'
+        'return_envelope' => 'setReturnEnvelope'
     ];
 
     /**
@@ -150,7 +150,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'duplex' => 'getDuplex',
         'colour' => 'getColour',
         'source' => 'getSource',
-        'custom_envelope' => 'getCustomEnvelope'
+        'return_envelope' => 'getReturnEnvelope'
     ];
 
     /**
@@ -220,7 +220,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         $this->container['duplex'] = isset($data['duplex']) ? $data['duplex'] : 0;
         $this->container['colour'] = isset($data['colour']) ? $data['colour'] : 0;
         $this->container['source'] = isset($data['source']) ? $data['source'] : 'sdk';
-        $this->container['custom_envelope'] = isset($data['custom_envelop']) ? $data['custom_envelope'] : 0;
+        $this->container['return_envelope'] = isset($data['return_envelope']) ? $data['return_envelope'] : 0;
 
         // Initialize discriminator property with the model name.
         $discriminator = array_search('classType', self::$attributeMap, true);
@@ -426,25 +426,25 @@ class PostLetter implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets source
+     * Gets return_envelope
      *
      * @return string
      */
-    public function getCustomEnvelope()
+    public function getReturnEnvelope()
     {
-        return $this->container['custom_envelope'];
+        return $this->container['return_envelope'];
     }
 
     /**
-     * Sets custom_envelope
+     * Sets return_envelope
      *
-     * @param string $custom_envelope Custom Envelope
+     * @param string $return_envelope Return Envelope
      *
      * @return $this
      */
-    public function setCustomEnvelope($custom_envelope)
+    public function setReturnEnvelope($return_envelope)
     {
-        $this->container['custom_envelope'] = $custom_envelope;
+        $this->container['return_envelope'] = $return_envelope;
 
         return $this;
     }
