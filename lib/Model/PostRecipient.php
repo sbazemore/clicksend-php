@@ -66,7 +66,8 @@ class PostRecipient implements ModelInterface, ArrayAccess
         'address_postal_code' => 'string',
         'address_country' => 'string',
         'return_address_id' => 'int',
-        'schedule' => 'int'
+        'schedule' => 'int',
+        'custom_envelope' => 'int'
     ];
 
     /**
@@ -83,7 +84,8 @@ class PostRecipient implements ModelInterface, ArrayAccess
         'address_postal_code' => null,
         'address_country' => null,
         'return_address_id' => 'int32',
-        'schedule' => 'int32'
+        'schedule' => 'int32',
+        'custom_envelope' => 'int32'
     ];
 
     /**
@@ -121,7 +123,8 @@ class PostRecipient implements ModelInterface, ArrayAccess
         'address_postal_code' => 'address_postal_code',
         'address_country' => 'address_country',
         'return_address_id' => 'return_address_id',
-        'schedule' => 'schedule'
+        'schedule' => 'schedule',
+        'custom_envelope' => 'custom_envelope'
     ];
 
     /**
@@ -138,7 +141,8 @@ class PostRecipient implements ModelInterface, ArrayAccess
         'address_postal_code' => 'setAddressPostalCode',
         'address_country' => 'setAddressCountry',
         'return_address_id' => 'setReturnAddressId',
-        'schedule' => 'setSchedule'
+        'schedule' => 'setSchedule',
+        'custom_envelope' => 'setCustomEnvelope'
     ];
 
     /**
@@ -155,7 +159,8 @@ class PostRecipient implements ModelInterface, ArrayAccess
         'address_postal_code' => 'getAddressPostalCode',
         'address_country' => 'getAddressCountry',
         'return_address_id' => 'getReturnAddressId',
-        'schedule' => 'getSchedule'
+        'schedule' => 'getSchedule',
+        'custom_envelope' => 'getCustomEnvelope'
     ];
 
     /**
@@ -199,9 +204,9 @@ class PostRecipient implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
 
-    
+
+
 
     /**
      * Associative array for storing property values
@@ -227,6 +232,7 @@ class PostRecipient implements ModelInterface, ArrayAccess
         $this->container['address_country'] = isset($data['address_country']) ? $data['address_country'] : null;
         $this->container['return_address_id'] = isset($data['return_address_id']) ? $data['return_address_id'] : null;
         $this->container['schedule'] = isset($data['schedule']) ? $data['schedule'] : 0;
+        $this->container['custom_envelope'] = isset($data['custom_envelope']) ? $data['custom_envelope'] : 0;
 
         // Initialize discriminator property with the model name.
         $discriminator = array_search('classType', self::$attributeMap, true);
@@ -493,6 +499,31 @@ class PostRecipient implements ModelInterface, ArrayAccess
 
         return $this;
     }
+
+    /**
+     * Gets custom_envelope
+     *
+     * @return int
+     */
+    public function getCustomEnvelope()
+    {
+        return $this->container['custom_envelope'];
+    }
+
+    /**
+     * Sets custom_envelope
+     *
+     * @param int $custom_envelope Send with return envelope
+     *
+     * @return $this
+     */
+    public function setCustomEnvelope($custom_envelope)
+    {
+        $this->container['custom_envelope'] = $custom_envelope;
+
+        return $this;
+    }
+
     /**
      * Returns true if offset exists. False otherwise.
      *

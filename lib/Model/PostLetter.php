@@ -64,8 +64,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'int',
         'duplex' => 'int',
         'colour' => 'int',
-        'source' => 'string',
-        'return_envelope' => 'int'
+        'source' => 'string'
     ];
 
     /**
@@ -80,8 +79,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'int32',
         'duplex' => 'int32',
         'colour' => 'int32',
-        'source' => null,
-        'return_envelope' => 'int32'
+        'source' => null
     ];
 
     /**
@@ -117,8 +115,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'template_used',
         'duplex' => 'duplex',
         'colour' => 'colour',
-        'source' => 'source',
-        'return_envelope' => 'return_envelope'
+        'source' => 'source'
     ];
 
     /**
@@ -133,8 +130,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'setTemplateUsed',
         'duplex' => 'setDuplex',
         'colour' => 'setColour',
-        'source' => 'setSource',
-        'return_envelope' => 'setReturnEnvelope'
+        'source' => 'setSource'
     ];
 
     /**
@@ -149,8 +145,7 @@ class PostLetter implements ModelInterface, ArrayAccess
         'template_used' => 'getTemplateUsed',
         'duplex' => 'getDuplex',
         'colour' => 'getColour',
-        'source' => 'getSource',
-        'return_envelope' => 'getReturnEnvelope'
+        'source' => 'getSource'
     ];
 
     /**
@@ -194,9 +189,9 @@ class PostLetter implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
 
-    
+
+
 
     /**
      * Associative array for storing property values
@@ -220,7 +215,6 @@ class PostLetter implements ModelInterface, ArrayAccess
         $this->container['duplex'] = isset($data['duplex']) ? $data['duplex'] : 0;
         $this->container['colour'] = isset($data['colour']) ? $data['colour'] : 0;
         $this->container['source'] = isset($data['source']) ? $data['source'] : 'sdk';
-        $this->container['return_envelope'] = isset($data['return_envelope']) ? $data['return_envelope'] : 0;
 
         // Initialize discriminator property with the model name.
         $discriminator = array_search('classType', self::$attributeMap, true);
@@ -421,30 +415,6 @@ class PostLetter implements ModelInterface, ArrayAccess
     public function setSource($source)
     {
         $this->container['source'] = $source;
-
-        return $this;
-    }
-
-    /**
-     * Gets return_envelope
-     *
-     * @return string
-     */
-    public function getReturnEnvelope()
-    {
-        return $this->container['return_envelope'];
-    }
-
-    /**
-     * Sets return_envelope
-     *
-     * @param string $return_envelope Return Envelope
-     *
-     * @return $this
-     */
-    public function setReturnEnvelope($return_envelope)
-    {
-        $this->container['return_envelope'] = $return_envelope;
 
         return $this;
     }
